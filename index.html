@@ -1,303 +1,313 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:;" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>智能硬件行业及消费者分析</title>
+  <title>Sintech — Smart Hardware Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- 顶部导航 + Tab 栏 -->
-  <nav class="site-nav">
-    <div class="container">
-      <a href="#" class="nav-brand">智能硬件分析</a>
-      <div class="tab-list">
-        <button class="tab-btn active" data-tab="market-overview">市场概览</button>
-        <button class="tab-btn" data-tab="categories">品类分析</button>
-        <button class="tab-btn" data-tab="consumer-profile">消费者画像</button>
-        <button class="tab-btn" data-tab="trends">发展趋势</button>
+  <!-- ===== Top Nav ===== -->
+  <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+    <div class="gi-nav-inner">
+      <div class="gi-nav-brand">
+        <div class="gi-nav-logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sintech_titanium" x1="20" y1="70" x2="80" y2="30" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#A69781"/>
+                <stop offset="50%" stop-color="#E0D6C3"/>
+                <stop offset="100%" stop-color="#D0C0A5"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 68C12 68 28 66 40 58C52 50 48 34 60 34C72 34 72 58 88 62"
+              stroke="url(#sintech_titanium)" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="gi-brand-name">Sintech</span>
+      </div>
+      <div class="tab-list" role="tablist">
+        <button class="tab-btn active" data-tab="global-insights" role="tab" aria-selected="true" aria-controls="global-insights">Home</button>
+        <button class="tab-btn" data-tab="categories" role="tab" aria-selected="false" aria-controls="categories">Industry Analysis</button>
+        <button class="tab-btn" data-tab="consumer-profile" role="tab" aria-selected="false" aria-controls="consumer-profile">Consumer Insights</button>
+        <button class="tab-btn" data-tab="trends" role="tab" aria-selected="false" aria-controls="trends">Dashboard</button>
+      </div>
+      <div class="lang-toggle" aria-label="Language Selector">
+        <button class="lang-btn active" data-lang="en" aria-label="Switch to English" aria-pressed="true">EN</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button class="lang-btn" data-lang="cn" aria-label="切换至中文" aria-pressed="false">CN</button>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="site-hero">
-    <div class="container">
-      <span class="eyebrow">2025 年度报告</span>
-      <h1>智能硬件行业分析报告</h1>
-      <p class="subtitle">市场趋势 · 消费者洞察 · 行业数据</p>
-    </div>
-  </header>
-
   <main>
+    <!-- ===== Tab: Global Insights (Home) ===== -->
+    <section id="global-insights" class="tab-panel active" role="tabpanel" aria-labelledby="tab-home">
+      <div class="gi-layout">
+        <!-- Sidebar -->
+        <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
 
-    <!-- Tab: 市场概览 -->
-    <section id="market-overview" class="tab-panel">
-      <div class="container">
-        <div class="panel-header">
-          <span class="section-eyebrow">Market Overview</span>
-          <h2>市场概览</h2>
-          <p class="section-desc">2025 年中国智能硬件市场规模突破 8000 亿，年均复合增长率持续领跑消费电子行业。</p>
-        </div>
-        <div class="stat-grid">
-          <div class="stat-card">
-            <span class="stat-number">8,420亿</span>
-            <span class="stat-label">2025年市场规模（元）</span>
+        <!-- Main Content -->
+        <div class="gi-main">
+          <div class="gi-header">
+            <div>
+              <h2 class="gi-title"></h2>
+              <p class="gi-subtitle"></p>
+            </div>
+            <span class="gi-badge">Updated: 2025 Q3</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">18.6%</span>
-            <span class="stat-label">年均复合增长率</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">4.2亿</span>
-            <span class="stat-label">智能设备活跃用户数</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">62%</span>
-            <span class="stat-label">用户复购率</span>
-          </div>
-        </div>
-        <div class="chart-container">
-          <h3>市场规模增长趋势（亿元）</h3>
-          <div class="bar-chart">
-            <div class="bar-group">
-              <div class="bar" style="--height: 45%"><span class="bar-label">2021<br/>3,800</span></div>
-              <div class="bar" style="--height: 55%"><span class="bar-label">2022<br/>4,650</span></div>
-              <div class="bar" style="--height: 67%"><span class="bar-label">2023<br/>5,690</span></div>
-              <div class="bar" style="--height: 80%"><span class="bar-label">2024<br/>6,900</span></div>
-              <div class="bar active" style="--height: 100%"><span class="bar-label">2025<br/>8,420</span></div>
+
+          <!-- KPI Cards -->
+          <div class="gi-kpi-grid">
+            <div class="gi-kpi-card gi-kpi-revenue">
+              <div class="gi-kpi-top">
+                <span class="gi-kpi-label">Market Size</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CBD5E1" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="9" width="7" height="12" rx="1"/></svg>
+              </div>
+              <div class="gi-kpi-value-row">
+                <span class="gi-kpi-big">--</span>
+                <span class="gi-kpi-change">--</span>
+              </div>
+              <div class="gi-kpi-sub">--</div>
+            </div>
+            <div class="gi-kpi-card gi-kpi-asp">
+              <div class="gi-kpi-top">
+                <span class="gi-kpi-label">ASP</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="1" width="14" height="14" rx="3" stroke="#93C5FD" stroke-width="1.5"/><path d="M5 8h6M8 5v6" stroke="#93C5FD" stroke-width="1.5"/></svg>
+              </div>
+              <div class="gi-kpi-value-row">
+                <span class="gi-kpi-big">--</span>
+                <span class="gi-kpi-change">--</span>
+              </div>
+              <div class="gi-kpi-sub">--</div>
+            </div>
+            <div class="gi-kpi-card gi-kpi-share">
+              <div class="gi-kpi-label" style="opacity:0.85">Top 5 Market Share</div>
+              <div class="gi-share-body">
+                <div class="gi-share-list"></div>
+                <div class="gi-share-big">
+                  <span class="gi-share-pct">--</span>
+                  <span class="gi-share-tag">--</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Tab: 品类分析 -->
-    <section id="categories" class="tab-panel">
-      <div class="container">
-        <div class="panel-header">
-          <span class="section-eyebrow">Category Analysis</span>
-          <h2>主要品类分析</h2>
-          <p class="section-desc">六大核心品类构成智能硬件市场主体，智能手机以 32% 占比领跑全场。</p>
-        </div>
-        <div class="category-grid">
-          <div class="category-card">
-            <div class="category-icon">📱</div>
-            <h3>智能手机</h3>
-            <div class="progress-bar"><div class="progress" style="--w: 100%"></div></div>
-            <p class="category-share">市场占比 <strong>32%</strong></p>
-            <ul>
-              <li>旗舰 / 高端机型</li>
-              <li>中端大众机型</li>
-              <li>折叠屏手机</li>
-            </ul>
+          <!-- Metric Row -->
+          <div class="gi-metric-row">
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
           </div>
-          <div class="category-card">
-            <div class="category-icon">⌚</div>
-            <h3>智能穿戴</h3>
-            <div class="progress-bar"><div class="progress" style="--w: 69%"></div></div>
-            <p class="category-share">市场占比 <strong>22%</strong></p>
-            <ul>
-              <li>智能手表 / 手环</li>
-              <li>TWS 耳机</li>
-              <li>智能眼镜</li>
-            </ul>
+
+          <!-- Chart + Price Band -->
+          <div class="gi-chart-row">
+            <div class="gi-chart-card">
+              <div class="gi-chart-header">
+                <div>
+                  <h3 class="gi-chart-title"></h3>
+                  <p class="gi-chart-sub"></p>
+                </div>
+                <div class="gi-toggle" role="group" aria-label="Timeframe Toggle">
+                  <button class="gi-toggle-btn active" data-view="quarterly">Quarterly</button>
+                  <button class="gi-toggle-btn" data-view="yearly">Yearly</button>
+                </div>
+              </div>
+              <div class="gi-bar-chart">
+                <div class="gi-bar-group"></div>
+              </div>
+            </div>
+            <div class="gi-right-col">
+              <div class="gi-price-card">
+                <div class="gi-price-header">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="9" width="7" height="12" rx="1"/></svg>
+                  <span>--</span>
+                </div>
+                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
+                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
+                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
+                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
+                <button class="gi-deep-btn" aria-label="Deep Price Analysis">--</button>
+              </div>
+              <div class="gi-ai-card">
+                <div class="gi-ai-label">--</div>
+                <p>--</p>
+              </div>
+            </div>
           </div>
-          <div class="category-card">
-            <div class="category-icon">🏠</div>
-            <h3>智能家居</h3>
-            <div class="progress-bar"><div class="progress" style="--w: 56%"></div></div>
-            <p class="category-share">市场占比 <strong>18%</strong></p>
-            <ul>
-              <li>智能音箱 / 屏</li>
-              <li>智能门锁 / 摄像头</li>
-              <li>扫地机器人</li>
-            </ul>
-          </div>
-          <div class="category-card">
-            <div class="category-icon">🎮</div>
-            <h3>智能娱乐</h3>
-            <div class="progress-bar"><div class="progress" style="--w: 38%"></div></div>
-            <p class="category-share">市场占比 <strong>12%</strong></p>
-            <ul>
-              <li>VR / AR 头显</li>
-              <li>游戏主机外设</li>
-              <li>便携投影仪</li>
-            </ul>
-          </div>
-          <div class="category-card">
-            <div class="category-icon">🏥</div>
-            <h3>智能健康</h3>
-            <div class="progress-bar"><div class="progress" style="--w: 31%"></div></div>
-            <p class="category-share">市场占比 <strong>10%</strong></p>
-            <ul>
-              <li>智能体脂秤</li>
-              <li>血氧 / 血压监测</li>
-              <li>睡眠追踪器</li>
-            </ul>
-          </div>
-          <div class="category-card">
-            <div class="category-icon">🚗</div>
-            <h3>车载智能</h3>
-            <div class="progress-bar"><div class="progress" style="--w: 19%"></div></div>
-            <p class="category-share">市场占比 <strong>6%</strong></p>
-            <ul>
-              <li>行车记录仪</li>
-              <li>HUD 抬头显示</li>
-              <li>车载智能终端</li>
-            </ul>
+
+          <!-- Footer Stats -->
+          <div class="gi-footer-stats">
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">14,208</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">--</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">98.5%</div></div>
+            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tab: 消费者画像 -->
-    <section id="consumer-profile" class="tab-panel">
-      <div class="container">
-        <div class="panel-header">
-          <span class="section-eyebrow">Consumer Profile</span>
-          <h2>消费者画像</h2>
-          <p class="section-desc">深入了解智能硬件用户的年龄构成、决策逻辑与消费行为模式。</p>
-        </div>
-        <div class="profile-grid">
-
-          <div class="profile-block">
-            <h3>年龄分布</h3>
-            <div class="donut-chart">
-              <svg viewBox="0 0 120 120">
-                <circle class="donut-ring" cx="60" cy="60" r="45" />
-                <circle class="donut-seg seg1" cx="60" cy="60" r="45" stroke-dasharray="113 170" stroke-dashoffset="0" />
-                <circle class="donut-seg seg2" cx="60" cy="60" r="45" stroke-dasharray="71 212" stroke-dashoffset="-113" />
-                <circle class="donut-seg seg3" cx="60" cy="60" r="45" stroke-dasharray="43 240" stroke-dashoffset="-184" />
-                <circle class="donut-seg seg4" cx="60" cy="60" r="45" stroke-dasharray="56 227" stroke-dashoffset="-227" />
-              </svg>
-              <div class="donut-legend">
-                <span class="legend-item seg1-color">18–25岁 40%</span>
-                <span class="legend-item seg2-color">26–35岁 25%</span>
-                <span class="legend-item seg3-color">36–45岁 15%</span>
-                <span class="legend-item seg4-color">46岁以上 20%</span>
+    <!-- ===== Tab: Industry Analysis ===== -->
+    <section id="categories" class="tab-panel" role="tabpanel">
+      <div class="gi-layout">
+        <aside class="gi-sidebar"></aside>
+        <div class="gi-main">
+          <div class="gi-header">
+            <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
+            <span class="gi-badge">Updated: 2025 Q3</span>
+          </div>
+          <div class="gi-kpi-grid">
+            <div class="gi-kpi-card gi-kpi-revenue">
+              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
+              <div class="gi-kpi-value-row"><span class="gi-kpi-big">6</span></div>
+              <div class="gi-kpi-sub">--</div>
+            </div>
+            <div class="gi-kpi-card gi-kpi-asp">
+              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
+              <div class="gi-kpi-value-row"><span class="gi-kpi-big">--</span><span class="gi-kpi-change up">--</span></div>
+              <div class="gi-kpi-sub">--</div>
+            </div>
+            <div class="gi-kpi-card gi-kpi-share">
+              <div class="gi-kpi-label">--</div>
+              <div class="gi-share-body">
+                <div class="gi-share-list"></div>
+                <div class="gi-share-big"><span class="gi-share-pct">--</span><span class="gi-share-tag">--</span></div>
               </div>
             </div>
           </div>
-
-          <div class="profile-block">
-            <h3>购买决策因素</h3>
-            <div class="factor-list">
-              <div class="factor-item">
-                <span class="factor-name">功能实用性</span>
-                <div class="factor-bar"><div class="factor-fill" style="--w:88%"></div></div>
-                <span class="factor-value">88%</span>
-              </div>
-              <div class="factor-item">
-                <span class="factor-name">品牌口碑</span>
-                <div class="factor-bar"><div class="factor-fill" style="--w:75%"></div></div>
-                <span class="factor-value">75%</span>
-              </div>
-              <div class="factor-item">
-                <span class="factor-name">价格定位</span>
-                <div class="factor-bar"><div class="factor-fill" style="--w:70%"></div></div>
-                <span class="factor-value">70%</span>
-              </div>
-              <div class="factor-item">
-                <span class="factor-name">外观设计</span>
-                <div class="factor-bar"><div class="factor-fill" style="--w:62%"></div></div>
-                <span class="factor-value">62%</span>
-              </div>
-              <div class="factor-item">
-                <span class="factor-name">生态互联</span>
-                <div class="factor-bar"><div class="factor-fill" style="--w:55%"></div></div>
-                <span class="factor-value">55%</span>
-              </div>
-              <div class="factor-item">
-                <span class="factor-name">售后服务</span>
-                <div class="factor-bar"><div class="factor-fill" style="--w:48%"></div></div>
-                <span class="factor-value">48%</span>
-              </div>
-            </div>
+          <div class="gi-cat-grid">
+            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">📱</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">👓</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">⌚</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">🏠</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">🏥</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">🚗</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
           </div>
-
-          <div class="profile-block">
-            <h3>消费者分层</h3>
-            <div class="segment-cards">
-              <div class="segment-card early">
-                <span class="segment-tag">早期采用者</span>
-                <p>追求新技术，愿意溢价，活跃于科技社区，对品牌忠诚度高。占比 <strong>22%</strong>。</p>
-              </div>
-              <div class="segment-card mainstream">
-                <span class="segment-tag">主流消费者</span>
-                <p>注重性价比，受口碑驱动，跟随市场主流，品类覆盖广。占比 <strong>51%</strong>。</p>
-              </div>
-              <div class="segment-card late">
-                <span class="segment-tag">滞后采用者</span>
-                <p>价格敏感，需求明确，购买决策周期长，集中在中老年群体。占比 <strong>27%</strong>。</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="profile-block">
-            <h3>渠道偏好</h3>
-            <div class="channel-grid">
-              <div class="channel-item"><span class="channel-icon">📱</span><span>电商平台</span><strong>54%</strong></div>
-              <div class="channel-item"><span class="channel-icon">🏪</span><span>品牌直营</span><strong>21%</strong></div>
-              <div class="channel-item"><span class="channel-icon">🛒</span><span>线下零售</span><strong>16%</strong></div>
-              <div class="channel-item"><span class="channel-icon">📲</span><span>社交电商</span><strong>9%</strong></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Tab: 发展趋势 -->
-    <section id="trends" class="tab-panel">
-      <div class="container">
-        <div class="panel-header">
-          <span class="section-eyebrow">Industry Trends</span>
-          <h2>行业发展趋势</h2>
-          <p class="section-desc">未来四年，智能硬件将在 AI、互联与健康三条主轴上持续深化演进。</p>
-        </div>
-        <div class="trend-timeline">
-          <div class="trend-item">
-            <div class="trend-year">2025</div>
-            <div class="trend-content">
-              <h3>AI 端侧推理普及</h3>
-              <p>NPU 芯片性能大幅提升，大语言模型开始本地化运行于穿戴及家居设备，交互体验质变。</p>
-            </div>
-          </div>
-          <div class="trend-item">
-            <div class="trend-year">2026</div>
-            <div class="trend-content">
-              <h3>全屋互联生态成熟</h3>
-              <p>Matter 协议加速跨品牌互联，消费者对生态完整性的要求推动头部厂商开放 API。</p>
-            </div>
-          </div>
-          <div class="trend-item">
-            <div class="trend-year">2027</div>
-            <div class="trend-content">
-              <h3>健康监测精度跃升</h3>
-              <p>连续血糖、无创血压等医疗级传感器商业化落地，智能硬件与大健康深度融合。</p>
-            </div>
-          </div>
-          <div class="trend-item">
-            <div class="trend-year">2028</div>
-            <div class="trend-content">
-              <h3>空间计算设备规模化</h3>
-              <p>AR 眼镜重量突破 30g 以下，续航达全天候，消费级空间计算市场正式启动。</p>
-            </div>
+          <div class="gi-footer-stats">
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">6</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">2,840+</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">IDC · GfK</div></div>
+            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== Tab: Consumer Insights ===== -->
+    <section id="consumer-profile" class="tab-panel" role="tabpanel">
+      <div class="gi-layout">
+        <aside class="gi-sidebar"></aside>
+        <div class="gi-main">
+          <div class="gi-header">
+            <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
+            <span class="gi-badge">Updated: 2025 Q3</span>
+          </div>
+          <div class="gi-kpi-grid">
+            <div class="gi-kpi-card gi-kpi-revenue">
+              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
+              <div class="gi-kpi-value-row"><span class="gi-kpi-big">--</span><span class="gi-kpi-change up">--</span></div>
+              <div class="gi-kpi-sub">--</div>
+            </div>
+            <div class="gi-kpi-card gi-kpi-asp">
+              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
+              <div class="gi-kpi-value-row"><span class="gi-kpi-big">--</span><span class="gi-kpi-change up">--</span></div>
+              <div class="gi-kpi-sub">--</div>
+            </div>
+            <div class="gi-kpi-card gi-kpi-share">
+              <div class="gi-kpi-label">--</div>
+              <div class="gi-share-body">
+                <div class="gi-share-list"></div>
+                <div class="gi-share-big"><span class="gi-share-pct">--</span><span class="gi-share-tag">--</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gi-donut-container"></div>
+          <div class="gi-chart-row">
+            <div class="gi-chart-card">
+              <h3 class="gi-chart-title" style="margin-bottom:20px">--</h3>
+              <div class="gi-factor-list">
+                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
+                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
+                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
+                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
+                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
+                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
+              </div>
+            </div>
+            <div class="gi-right-col">
+              <div class="gi-price-card">
+                <div class="gi-price-header"><span>--</span></div>
+                <div class="gi-segment">
+                  <div class="gi-segment-card"><span class="gi-seg-tag">--</span><p>--</p></div>
+                  <div class="gi-segment-card"><span class="gi-seg-tag">--</span><p>--</p></div>
+                  <div class="gi-segment-card"><span class="gi-seg-tag">--</span><p>--</p></div>
+                </div>
+              </div>
+              <div class="gi-price-card">
+                <div class="gi-price-header"><span>--</span></div>
+                <div class="gi-channel-grid">
+                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
+                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
+                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
+                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gi-footer-stats">
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">28,500</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">86</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">97.2%</div></div>
+            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tab: Dashboard ===== -->
+    <section id="trends" class="tab-panel" role="tabpanel">
+      <div class="gi-layout">
+        <aside class="gi-sidebar"></aside>
+        <div class="gi-main">
+          <div class="gi-header">
+            <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
+            <span class="gi-badge">Forecast: 2025–2028</span>
+          </div>
+          <div class="gi-metric-row" style="grid-template-columns: repeat(4,1fr)">
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value gi-blue">2025</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">2026</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">2027</div></div>
+            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">2028</div></div>
+          </div>
+          <div class="gi-trend-grid">
+            <div class="gi-trend-card"><span class="gi-trend-year">2025</span><h3>--</h3><p>--</p></div>
+            <div class="gi-trend-card"><span class="gi-trend-year">2026</span><h3>--</h3><p>--</p></div>
+            <div class="gi-trend-card"><span class="gi-trend-year">2027</span><h3>--</h3><p>--</p></div>
+            <div class="gi-trend-card"><span class="gi-trend-year">2028</span><h3>--</h3><p>--</p></div>
+          </div>
+          <div class="gi-footer-stats">
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">4 Years</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">128</div></div>
+            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">94.7%</div></div>
+            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 智能硬件行业分析报告 · 数据来源：IDC、艾瑞咨询、GfK</p>
-    </div>
-  </footer>
-
+  <div id="loading-overlay" class="loading-overlay" aria-label="Loading" role="status">
+    <div class="loading-spinner"></div>
+  </div>
+  <div id="toast" role="alert" aria-live="polite" style="opacity:0; visibility:hidden"></div>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

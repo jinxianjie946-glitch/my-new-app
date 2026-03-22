@@ -1,0 +1,575 @@
+{
+  "VERTICALS": {
+    "smartphones": {
+      "icon": "<rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\"/><line x1=\"12\" y1=\"18\" x2=\"12.01\" y2=\"18\"/>",
+      "home": {
+        "marketSize": "$609B",
+        "marketChange": 2.0,
+        "marketSub": "1.26B units shipped | Slight recovery YoY",
+        "asp": "$402",
+        "aspChange": 8.6,
+        "aspSub": "Q4 2025 ASP crossed $400 for first time",
+        "top5": [
+          { "n": "Apple", "s": "20%" },
+          { "n": "Samsung", "s": "19%" },
+          { "n": "Xiaomi", "s": "13%" },
+          { "n": "OPPO", "s": "9%" },
+          { "n": "Vivo", "s": "8%" }
+        ],
+        "concentration": "69%",
+        "metrics": [
+          { "label": "Penetration", "value": "85.7%", "color": "" },
+          { "label": "Saturation", "value": "Critical", "color": "gi-red" },
+          { "label": "Iteration Cycle", "value": "11 Mo", "color": "" },
+          { "label": "Replacement", "value": "34 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$200-499", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 72 },
+          { "label": "", "h": 68 },
+          { "label": "2024 Q3", "h": 78 },
+          { "label": "", "h": 82 },
+          { "label": "2025 Q1", "h": 88 },
+          { "label": "", "h": 92 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 96 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 58 },
+          { "label": "2022", "h": 52 },
+          { "label": "2023", "h": 60 },
+          { "label": "2024", "h": 78 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$200)", "pct": 25 },
+          { "label": "Mid ($200-$499)", "pct": 40 },
+          { "label": "Premium ($600+)", "pct": 25, "hl": true },
+          { "label": "Ultra (>$1000)", "pct": 10 }
+        ]
+      },
+      "industry": { "shares": [38, 5, 18, 22, 8, 9] },
+      "consumer": {
+        "users": "4.8亿",
+        "usersChange": 6.2,
+        "repurchase": "64%",
+        "repurchaseChange": 3.2,
+        "donut": [35, 28, 18, 19]
+      }
+    },
+    "glasses": {
+      "icon": "<circle cx=\"6\" cy=\"15\" r=\"4\"/><circle cx=\"18\" cy=\"15\" r=\"4\"/><path d=\"M10 15h4\"/><path d=\"M2 15h0\"/><path d=\"M22 15h0\"/>",
+      "home": {
+        "marketSize": "$22.1B",
+        "marketChange": 39.2,
+        "marketSub": "14.3M units | Hyper-growth continues",
+        "asp": "$420",
+        "aspChange": 22.5,
+        "aspSub": "AI-powered models commanding premium",
+        "top5": [
+          { "n": "Meta", "s": "42%" },
+          { "n": "Xreal", "s": "12%" },
+          { "n": "Rokid", "s": "9%" },
+          { "n": "Ray-Ban", "s": "8%" },
+          { "n": "Pico", "s": "6%" }
+        ],
+        "concentration": "77%",
+        "metrics": [
+          { "label": "Penetration", "value": "5.8%", "color": "" },
+          { "label": "Saturation", "value": "Nascent", "color": "gi-blue" },
+          { "label": "Iteration Cycle", "value": "8 Mo", "color": "" },
+          { "label": "Replacement", "value": "18 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$250-500", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 28 },
+          { "label": "", "h": 35 },
+          { "label": "2024 Q3", "h": 48 },
+          { "label": "", "h": 58 },
+          { "label": "2025 Q1", "h": 72 },
+          { "label": "", "h": 88 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 95 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 12 },
+          { "label": "2022", "h": 22 },
+          { "label": "2023", "h": 38 },
+          { "label": "2024", "h": 62 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$200)", "pct": 15 },
+          { "label": "Mid ($200-$499)", "pct": 38 },
+          { "label": "Premium ($500+)", "pct": 32, "hl": true },
+          { "label": "Ultra (>$1000)", "pct": 15 }
+        ]
+      },
+      "industry": { "shares": [38, 22, 18, 10, 8, 4] },
+      "consumer": {
+        "users": "0.45亿",
+        "usersChange": 62.8,
+        "repurchase": "35%",
+        "repurchaseChange": 14.2,
+        "donut": [40, 38, 15, 7]
+      }
+    },
+    "wearables": {
+      "icon": "<circle cx=\"12\" cy=\"12\" r=\"7\"/><polyline points=\"12 9 12 12 13.5 13.5\"/><path d=\"M16.5 17.2 19 20\"/><path d=\"M7.5 17.2 5 20\"/><path d=\"M16.5 6.8 19 4\"/><path d=\"M7.5 6.8 5 4\"/>",
+      "home": {
+        "marketSize": "$118.9B",
+        "marketChange": 19.7,
+        "marketSub": "Smartwatch $57.2B | Total wearables market",
+        "asp": "$331",
+        "aspChange": 6.2,
+        "aspSub": "Apple Watch ASP $429 | Xiaomi $142",
+        "top5": [
+          { "n": "Apple", "s": "38%" },
+          { "n": "Samsung", "s": "12%" },
+          { "n": "Huawei", "s": "9%" },
+          { "n": "Noise", "s": "8%" },
+          { "n": "Garmin", "s": "6%" }
+        ],
+        "concentration": "73%",
+        "metrics": [
+          { "label": "Penetration", "value": "42.5%", "color": "" },
+          { "label": "Saturation", "value": "Growing", "color": "gi-blue" },
+          { "label": "Iteration Cycle", "value": "14 Mo", "color": "" },
+          { "label": "Replacement", "value": "24 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$150-400", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 58 },
+          { "label": "", "h": 64 },
+          { "label": "2024 Q3", "h": 72 },
+          { "label": "", "h": 78 },
+          { "label": "2025 Q1", "h": 84 },
+          { "label": "", "h": 92 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 96 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 48 },
+          { "label": "2022", "h": 58 },
+          { "label": "2023", "h": 72 },
+          { "label": "2024", "h": 85 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$100)", "pct": 22 },
+          { "label": "Mid ($100-$299)", "pct": 36 },
+          { "label": "Premium ($300+)", "pct": 30, "hl": true },
+          { "label": "Ultra (>$500)", "pct": 12 }
+        ]
+      },
+      "industry": { "shares": [38, 26, 14, 9, 8, 5] },
+      "consumer": {
+        "users": "3.2亿",
+        "usersChange": 16.8,
+        "repurchase": "52%",
+        "repurchaseChange": 5.8,
+        "donut": [42, 30, 14, 14]
+      }
+    },
+    "smart-home": {
+      "icon": "<path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/>",
+      "home": {
+        "marketSize": "$174B",
+        "marketChange": 9.5,
+        "marketSub": "Projected $180B+ in 2026 | CAGR 9.5%",
+        "asp": "$168",
+        "aspChange": -3.2,
+        "aspSub": "Price competition intensifying | Volume up",
+        "top5": [
+          { "n": "Amazon", "s": "16%" },
+          { "n": "Google", "s": "14%" },
+          { "n": "Xiaomi", "s": "13%" },
+          { "n": "Arlo", "s": "6%" },
+          { "n": "Ring", "s": "5%" }
+        ],
+        "concentration": "54%",
+        "metrics": [
+          { "label": "Penetration", "value": "48.2%", "color": "" },
+          { "label": "Saturation", "value": "Moderate", "color": "" },
+          { "label": "Iteration Cycle", "value": "18 Mo", "color": "" },
+          { "label": "Replacement", "value": "48 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$80-250", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 62 },
+          { "label": "", "h": 68 },
+          { "label": "2024 Q3", "h": 74 },
+          { "label": "", "h": 80 },
+          { "label": "2025 Q1", "h": 86 },
+          { "label": "", "h": 92 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 97 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 52 },
+          { "label": "2022", "h": 65 },
+          { "label": "2023", "h": 76 },
+          { "label": "2024", "h": 88 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$50)", "pct": 30 },
+          { "label": "Mid ($50-$199)", "pct": 42 },
+          { "label": "Premium ($200+)", "pct": 20, "hl": true },
+          { "label": "Ultra (>$500)", "pct": 8 }
+        ]
+      },
+      "industry": { "shares": [24, 20, 22, 16, 10, 8] },
+      "consumer": {
+        "users": "3.6亿",
+        "usersChange": 12.8,
+        "repurchase": "58%",
+        "repurchaseChange": 4.6,
+        "donut": [16, 36, 30, 18]
+      }
+    },
+    "entertainment": {
+      "icon": "<rect x=\"2\" y=\"7\" width=\"20\" height=\"15\" rx=\"2\"/><polyline points=\"17 2 12 7 7 2\"/>",
+      "home": {
+        "marketSize": "$152.4B",
+        "marketChange": 12.4,
+        "marketSub": "Smart TV + Audio growth stable",
+        "asp": "$285",
+        "aspChange": 4.2,
+        "aspSub": "Premium audio modules driving value",
+        "top5": [
+          { "n": "Sony", "s": "18%" },
+          { "n": "Samsung", "s": "16%" },
+          { "n": "LG", "s": "12%" },
+          { "n": "TCL", "s": "10%" },
+          { "n": "Hisense", "s": "8%" }
+        ],
+        "concentration": "64%",
+        "metrics": [
+          { "label": "Penetration", "value": "65.2%", "color": "" },
+          { "label": "Saturation", "value": "Growing", "color": "gi-blue" },
+          { "label": "Iteration Cycle", "value": "24 Mo", "color": "" },
+          { "label": "Replacement", "value": "60 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$200-500", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 58 },
+          { "label": "", "h": 62 },
+          { "label": "2024 Q3", "h": 70 },
+          { "label": "", "h": 78 },
+          { "label": "2025 Q1", "h": 85 },
+          { "label": "", "h": 92 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 96 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 42 },
+          { "label": "2022", "h": 55 },
+          { "label": "2023", "h": 68 },
+          { "label": "2024", "h": 82 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$100)", "pct": 20 },
+          { "label": "Mid ($100-$399)", "pct": 45 },
+          { "label": "Premium ($400+)", "pct": 25, "hl": true },
+          { "label": "Ultra (>$1000)", "pct": 10 }
+        ]
+      },
+      "industry": { "shares": [32, 24, 18, 12, 8, 6] },
+      "consumer": {
+        "users": "4.2亿",
+        "usersChange": 8.4,
+        "repurchase": "42%",
+        "repurchaseChange": 2.8,
+        "donut": [22, 38, 25, 15]
+      }
+    },
+    "health": {
+      "icon": "<path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/>",
+      "home": {
+        "marketSize": "$491.6B",
+        "marketChange": 15.1,
+        "marketSub": "Digital health total | CAGR 11.7%",
+        "asp": "$145",
+        "aspChange": 8.4,
+        "aspSub": "Medical-grade sensors raising ASP steadily",
+        "top5": [
+          { "n": "Omron", "s": "14%" },
+          { "n": "Withings", "s": "11%" },
+          { "n": "Abbott", "s": "10%" },
+          { "n": "Dexcom", "s": "9%" },
+          { "n": "iRhythm", "s": "7%" }
+        ],
+        "concentration": "51%",
+        "metrics": [
+          { "label": "Penetration", "value": "28.5%", "color": "" },
+          { "label": "Saturation", "value": "Growing", "color": "gi-blue" },
+          { "label": "Iteration Cycle", "value": "12 Mo", "color": "" },
+          { "label": "Replacement", "value": "28 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$60-250", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 48 },
+          { "label": "", "h": 55 },
+          { "label": "2024 Q3", "h": 64 },
+          { "label": "", "h": 72 },
+          { "label": "2025 Q1", "h": 80 },
+          { "label": "", "h": 90 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 98 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 35 },
+          { "label": "2022", "h": 48 },
+          { "label": "2023", "h": 62 },
+          { "label": "2024", "h": 80 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$50)", "pct": 30 },
+          { "label": "Mid ($50-$199)", "pct": 38 },
+          { "label": "Premium ($200+)", "pct": 22, "hl": true },
+          { "label": "Medical (>$500)", "pct": 10 }
+        ]
+      },
+      "industry": { "shares": [24, 22, 16, 15, 14, 9] },
+      "consumer": {
+        "users": "2.4亿",
+        "usersChange": 32.6,
+        "repurchase": "56%",
+        "repurchaseChange": 10.4,
+        "donut": [10, 24, 28, 38]
+      }
+    },
+    "mobility": {
+      "icon": "<rect x=\"1\" y=\"3\" width=\"15\" height=\"13\" rx=\"2\"/><path d=\"M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/><path d=\"M8 18.5h8\"/>",
+      "home": {
+        "marketSize": "$84.7B",
+        "marketChange": 20.8,
+        "marketSub": "Connected vehicles | CAGR 12.6%",
+        "asp": "$295",
+        "aspChange": 8.2,
+        "aspSub": "ADAS + HUD modules driving ASP growth",
+        "top5": [
+          { "n": "Tesla", "s": "18%" },
+          { "n": "Bosch", "s": "14%" },
+          { "n": "Continental", "s": "12%" },
+          { "n": "Denso", "s": "10%" },
+          { "n": "Magna", "s": "8%" }
+        ],
+        "concentration": "62%",
+        "metrics": [
+          { "label": "Penetration", "value": "42.8%", "color": "" },
+          { "label": "Saturation", "value": "Growing", "color": "gi-blue" },
+          { "label": "Iteration Cycle", "value": "20 Mo", "color": "" },
+          { "label": "Replacement", "value": "60 Mo", "color": "" },
+          { "label": "Price Centroid", "value": "$150-400", "color": "gi-blue" }
+        ],
+        "quarterly": [
+          { "label": "2024 Q1", "h": 55 },
+          { "label": "", "h": 62 },
+          { "label": "2024 Q3", "h": 70 },
+          { "label": "", "h": 78 },
+          { "label": "2025 Q1", "h": 85 },
+          { "label": "", "h": 92 },
+          { "label": "2025 Q3", "h": 100, "current": true },
+          { "label": "2025 Q4", "h": 96 }
+        ],
+        "yearly": [
+          { "label": "2021", "h": 38 },
+          { "label": "2022", "h": 50 },
+          { "label": "2023", "h": 65 },
+          { "label": "2024", "h": 82 },
+          { "label": "2025", "h": 100, "current": true }
+        ],
+        "priceBands": [
+          { "label": "Entry (<$100)", "pct": 22 },
+          { "label": "Mid ($100-$299)", "pct": 36 },
+          { "label": "Premium ($300+)", "pct": 30, "hl": true },
+          { "label": "Ultra (>$800)", "pct": 12 }
+        ]
+      },
+      "industry": { "shares": [28, 18, 24, 14, 10, 6] },
+      "consumer": {
+        "users": "2.8亿",
+        "usersChange": 22.4,
+        "repurchase": "45%",
+        "repurchaseChange": 6.8,
+        "donut": [18, 34, 32, 16]
+      }
+    }
+  },
+  "INDUSTRY_CATS": {
+    "en": {
+      "smartphones": ["Smartphones", "Smart Glasses", "Smart Watches", "Smart Home", "Smart Health", "Smart Mobility"],
+      "glasses": ["AI Smart Glasses", "AR Display Glasses", "Audio Glasses", "Sports Smart Glasses", "Industrial AR", "Kids Eye Protection"],
+      "wearables": ["Smart Watches", "TWS Earbuds", "Smart Bands", "Smart Rings", "Health Wearables", "Sports Wearables"],
+      "smart-home": ["Smart Speakers/Displays", "Smart Locks", "Robot Vacuums", "Smart Lighting", "Smart Security", "Smart Climate"],
+      "entertainment": ["Smart TVs", "Soundbars", "Gaming Consoles", "Streaming Sticks", "Projectors", "VR Headsets"],
+      "health": ["Smart Body Scales", "BP Monitors", "Pulse Oximeters", "Sleep Trackers", "CGM Devices", "Telehealth Terminals"],
+      "mobility": ["Smart Cockpit", "HUD Display", "ADAS Modules", "Dash Cameras", "In-Car Terminals", "OBD Diagnostics"]
+    },
+    "cn": {
+      "smartphones": ["智能手机", "智能眼镜", "智能手表", "智能家居", "智能健康", "车载智能"],
+      "glasses": ["AI 智能眼镜", "AR 显示眼镜", "音频眼镜", "运动智能眼镜", "工业 AR", "儿童护眼镜"],
+      "wearables": ["智能手表", "TWS 耳机", "智能手环", "智能戒指", "健康穿戴", "运动穿戴"],
+      "smart-home": ["智能音箱/屏", "智能门锁", "扫地机器人", "智能照明", "智能安防", "智能温控"],
+      "entertainment": ["智能电视", "回音壁/音响", "游戏主机", "投屏/机顶盒", "投影仪", "VR 头显"],
+      "health": ["智能体脂秤", "血压监测仪", "血氧仪", "睡眠追踪", "连续血糖仪", "远程健康终端"],
+      "mobility": ["智能座舱", "HUD 抬头显示", "ADAS 模块", "行车记录仪", "车载终端", "OBD 诊断"]
+    }
+  },
+  "CONSUMER_I18N": {
+    "en": {
+      "smartphones": {
+        "demo": [{ "n": "18–25", "s": "35%" }, { "n": "26–35", "s": "28%" }, { "n": "36–45", "s": "18%" }],
+        "demoTag": "UNDER 35",
+        "factors": [{ "n": "Functionality", "v": 88 },{ "n": "Brand Reputation", "v": 78 },{ "n": "Pricing", "v": 72 },{ "n": "AI Features", "v": 68 },{ "n": "Ecosystem", "v": 60 },{ "n": "Design", "v": 55 }],
+        "segments": [{ "tag": "Early Adopters 20%", "cls": "blue", "desc": "Pursue new tech & AI features, willing to pay premium for flagships" },{ "tag": "Mainstream 53%", "cls": "dark", "desc": "Value-driven, influenced by word-of-mouth, broad category coverage" },{ "tag": "Late Adopters 27%", "cls": "gray", "desc": "Price-sensitive, clear needs, long decision cycles" }],
+        "channels": [{ "n": "E-commerce", "v": "52%" },{ "n": "Brand Direct", "v": "23%" },{ "n": "Retail", "v": "16%" },{ "n": "Social Commerce", "v": "9%" }],
+        "donutLabels": ["18–25", "26–35", "36–45", "46+"],
+        "ai": "On-device AI has become a new purchase decision factor in 2025. Gen Z share is declining but spending power is stronger; 36+ age group is growing significantly driven by health features."
+      },
+      "glasses": {
+        "demo": [{ "n": "18–25", "s": "40%" }, { "n": "26–35", "s": "38%" }, { "n": "36–45", "s": "15%" }],
+        "demoTag": "UNDER 35",
+        "factors": [{ "n": "AI Features", "v": 90 },{ "n": "Comfort", "v": 86 },{ "n": "Design", "v": 82 },{ "n": "Battery Life", "v": 76 },{ "n": "Price", "v": 64 },{ "n": "Content Ecosystem", "v": 58 }],
+        "segments": [{ "tag": "Tech Pioneers 42%", "cls": "blue", "desc": "First-wave AI glasses users, passionate about sharing experiences" },{ "tag": "Lifestyle Users 36%", "cls": "dark", "desc": "Use smart glasses as fashion accessories and daily tools" },{ "tag": "Professional Users 22%", "cls": "gray", "desc": "Industrial, medical, education B2B applications" }],
+        "channels": [{ "n": "Brand Direct", "v": "36%" },{ "n": "E-commerce", "v": "34%" },{ "n": "Optical Stores", "v": "20%" },{ "n": "Carriers", "v": "10%" }],
+        "donutLabels": ["18–25", "26–35", "36–45", "46+"],
+        "ai": "61% of Gen Z early users enter via gaming. Over 36% of US enterprises have integrated AR glasses into workflows. Chinese brands are rapidly catching up in waveguide technology."
+      },
+      "wearables": {
+        "demo": [{ "n": "18–25", "s": "42%" }, { "n": "26–35", "s": "30%" }, { "n": "36–45", "s": "14%" }],
+        "demoTag": "UNDER 35",
+        "factors": [{ "n": "Health Monitoring", "v": 85 },{ "n": "Battery Life", "v": 80 },{ "n": "Design", "v": 75 },{ "n": "Ecosystem Compat.", "v": 70 },{ "n": "Price", "v": 66 },{ "n": "Sports Features", "v": 62 }],
+        "segments": [{ "tag": "Sports Enthusiasts 32%", "cls": "blue", "desc": "Core need for fitness data, focused on sensor accuracy" },{ "tag": "Fashion Consumers 42%", "cls": "dark", "desc": "Value aesthetics and brand identity, willing to pay for design" },{ "tag": "Health-Focused 26%", "cls": "gray", "desc": "Older demographic, focused on SpO2, heart rate, sleep" }],
+        "channels": [{ "n": "E-commerce", "v": "46%" },{ "n": "Brand Direct", "v": "28%" },{ "n": "Retail", "v": "18%" },{ "n": "Social Commerce", "v": "8%" }],
+        "donutLabels": ["18–25", "26–35", "36–45", "46+"],
+        "ai": "Smartwatches are fully replacing bands as the primary wearable. Health monitoring accuracy is leaping—continuous SpO2 and AFib detection are standard; non-invasive glucose monitoring expected by 2027."
+      },
+      "smart-home": {
+        "demo": [{ "n": "25–35", "s": "36%" }, { "n": "36–45", "s": "30%" }, { "n": "18–25", "s": "16%" }],
+        "demoTag": "25-45",
+        "factors": [{ "n": "Convenience", "v": 86 },{ "n": "Security", "v": 82 },{ "n": "Compatibility", "v": 74 },{ "n": "Price", "v": 70 },{ "n": "Brand", "v": 60 },{ "n": "Aesthetics", "v": 48 }],
+        "segments": [{ "tag": "Whole-Home Users 26%", "cls": "blue", "desc": "Pursue full-home automation, invest in complete ecosystems" },{ "tag": "Pragmatists 50%", "cls": "dark", "desc": "Buy individual products, value specific use-case benefits" },{ "tag": "Passive Adopters 24%", "cls": "gray", "desc": "Encounter smart home through renovation or gifts" }],
+        "channels": [{ "n": "E-commerce", "v": "48%" },{ "n": "Home Renovation", "v": "24%" },{ "n": "Brand Direct", "v": "18%" },{ "n": "Retail", "v": "10%" }],
+        "donutLabels": ["18–25", "25–35", "36–45", "46+"],
+        "ai": "Whole-home smart solutions penetration exceeds 40% in newly renovated homes. Matter protocol is now the cross-brand standard. Smart speaker/display market at $15.5B, projected $50.9B by 2034."
+      },
+      "entertainment": {
+        "demo": [{ "n": "18–25", "s": "38%" }, { "n": "26–35", "s": "32%" }, { "n": "36–45", "s": "18%" }],
+        "demoTag": "UNDER 35",
+        "factors": [{ "n": "Visual Quality", "v": 92 },{ "n": "Audio Immers.", "v": 88 },{ "n": "Content Lib.", "v": 84 },{ "n": "AI Smart Features", "v": 76 },{ "n": "Price", "v": 70 },{ "n": "Design", "v": 62 }],
+        "segments": [{ "tag": "Core Gamers 28%", "cls": "blue", "desc": "Pursue high refresh rate, low latency, and 4K/8K resolution" },{ "tag": "Movie Buffs 45%", "cls": "dark", "desc": "Focus on OLED/Mini-LED panels and Dolby Atmos audio systems" },{ "tag": "Casual Viewers 27%", "cls": "gray", "desc": "Value-driven, focus on screen size and streaming ease-of-use" }],
+        "channels": [{ "n": "E-commerce", "v": "52%" },{ "n": "Retail Stores", "v": "28%" },{ "n": "Brand Direct", "v": "12%" },{ "n": "Installers", "v": "8%" }],
+        "donutLabels": ["18–25", "26–35", "36–45", "46+"],
+        "ai": "Smart TVs are becoming the central AI hub for the living room. 8K penetration remains slow, but Mini-LED is growing at 34% CAGR. Hand-tracking and spatial audio are key VR/AR growth drivers."
+      },
+      "health": {
+        "demo": [{ "n": "36–45", "s": "28%" }, { "n": "46–60", "s": "30%" }, { "n": "26–35", "s": "24%" }],
+        "demoTag": "OVER 35",
+        "factors": [{ "n": "Data Accuracy", "v": 92 },{ "n": "Medical Cert.", "v": 88 },{ "n": "Ease of Use", "v": 80 },{ "n": "Data Privacy", "v": 74 },{ "n": "Price", "v": 66 },{ "n": "Brand", "v": 60 }],
+        "segments": [{ "tag": "Chronic Patients 36%", "cls": "blue", "desc": "Hypertension, diabetes—rigid demand driven" },{ "tag": "Health Preventers 42%", "cls": "dark", "desc": "Focus on daily health monitoring, prevention-first" },{ "tag": "Family Caregivers 22%", "cls": "gray", "desc": "Purchase for parents/elders, remote monitoring needs" }],
+        "channels": [{ "n": "E-commerce", "v": "40%" },{ "n": "Healthcare", "v": "28%" },{ "n": "Pharmacy", "v": "20%" },{ "n": "Brand Direct", "v": "12%" }],
+        "donutLabels": ["18–25", "26–35", "36–45", "46+"],
+        "ai": "Health hardware user profile is unique—46+ age group accounts for 38%. CGM is the fastest growing segment (19.1% CAGR); B2C growth rate exceeds B2B."
+      },
+      "mobility": {
+        "demo": [{ "n": "26–35", "s": "34%" }, { "n": "36–45", "s": "32%" }, { "n": "18–25", "s": "18%" }],
+        "demoTag": "26-45",
+        "factors": [{ "n": "Safety", "v": 92 },{ "n": "Reliability", "v": 86 },{ "n": "AI Intelligence", "v": 76 },{ "n": "Compatibility", "v": 72 },{ "n": "Installation Ease", "v": 65 },{ "n": "Price", "v": 60 }],
+        "segments": [{ "tag": "EV Owners 42%", "cls": "blue", "desc": "Highly dependent on smart cockpit, OTA updates, and AI assistants" },{ "tag": "Aftermarket 32%", "cls": "dark", "desc": "Aftermarket-focused, value-driven" },{ "tag": "Commercial Fleets 26%", "cls": "gray", "desc": "Fleet management and safety compliance-driven B2B demand" }],
+        "channels": [{ "n": "Dealers/OEM", "v": "36%" },{ "n": "E-commerce", "v": "32%" },{ "n": "Auto Parts", "v": "22%" },{ "n": "Brand Direct", "v": "10%" }],
+        "donutLabels": ["18–25", "26–35", "36–45", "46+"],
+        "ai": "EV owners have far higher expectations for smart cockpit than ICE vehicle owners. In-car AI assistants and V2V communication will be the core competitive battlefield in 2026. Smart cockpit surpasses dash cams as #1 category."
+      }
+    },
+    "cn": {
+      "smartphones": {
+        "demo": [{ "n": "18–25岁", "s": "35%" }, { "n": "26–35岁", "s": "28%" }, { "n": "36–45岁", "s": "18%" }],
+        "demoTag": "35岁以下",
+        "factors": [{ "n": "功能实用性", "v": 88 },{ "n": "品牌口碑", "v": 78 },{ "n": "价格定位", "v": 72 },{ "n": "AI 功能", "v": 68 },{ "n": "生态互联", "v": 60 },{ "n": "外观设计", "v": 55 }],
+        "segments": [{ "tag": "早期采用者 20%", "cls": "blue", "desc": "追求新技术与 AI 功能，愿意为旗舰溢价" },{ "tag": "主流消费者 53%", "cls": "dark", "desc": "注重性价比，受口碑驱动，品类覆盖广" },{ "tag": "滞后采用者 27%", "cls": "gray", "desc": "价格敏感，需求明确，决策周期长" }],
+        "channels": [{ "n": "电商平台", "v": "52%" },{ "n": "品牌直营", "v": "23%" },{ "n": "线下零售", "v": "16%" },{ "n": "社交电商", "v": "9%" }],
+        "donutLabels": ["18–25岁", "26–35岁", "36–45岁", "46岁以上"],
+        "ai": "端侧 AI 能力成为 2025 年购机新决策因素。Z 世代占比有所下降但消费力更强，36+ 群体在健康功能驱动下增速显著。"
+      },
+      "glasses": {
+        "demo": [{ "n": "18–25岁", "s": "40%" }, { "n": "26–35岁", "s": "38%" }, { "n": "36–45岁", "s": "15%" }],
+        "demoTag": "35岁以下",
+        "factors": [{ "n": "AI 功能", "v": 90 },{ "n": "佩戴舒适", "v": 86 },{ "n": "外观设计", "v": 82 },{ "n": "续航", "v": 76 },{ "n": "价格", "v": 64 },{ "n": "内容生态", "v": 58 }],
+        "segments": [{ "tag": "科技先锋 42%", "cls": "blue", "desc": "最早的 AI 眼镜用户，热衷体验与分享" },{ "tag": "生活方式者 36%", "cls": "dark", "desc": "将智能眼镜作为时尚配饰和日常工具" },{ "tag": "专业用户 22%", "cls": "gray", "desc": "工业维修、医疗教育等 B 端场景" }],
+        "channels": [{ "n": "品牌直营", "v": "36%" },{ "n": "电商平台", "v": "34%" },{ "n": "眼镜店", "v": "20%" },{ "n": "运营商", "v": "10%" }],
+        "donutLabels": ["18–25岁", "26–35岁", "36–45岁", "46岁以上"],
+        "ai": "61% Gen Z 早期用户以游戏为入口，超过 36% 美国企业已将 AR 眼镜纳入 work flow。中国品牌在光波导技术上正在快速赶超。"
+      },
+      "wearables": {
+        "demo": [{ "n": "18–25岁", "s": "42%" }, { "n": "26–35岁", "s": "30%" }, { "n": "36–45岁", "s": "14%" }],
+        "demoTag": "35岁以下",
+        "factors": [{ "n": "健康监测", "v": 85 },{ "n": "续航能力", "v": 80 },{ "n": "外观设计", "v": 75 },{ "n": "生态兼容", "v": 70 },{ "n": "价格", "v": 66 },{ "n": "运动功能", "v": 62 }],
+        "segments": [{ "tag": "运动爱好者 32%", "cls": "blue", "desc": "以健身数据为核心需求，关注传感器精度" },{ "tag": "时尚消费者 42%", "cls": "dark", "desc": "注重外观与品牌调性，愿为设计溢价" },{ "tag": "健康关注者 26%", "cls": "gray", "desc": "中老年群体为主，关注血氧心率睡眠" }],
+        "channels": [{ "n": "电商平台", "v": "46%" },{ "n": "品牌直营", "v": "28%" },{ "n": "线下零售", "v": "18%" },{ "n": "社交电商", "v": "8%" }],
+        "donutLabels": ["18–25岁", "26–35岁", "36–45岁", "46岁以上"],
+        "ai": "智能手表正全面替代手环成为穿戴主力品类。健康监测精度跃升——连续血氧、房颤检测已成标配，血糖无创监测预计 2027 年商用。"
+      },
+      "smart-home": {
+        "demo": [{ "n": "25–35岁", "s": "36%" }, { "n": "36–45岁", "s": "30%" }, { "n": "18–25岁", "s": "16%" }],
+        "demoTag": "25-45",
+        "factors": [{ "n": "便捷性", "v": 86 },{ "n": "安全性", "v": 82 },{ "n": "兼容性", "v": 74 },{ "n": "价格", "v": 70 },{ "n": "品牌", "v": 60 },{ "n": "外观", "v": 48 }],
+        "segments": [{ "tag": "全屋智能者 26%", "cls": "blue", "desc": "追求全屋联动，愿意投入整套生态" },{ "tag": "实用主义者 50%", "cls": "dark", "desc": "单品购买为主，看重具体场景价值" },{ "tag": "被动接受者 24%", "cls": "gray", "desc": "因家装或赠送接触智能家居产品" }],
+        "channels": [{ "n": "电商平台", "v": "48%" },{ "n": "家装渠道", "v": "24%" },{ "n": "品牌直营", "v": "18%" },{ "n": "线下零售", "v": "10%" }],
+        "donutLabels": ["18–25岁", "25–35岁", "36–45岁", "46岁以上"],
+        "ai": "全屋智能在新装修家庭中渗透率突破 40%。Matter 协议已成为跨品牌互联标准。智能音箱/屏市场 ¥1,125 亿规模，预计 2034 年达 ¥3,690 亿。"
+      },
+      "entertainment": {
+        "demo": [{ "n": "18–25岁", "s": "38%" }, { "n": "26–35岁", "s": "32%" }, { "n": "36–45岁", "s": "18%" }],
+        "demoTag": "35岁以下",
+        "factors": [{ "n": "画质表现", "v": 92 },{ "n": "音效沉浸", "v": 88 },{ "n": "内容丰富度", "v": 84 },{ "n": "AI 智能", "v": 76 },{ "n": "价格", "v": 70 },{ "n": "外观设计", "v": 62 }],
+        "segments": [{ "tag": "核心玩家 28%", "cls": "blue", "desc": "追求高刷、低延迟与 4K/8K 极致分辨率" },{ "tag": "影音爱好者 45%", "cls": "dark", "desc": "关注 OLED/Mini-LED 面板与杜比全景声音响系统" },{ "tag": "大众用户 27%", "cls": "gray", "desc": "注重性价比，看重屏幕尺寸与投屏易用性" }],
+        "channels": [{ "n": "电商平台", "v": "52%" },{ "n": "家电卖场", "v": "28%" },{ "n": "品牌直营", "v": "12%" },{ "n": "装配渠道", "v": "8%" }],
+        "donutLabels": ["18–25岁", "26–35岁", "36–45岁", "46岁以上"],
+        "ai": "智能电视正成为客厅的 AI 中心。8K 普及依然缓慢，但 Mini-LED 正以 34% CAGR 增长。手势追踪与空间音频是 VR/AR 的关键增长点。"
+      },
+      "health": {
+        "demo": [{ "n": "36–45岁", "s": "28%" }, { "n": "46–60岁", "s": "30%" }, { "n": "26–35岁", "s": "24%" }],
+        "demoTag": "35岁以上",
+        "factors": [{ "n": "数据精度", "v": 92 },{ "n": "医疗认证", "v": 88 },{ "n": "易用性", "v": 80 },{ "n": "数据隐私", "v": 74 },{ "n": "价格", "v": 66 },{ "n": "品牌", "v": 60 }],
+        "segments": [{ "tag": "慢病管理者 36%", "cls": "blue", "desc": "高血压、糖尿病等慢病人群，刚需驱动" },{ "tag": "健康预防者 42%", "cls": "dark", "desc": "注重日常健康监测，预防为主" },{ "tag": "孝心购买者 22%", "cls": "gray", "desc": "为父母长辈购买，远程监护需求" }],
+        "channels": [{ "n": "电商平台", "v": "40%" },{ "n": "医疗渠道", "v": "28%" },{ "n": "药房", "v": "20%" },{ "n": "品牌直营", "v": "12%" }],
+        "donutLabels": ["18–25岁", "26–35岁", "36–45岁", "46岁以上"],
+        "ai": "健康硬件用户画像独特——46 岁以上用户占比达 38%。连续血糖监测增速最快（19.1% CAGR），B2C 增长率超过 B2B。"
+      },
+      "mobility": {
+        "demo": [{ "n": "26–35岁", "s": "34%" }, { "n": "36–45岁", "s": "32%" }, { "n": "18–25岁", "s": "18%" }],
+        "demoTag": "26-45",
+        "factors": [{ "n": "安全性", "v": 92 },{ "n": "可靠性", "v": 86 },{ "n": "AI 智能", "v": 76 },{ "n": "兼容性", "v": 72 },{ "n": "安装便捷", "v": 65 },{ "n": "价格", "v": 60 }],
+        "segments": [{ "tag": "新能源车主 42%", "cls": "blue", "desc": "高度依赖智能座舱、OTA 升级和 AI 助手" },{ "tag": "传统改装者 32%", "cls": "dark", "desc": "后装市场为主，注重性价比" },{ "tag": "商用车队 26%", "cls": "gray", "desc": "车队管理、安全合规驱动的 B 端需求" }],
+        "channels": [{ "n": "4S 店/OEM", "v": "36%" },{ "n": "电商平台", "v": "32%" },{ "n": "汽配渠道", "v": "22%" },{ "n": "品牌直营", "v": "10%" }],
+        "donutLabels": ["18–25岁", "26–35岁", "36–45岁", "46岁以上"],
+        "ai": "新能源车主对智能座舱期待远超燃油车主。车载 AI 助手与 V2V 通信将是 2026 年核心差异化战场。智能座舱首次超越行车记录仪成为第一品类。"
+      }
+    }
+  },
+  "HOME_AI": {
+    "en": {
+      "smartphones": "Premium segment shows strongest resilience with Apple ASP approaching $919. Foldable devices and on-device AI are the key differentiators for 2026 flagships.",
+      "glasses": "Ray-Ban Meta series drove 247% YoY growth in consumer smart glasses. AI multimodal capabilities (camera + LLM) are the killer feature. Weight under 50g is the mass adoption threshold.",
+      "wearables": "Apple dominates with 52.4% of industry revenue. Health monitoring is the #1 growth driver—smartwatches are replacing fitness bands as the primary wearable.",
+      "smart-home": "Matter protocol drives cross-brand interoperability. Smart entertainment systems (55% penetration) lead adoption, followed by thermostats (34%) and security (32%).",
+      "entertainment": "8K penetration remains slow, but Mini-LED is growing at 34% CAGR. Smart TVs are becoming the central AI hub for the living room.",
+      "health": "mHealth dominates the digital health market. Healthcare analytics segment growing at 25.2% CAGR. CGM and non-invasive BP sensors approaching commercial maturity by 2027.",
+      "mobility": "5G connectivity and V2V communication mandates accelerate adoption. Software-defined vehicles are reshaping the aftermarket—OEM-integrated features targeting 60%+ share by 2027."
+    },
+    "cn": {
+      "smartphones": "高端市场韧性最强，Apple 均价逼近 ¥6,660。折叠屏与端侧 AI 是 2026 年旗舰机的核心差异化。",
+      "glasses": "Ray-Ban Meta 系列推动消费级智能眼镜同比增长 247%。AI 多模态能力（摄像头 + LLM）是杀手级功能，50g 以下重量是大众化门槛。",
+      "wearables": "Apple 以 52.4% 的行业营收占比主导市场。健康监测是第一增长驱动力——智能手表正全面替代手环成为穿戴主力。",
+      "smart-home": "Matter 协议推动跨品牌互联。智能娱乐系统（55% 渗透率）领跑采纳度，其次是温控（34%）和安防（32%）。",
+      "entertainment": "8K 普及依然缓慢，但 Mini-LED 正以 34% CAGR 增长。智能电视正成为客厅的 AI 中心。",
+      "health": "移动健康主导数字健康市场。医疗分析分部 CAGR 达 25.2%。连续血糖和无创血压传感器预计 2027 年实现商业化。",
+      "mobility": "5G 连接与 V2V 通信法规推动加速采纳。软件定义汽车正重塑后市场——OEM 集成功能目标 2027 年占比超 60%。"
+    }
+  }
+}
