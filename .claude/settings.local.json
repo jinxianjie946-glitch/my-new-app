@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python3:*)",
+      "Bash(open:*)",
+      "Bash(git fetch:*)",
+      "Bash(cat .github/workflows/*.yml)"
     ]
   }
 }

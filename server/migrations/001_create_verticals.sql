@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS verticals (
+  id TEXT PRIMARY KEY,
+  payload TEXT NOT NULL
+);

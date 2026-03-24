@@ -163,26 +163,7 @@ body {
   font-weight: 600;
 }
 
-/* Skeleton/Placeholder Style - Only for text labels, not icons/dots */
-span:empty:not(.gi-dot)::before,
-strong:empty::before,
-p:empty::before,
-h2:empty::before,
-h3:empty::before {
-  content: " ";
-  display: inline-block;
-  width: 4em;
-  height: 1em;
-  background: var(--surface-container-high);
-  border-radius: 4px;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% { opacity: 0.6; }
-  50% { opacity: 1; }
-  100% { opacity: 0.6; }
-}
+/* Skeleton/Placeholder Style removed to avoid grey mask */
 
 /* ============================
    Tab Panels — unified layout
@@ -528,6 +509,7 @@ h3:empty::before {
   height: 100%;
   justify-content: flex-end;
   position: relative;
+  padding-bottom: 22px;
 }
 
 .gi-bar {
@@ -539,6 +521,7 @@ h3:empty::before {
   transform: scaleY(0);
   transform-origin: bottom;
   transition: opacity 0.18s;
+  position: relative;
 }
 
 .gi-bar.active { background: var(--primary); }
@@ -551,13 +534,24 @@ h3:empty::before {
 .gi-bar-label {
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Inter", sans-serif;
   font-size: 0.6875rem;
   color: var(--on-surface-variant);
   white-space: nowrap;
 }
 
-.gi-bar-label-active { color: var(--primary); font-weight: 700; }
+.gi-bar-label-active { font-weight: 700; }
+
+.gi-bar-label-inside {
+  bottom: 6px;
+  color: var(--on-surface-variant);
+}
+
+.gi-bar.active .gi-bar-label-inside {
+  color: #fff;
+}
 
 .gi-bar-current { position: relative; }
 
@@ -1119,3 +1113,12 @@ h3:empty::before {
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

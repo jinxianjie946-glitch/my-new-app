@@ -16,6 +16,16 @@ const SintechApp = (() => {
     data: null // Will hold the fetched data from data.json
   };
 
+  const SAFE_ICON_PATHS = {
+    smartphones: "<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"3\"/><circle cx=\"12\" cy=\"18\" r=\"1\"/>",
+    glasses: "<circle cx=\"6\" cy=\"15\" r=\"4\"/><circle cx=\"18\" cy=\"15\" r=\"4\"/><path d=\"M10 15h4\"/><path d=\"M2 15h0\"/><path d=\"M22 15h0\"/>",
+    wearables: "<circle cx=\"12\" cy=\"12\" r=\"7\"/><path d=\"M12 1v3\"/><path d=\"M12 20v3\"/>",
+    "smart-home": "<path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/>",
+    entertainment: "<rect x=\"3\" y=\"4\" width=\"18\" height=\"12\" rx=\"2\"/><path d=\"M7 20h10\"/>",
+    health: "<path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/>",
+    mobility: "<rect x=\"1\" y=\"3\" width=\"15\" height=\"13\" rx=\"2\"/><path d=\"M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/><path d=\"M8 18.5h8\"/>"
+  };
+
   // ==============================
   // Fetch Engine (Simulated Backend API)
   // ==============================
@@ -71,7 +81,7 @@ const SintechApp = (() => {
     });
 
     injectSidebars();
-    updateAllPanels();
+    updateActivePanel();
     updateStaticText();
   }
 
@@ -134,13 +144,12 @@ const SintechApp = (() => {
       sb.appendChild(labelDiv);
 
       Object.keys(VERTICALS).forEach(key => {
-        const v = VERTICALS[key];
         const name = SintechI18n.getVertName(key);
         const btn = document.createElement("button");
         btn.className = `gi-vert-btn${key === state.currentVertical ? ' active' : ''}`;
         btn.dataset.vert = key;
         btn.setAttribute("aria-selected", key === state.currentVertical);
-        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${v.icon}</svg>`;
+        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${SAFE_ICON_PATHS[key] || SAFE_ICON_PATHS.smartphones}</svg>`;
         btn.appendChild(document.createTextNode(` ${name}`));
 
         btn.addEventListener("click", () => {
@@ -149,7 +158,7 @@ const SintechApp = (() => {
             b.classList.toggle("active", b.dataset.vert === key);
             b.setAttribute("aria-selected", b.dataset.vert === key);
           });
-          updateAllPanels();
+          updateActivePanel();
         });
         sb.appendChild(btn);
       });
@@ -221,14 +230,19 @@ const SintechApp = (() => {
   // ==============================
   // Panel Updates
   // ==============================
-  function updateAllPanels() {
+  function updateActivePanel() {
     if (!state.data) return;
     const v = state.data.VERTICALS[state.currentVertical];
     if (!v) return;
-    updateHomePanel(v);
-    updateIndustryPanel(v);
-    updateConsumerPanel(v);
-    updateDashboardPanel();
+    if (state.activeTab === "global-insights") {
+      updateHomePanel(v);
+    } else if (state.activeTab === "categories") {
+      updateIndustryPanel(v);
+    } else if (state.activeTab === "consumer-profile") {
+      updateConsumerPanel(v);
+    } else if (state.activeTab === "trends") {
+      updateDashboardPanel();
+    }
 
     const activePanel = document.getElementById(state.activeTab);
     if (activePanel) {
@@ -318,7 +332,9 @@ const SintechApp = (() => {
 
     while (group.firstChild) group.removeChild(group.firstChild);
 
-    bars.forEach(b => {
+    const labels = buildBarLabels(bars, state.currentTimeView);
+
+    bars.forEach((b, i) => {
       const col = document.createElement("div");
       col.className = `gi-bar-col${b.current ? " gi-bar-current" : ""}`;
 
@@ -332,15 +348,50 @@ const SintechApp = (() => {
       const bar = document.createElement("div");
       bar.className = `gi-bar${b.current ? " active" : ""}`;
       bar.style.setProperty("--h", `${b.h}%`);
-      col.appendChild(bar);
 
       const label = document.createElement("span");
-      label.className = `gi-bar-label${b.current ? " gi-bar-label-active" : ""}`;
-      label.textContent = b.label;
-      col.appendChild(label);
+      const labelText = labels[i] || b.label || "";
+      label.className = `gi-bar-label gi-bar-label-inside${b.current ? " gi-bar-label-active" : ""}`;
+      label.textContent = labelText;
+      bar.appendChild(label);
 
+      col.appendChild(bar);
       group.appendChild(col);
     });
+  }
+
+  function buildBarLabels(bars, view) {
+    const labels = bars.map(b => b.label || "");
+    const startIndex = labels.findIndex(l => l && l.trim().length > 0);
+    if (startIndex === -1) return labels;
+
+    const startLabel = labels[startIndex].trim();
+    if (view === "quarterly") {
+      const match = startLabel.match(/(\d{4})\s*Q([1-4])/i);
+      if (!match) return labels;
+      const startYear = parseInt(match[1], 10);
+      const startQuarter = parseInt(match[2], 10);
+      return labels.map((l, idx) => {
+        if (l && l.trim().length > 0) return l;
+        const offset = idx - startIndex;
+        const totalQuarter = startQuarter - 1 + offset;
+        const year = startYear + Math.floor(totalQuarter / 4);
+        const quarter = (totalQuarter % 4) + 1;
+        return `${year} Q${quarter}`;
+      });
+    }
+
+    if (view === "yearly") {
+      const yearMatch = startLabel.match(/(\d{4})/);
+      if (!yearMatch) return labels;
+      const startYear = parseInt(yearMatch[1], 10);
+      return labels.map((l, idx) => {
+        if (l && l.trim().length > 0) return l;
+        return `${startYear + (idx - startIndex)}`;
+      });
+    }
+
+    return labels;
   }
 
   function updateIndustryPanel(v) {
@@ -646,7 +697,7 @@ const SintechApp = (() => {
         });
         panels.forEach(p => p.classList.toggle("active", p.id === tabId));
         window.scrollTo({ top: 0, behavior: "smooth" });
-        updateAllPanels();
+        updateActivePanel();
       });
     });
 
@@ -680,6 +731,17 @@ const SintechApp = (() => {
         const detail = bands.map(b => `${SintechI18n.convertPriceBandLabel(b.label)}: ${b.pct}%`).join("  ·  ");
         showToast(`${prefix} ${detail}`);
       }
+    });
+
+    document.addEventListener("keydown", e => {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      const catCard = e.target.closest?.(".gi-cat-card");
+      if (!catCard) return;
+      e.preventDefault();
+      const name = catCard.querySelector("h3")?.textContent || "";
+      const share = catCard.querySelector(".gi-cat-share strong")?.textContent || "";
+      const label = SintechI18n.getLang() === "en" ? "Market Share" : "市场占比";
+      showToast(`${name} — ${label} ${share}`);
     });
 
     switchLanguage("en");

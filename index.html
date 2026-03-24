@@ -32,10 +32,10 @@
         <span class="gi-brand-name">Sintech</span>
       </div>
       <div class="tab-list" role="tablist">
-        <button class="tab-btn active" data-tab="global-insights" role="tab" aria-selected="true" aria-controls="global-insights">Home</button>
-        <button class="tab-btn" data-tab="categories" role="tab" aria-selected="false" aria-controls="categories">Industry Analysis</button>
-        <button class="tab-btn" data-tab="consumer-profile" role="tab" aria-selected="false" aria-controls="consumer-profile">Consumer Insights</button>
-        <button class="tab-btn" data-tab="trends" role="tab" aria-selected="false" aria-controls="trends">Dashboard</button>
+        <button id="tab-home" class="tab-btn active" data-tab="global-insights" role="tab" aria-selected="true" aria-controls="global-insights">Home</button>
+        <button id="tab-industry" class="tab-btn" data-tab="categories" role="tab" aria-selected="false" aria-controls="categories">Industry Analysis</button>
+        <button id="tab-consumer" class="tab-btn" data-tab="consumer-profile" role="tab" aria-selected="false" aria-controls="consumer-profile">Consumer Insights</button>
+        <button id="tab-dashboard" class="tab-btn" data-tab="trends" role="tab" aria-selected="false" aria-controls="trends">Dashboard</button>
       </div>
       <div class="lang-toggle" aria-label="Language Selector">
         <button class="lang-btn active" data-lang="en" aria-label="Switch to English" aria-pressed="true">EN</button>
@@ -155,9 +155,9 @@
     </section>
 
     <!-- ===== Tab: Industry Analysis ===== -->
-    <section id="categories" class="tab-panel" role="tabpanel">
+    <section id="categories" class="tab-panel" role="tabpanel" aria-labelledby="tab-industry">
       <div class="gi-layout">
-        <aside class="gi-sidebar"></aside>
+        <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
         <div class="gi-main">
           <div class="gi-header">
             <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
@@ -183,12 +183,12 @@
             </div>
           </div>
           <div class="gi-cat-grid">
-            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">📱</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">👓</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">⌚</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">🏠</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">🏥</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" aria-label="View Details"><div class="gi-cat-icon">🚗</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">📱</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">👓</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">⌚</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">🏠</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">🏥</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
+            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">🚗</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
           </div>
           <div class="gi-footer-stats">
             <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">6</div></div>
@@ -201,9 +201,9 @@
     </section>
 
     <!-- ===== Tab: Consumer Insights ===== -->
-    <section id="consumer-profile" class="tab-panel" role="tabpanel">
+    <section id="consumer-profile" class="tab-panel" role="tabpanel" aria-labelledby="tab-consumer">
       <div class="gi-layout">
-        <aside class="gi-sidebar"></aside>
+        <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
         <div class="gi-main">
           <div class="gi-header">
             <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
@@ -272,9 +272,9 @@
     </section>
 
     <!-- ===== Tab: Dashboard ===== -->
-    <section id="trends" class="tab-panel" role="tabpanel">
+    <section id="trends" class="tab-panel" role="tabpanel" aria-labelledby="tab-dashboard">
       <div class="gi-layout">
-        <aside class="gi-sidebar"></aside>
+        <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
         <div class="gi-main">
           <div class="gi-header">
             <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
@@ -307,7 +307,7 @@
     <div class="loading-spinner"></div>
   </div>
   <div id="toast" role="alert" aria-live="polite" style="opacity:0; visibility:hidden"></div>
-  <script src="i18n.js"></script>
-  <script src="app.js"></script>
+  <script defer src="i18n.js"></script>
+  <script defer src="app.js"></script>
 </body>
 </html>
