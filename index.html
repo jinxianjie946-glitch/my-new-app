@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=9" />
 </head>
 <body>
 
@@ -32,8 +32,7 @@
         <span class="gi-brand-name">Sintech</span>
       </div>
       <div class="tab-list" role="tablist">
-        <button id="tab-home" class="tab-btn active" data-tab="global-insights" role="tab" aria-selected="true" aria-controls="global-insights">Home</button>
-        <button id="tab-industry" class="tab-btn" data-tab="categories" role="tab" aria-selected="false" aria-controls="categories">Industry Analysis</button>
+        <button id="tab-insights" class="tab-btn active" data-tab="global-insights" role="tab" aria-selected="true" aria-controls="global-insights">Industry Insights</button>
         <button id="tab-consumer" class="tab-btn" data-tab="consumer-profile" role="tab" aria-selected="false" aria-controls="consumer-profile">Consumer Insights</button>
         <button id="tab-dashboard" class="tab-btn" data-tab="trends" role="tab" aria-selected="false" aria-controls="trends">Dashboard</button>
       </div>
@@ -46,227 +45,70 @@
   </nav>
 
   <main>
-    <!-- ===== Tab: Global Insights (Home) ===== -->
-    <section id="global-insights" class="tab-panel active" role="tabpanel" aria-labelledby="tab-home">
+    <!-- ===== Tab: Global Insights (Home -> Industry Insights) ===== -->
+    <section id="global-insights" class="tab-panel active" role="tabpanel" aria-labelledby="tab-insights">
       <div class="gi-layout">
         <!-- Sidebar -->
         <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
 
-        <!-- Main Content -->
-        <div class="gi-main">
-          <div class="gi-header">
-            <div>
-              <h2 class="gi-title"></h2>
-              <p class="gi-subtitle"></p>
+        <!-- Main Content: Executive Summary & Intelligence Matrix -->
+        <div class="gi-main" id="matrix-main">
+          
+          <!-- Level 1: Executive Summary -->
+          <div class="exec-summary">
+            <div class="gi-header" style="margin-bottom: 16px;">
+              <div>
+                <h2 class="gi-title"></h2>
+                <p class="gi-subtitle"></p>
+              </div>
+              <span class="gi-badge">Updated: 2025 Q3</span>
             </div>
-            <span class="gi-badge">Updated: 2025 Q3</span>
-          </div>
+            
+            <div class="exec-takeaway-card">
+              <div class="exec-takeaway-label" data-i18n="execTakeawayLabel">Key Takeaway</div>
+              <div class="exec-takeaway-text" id="exec-takeaway-text">--</div>
+            </div>
 
-          <!-- KPI Cards -->
-          <div class="gi-kpi-grid">
-            <div class="gi-kpi-card gi-kpi-revenue">
-              <div class="gi-kpi-top">
-                <span class="gi-kpi-label">Market Size</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CBD5E1" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="9" width="7" height="12" rx="1"/></svg>
-              </div>
-              <div class="gi-kpi-value-row">
-                <span class="gi-kpi-big">--</span>
-                <span class="gi-kpi-change">--</span>
-              </div>
-              <div class="gi-kpi-sub">--</div>
-            </div>
-            <div class="gi-kpi-card gi-kpi-asp">
-              <div class="gi-kpi-top">
-                <span class="gi-kpi-label">ASP</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="1" width="14" height="14" rx="3" stroke="#93C5FD" stroke-width="1.5"/><path d="M5 8h6M8 5v6" stroke="#93C5FD" stroke-width="1.5"/></svg>
-              </div>
-              <div class="gi-kpi-value-row">
-                <span class="gi-kpi-big">--</span>
-                <span class="gi-kpi-change">--</span>
-              </div>
-              <div class="gi-kpi-sub">--</div>
-            </div>
-            <div class="gi-kpi-card gi-kpi-share">
-              <div class="gi-kpi-label" style="opacity:0.85">Top 5 Market Share</div>
-              <div class="gi-share-body">
-                <div class="gi-share-list"></div>
-                <div class="gi-share-big">
-                  <span class="gi-share-pct">--</span>
-                  <span class="gi-share-tag">--</span>
-                </div>
-              </div>
+            <div class="gi-kpi-grid" id="vital-metrics-grid">
+              <!-- Rendered via JS -->
             </div>
           </div>
 
-          <!-- Metric Row -->
-          <div class="gi-metric-row">
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">--</div></div>
-          </div>
-
-          <!-- Chart + Price Band -->
-          <div class="gi-chart-row">
-            <div class="gi-chart-card">
-              <div class="gi-chart-header">
-                <div>
-                  <h3 class="gi-chart-title"></h3>
-                  <p class="gi-chart-sub"></p>
-                </div>
-                <div class="gi-toggle" role="group" aria-label="Timeframe Toggle">
-                  <button class="gi-toggle-btn active" data-view="quarterly">Quarterly</button>
-                  <button class="gi-toggle-btn" data-view="yearly">Yearly</button>
-                </div>
-              </div>
-              <div class="gi-bar-chart">
-                <div class="gi-bar-group"></div>
-              </div>
+          <!-- Level 2: Intelligence Matrix -->
+          <div class="intel-matrix">
+            <div class="matrix-tabs" role="tablist">
+              <button class="matrix-tab-btn active" data-matrix="macro" role="tab">Macro & Market</button>
+              <button class="matrix-tab-btn" data-matrix="competition" role="tab">Competitive Landscape</button>
+              <button class="matrix-tab-btn" data-matrix="risk" role="tab">Risks & Opportunities</button>
             </div>
-            <div class="gi-right-col">
-              <div class="gi-price-card">
-                <div class="gi-price-header">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="9" width="7" height="12" rx="1"/></svg>
-                  <span>--</span>
-                </div>
-                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
-                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
-                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
-                <div class="gi-price-item"><div class="gi-price-row"><span>--</span><strong>--</strong></div><div class="gi-price-bar"><div class="gi-price-fill"></div></div></div>
-                <button class="gi-deep-btn" aria-label="Deep Price Analysis">--</button>
-              </div>
-              <div class="gi-ai-card">
-                <div class="gi-ai-label">--</div>
-                <p>--</p>
-              </div>
+            <div class="matrix-content" id="matrix-content">
+              <!-- Rendered via JS -->
             </div>
           </div>
 
-          <!-- Footer Stats -->
-          <div class="gi-footer-stats">
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">14,208</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">--</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">98.5%</div></div>
-            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Tab: Industry Analysis ===== -->
-    <section id="categories" class="tab-panel" role="tabpanel" aria-labelledby="tab-industry">
-      <div class="gi-layout">
-        <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
-        <div class="gi-main">
-          <div class="gi-header">
-            <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
-            <span class="gi-badge">Updated: 2025 Q3</span>
-          </div>
-          <div class="gi-kpi-grid">
-            <div class="gi-kpi-card gi-kpi-revenue">
-              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
-              <div class="gi-kpi-value-row"><span class="gi-kpi-big">6</span></div>
-              <div class="gi-kpi-sub">--</div>
-            </div>
-            <div class="gi-kpi-card gi-kpi-asp">
-              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
-              <div class="gi-kpi-value-row"><span class="gi-kpi-big">--</span><span class="gi-kpi-change up">--</span></div>
-              <div class="gi-kpi-sub">--</div>
-            </div>
-            <div class="gi-kpi-card gi-kpi-share">
-              <div class="gi-kpi-label">--</div>
-              <div class="gi-share-body">
-                <div class="gi-share-list"></div>
-                <div class="gi-share-big"><span class="gi-share-pct">--</span><span class="gi-share-tag">--</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="gi-cat-grid">
-            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">📱</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">👓</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">⌚</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">🏠</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill highlight"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">🏥</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
-            <div class="gi-cat-card" role="button" tabindex="0" aria-label="View Details"><div class="gi-cat-icon">🚗</div><h3>--</h3><div class="gi-price-bar"><div class="gi-price-fill"></div></div><p class="gi-cat-share">--</p></div>
-          </div>
-          <div class="gi-footer-stats">
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">6</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">2,840+</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">IDC · GfK</div></div>
-            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
-          </div>
+    <!-- Deep Dive Drawer -->
+    <div id="deep-dive-drawer" class="drawer-overlay" aria-hidden="true">
+      <div class="drawer-content">
+        <div class="drawer-header">
+          <h3 id="drawer-title">Deep Dive</h3>
+          <button id="drawer-close" class="drawer-close-btn" aria-label="Close">&times;</button>
+        </div>
+        <div class="drawer-body module-workspace" id="drawer-body">
+          <!-- Rendered via JS (m01-m10) -->
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- ===== Tab: Consumer Insights ===== -->
     <section id="consumer-profile" class="tab-panel" role="tabpanel" aria-labelledby="tab-consumer">
       <div class="gi-layout">
         <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
-        <div class="gi-main">
-          <div class="gi-header">
-            <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
-            <span class="gi-badge">Updated: 2025 Q3</span>
-          </div>
-          <div class="gi-kpi-grid">
-            <div class="gi-kpi-card gi-kpi-revenue">
-              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
-              <div class="gi-kpi-value-row"><span class="gi-kpi-big">--</span><span class="gi-kpi-change up">--</span></div>
-              <div class="gi-kpi-sub">--</div>
-            </div>
-            <div class="gi-kpi-card gi-kpi-asp">
-              <div class="gi-kpi-top"><span class="gi-kpi-label">--</span></div>
-              <div class="gi-kpi-value-row"><span class="gi-kpi-big">--</span><span class="gi-kpi-change up">--</span></div>
-              <div class="gi-kpi-sub">--</div>
-            </div>
-            <div class="gi-kpi-card gi-kpi-share">
-              <div class="gi-kpi-label">--</div>
-              <div class="gi-share-body">
-                <div class="gi-share-list"></div>
-                <div class="gi-share-big"><span class="gi-share-pct">--</span><span class="gi-share-tag">--</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="gi-donut-container"></div>
-          <div class="gi-chart-row">
-            <div class="gi-chart-card">
-              <h3 class="gi-chart-title" style="margin-bottom:20px">--</h3>
-              <div class="gi-factor-list">
-                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
-                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
-                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
-                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
-                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
-                <div class="gi-factor-item"><span class="gi-factor-name">--</span><div class="gi-price-bar"><div class="gi-price-fill"></div></div><span class="gi-factor-val">--</span></div>
-              </div>
-            </div>
-            <div class="gi-right-col">
-              <div class="gi-price-card">
-                <div class="gi-price-header"><span>--</span></div>
-                <div class="gi-segment">
-                  <div class="gi-segment-card"><span class="gi-seg-tag">--</span><p>--</p></div>
-                  <div class="gi-segment-card"><span class="gi-seg-tag">--</span><p>--</p></div>
-                  <div class="gi-segment-card"><span class="gi-seg-tag">--</span><p>--</p></div>
-                </div>
-              </div>
-              <div class="gi-price-card">
-                <div class="gi-price-header"><span>--</span></div>
-                <div class="gi-channel-grid">
-                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
-                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
-                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
-                  <div class="gi-channel-item"><strong>--</strong><span>--</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gi-footer-stats">
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">28,500</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">86</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">97.2%</div></div>
-            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
-          </div>
+        <div class="gi-main empty-state">
+          <!-- Emptied as per user request -->
         </div>
       </div>
     </section>
@@ -275,29 +117,8 @@
     <section id="trends" class="tab-panel" role="tabpanel" aria-labelledby="tab-dashboard">
       <div class="gi-layout">
         <aside class="gi-sidebar" aria-label="Verticals Selection"></aside>
-        <div class="gi-main">
-          <div class="gi-header">
-            <div><h2 class="gi-title"></h2><p class="gi-subtitle">--</p></div>
-            <span class="gi-badge">Forecast: 2025–2028</span>
-          </div>
-          <div class="gi-metric-row" style="grid-template-columns: repeat(4,1fr)">
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value gi-blue">2025</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">2026</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">2027</div></div>
-            <div class="gi-metric-card"><div class="gi-metric-label">--</div><div class="gi-metric-value">2028</div></div>
-          </div>
-          <div class="gi-trend-grid">
-            <div class="gi-trend-card"><span class="gi-trend-year">2025</span><h3>--</h3><p>--</p></div>
-            <div class="gi-trend-card"><span class="gi-trend-year">2026</span><h3>--</h3><p>--</p></div>
-            <div class="gi-trend-card"><span class="gi-trend-year">2027</span><h3>--</h3><p>--</p></div>
-            <div class="gi-trend-card"><span class="gi-trend-year">2028</span><h3>--</h3><p>--</p></div>
-          </div>
-          <div class="gi-footer-stats">
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">4 Years</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num">128</div></div>
-            <div class="gi-footer-item"><div class="gi-footer-label">--</div><div class="gi-footer-num gi-blue">94.7%</div></div>
-            <div class="gi-footer-item gi-footer-copy"><span>--</span><span>--</span></div>
-          </div>
+        <div class="gi-main empty-state">
+          <!-- Emptied as per user request -->
         </div>
       </div>
     </section>
@@ -307,7 +128,8 @@
     <div class="loading-spinner"></div>
   </div>
   <div id="toast" role="alert" aria-live="polite" style="opacity:0; visibility:hidden"></div>
-  <script defer src="i18n.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="i18n.js?v=9"></script>
+  <script defer src="analysisModules.js?v=9"></script>
+  <script defer src="app.js?v=9"></script>
 </body>
 </html>
