@@ -55,6 +55,487 @@
         "repurchase": "64%",
         "repurchaseChange": 3.2,
         "donut": [35, 28, 18, 19]
+      },
+      "macro": {
+        "marketSummary": {
+          "en": "Smartphone volume is plateauing at ~1.26B units; profitability hinges on ASP uplift via premium mix, not volume expansion.",
+          "cn": "智能手机出货量在约12.6亿台见顶；利润增长核心在于高端结构性ASP提升，而非总量扩张。"
+        },
+        "strategicRecommendation": {
+          "en": "Focus on mid-to-premium mix upgrade and rebate discipline; avoid undifferentiated price wars in the sub-$200 segment.",
+          "cn": "聚焦中高端结构升级与渠道返利管控，避免在200美元以下市场参与无差别价格战。"
+        },
+        "hypeCycleStage": {
+          "stage": "price_capture",
+          "label": { "en": "Price Capture Phase", "cn": "价格获取期" },
+          "description": { "en": "Mature category with high penetration; leaders compete on premium mix and margin uplift rather than raw volume growth.", "cn": "成熟品类，渗透率高；头部玩家以高端产品结构与利润提升为竞争焦点，而非单纯追求出货量。" }
+        }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          {
+            "band": { "en": "Entry (<$200)", "cn": "入门级 (<¥1,450)" },
+            "players": [
+              { "brand": "Xiaomi", "share": "28%" },
+              { "brand": "realme", "share": "18%" },
+              { "brand": "Samsung", "share": "15%" },
+              { "brand": "Transsion", "share": "14%" }
+            ],
+            "costStructure": { "avgBom": "$95", "avgRetailPrice": "$159", "avgGrossMargin": "18%" }
+          },
+          {
+            "band": { "en": "Mid ($200–$499)", "cn": "中端 ($200–$499)" },
+            "players": [
+              { "brand": "Samsung", "share": "22%" },
+              { "brand": "Xiaomi", "share": "18%" },
+              { "brand": "OPPO", "share": "14%" },
+              { "brand": "Vivo", "share": "12%" }
+            ],
+            "costStructure": { "avgBom": "$155", "avgRetailPrice": "$329", "avgGrossMargin": "24%" }
+          },
+          {
+            "band": { "en": "Premium ($500–$999)", "cn": "高端 ($500–$999)" },
+            "players": [
+              { "brand": "Apple", "share": "35%" },
+              { "brand": "Samsung", "share": "28%" },
+              { "brand": "Huawei", "share": "12%" },
+              { "brand": "Google", "share": "8%" }
+            ],
+            "costStructure": { "avgBom": "$285", "avgRetailPrice": "$699", "avgGrossMargin": "38%" }
+          },
+          {
+            "band": { "en": "Ultra ($1000+)", "cn": "超高端 ($1000+)" },
+            "players": [
+              { "brand": "Apple", "share": "52%" },
+              { "brand": "Samsung", "share": "30%" },
+              { "brand": "Huawei", "share": "10%" },
+              { "brand": "Google", "share": "5%" }
+            ],
+            "costStructure": { "avgBom": "$420", "avgRetailPrice": "$1199", "avgGrossMargin": "42%" }
+          }
+        ],
+        "coreModelTeardown": {
+          "model": "Xiaomi Redmi Note 14 Pro 5G",
+          "bom": "$138",
+          "retailPrice": "$249",
+          "grossMargin": "22%",
+          "iterationCycle": { "en": "10 months", "cn": "10个月" },
+          "salesChannels": { "en": "E-commerce first + offline support", "cn": "电商主销 + 线下补位" },
+          "priceFloor": "$219",
+          "launchDate": "2025-03",
+          "sellingPoints": {
+            "en": ["200MP camera sensor", "68W fast charging", "AMOLED 120Hz display"],
+            "cn": ["2亿像素主摄", "68W快充", "AMOLED 120Hz屏幕"]
+          },
+          "targetAudience": { "en": "Budget-conscious millennials, 22-30", "cn": "注重性价比的千禧一代，22-30岁" },
+          "radiationAudience": { "en": "Students and first-time smartphone buyers", "cn": "学生群体、首次购机用户" }
+        },
+        "competitorComparison": [
+          {
+            "model": "Xiaomi Redmi Note 14 Pro 5G",
+            "brand": "Xiaomi",
+            "bom": "$138",
+            "retailPrice": "$249",
+            "grossMargin": "22%",
+            "launchDate": "2025-03",
+            "iterationCycle": { "en": "10 mo", "cn": "10个月" },
+            "salesChannels": { "en": "E-com + offline", "cn": "电商+线下" },
+            "priceFloor": "$219",
+            "sellingPoints": { "en": ["200MP camera", "68W fast charge", "AMOLED 120Hz"], "cn": ["2亿像素", "68W快充", "AMOLED 120Hz"] },
+            "targetAudience": { "en": "Budget millennials 22-30", "cn": "性价比用户 22-30" },
+            "radiationAudience": { "en": "Students, first buyers", "cn": "学生、首购" }
+          },
+          {
+            "model": "Samsung Galaxy A56 5G",
+            "brand": "Samsung",
+            "bom": "$152",
+            "retailPrice": "$299",
+            "grossMargin": "26%",
+            "launchDate": "2025-01",
+            "iterationCycle": { "en": "12 mo", "cn": "12个月" },
+            "salesChannels": { "en": "Carrier + retail", "cn": "运营商+零售" },
+            "priceFloor": "$259",
+            "sellingPoints": { "en": ["6-year OS updates", "IP68 waterproof", "Carrier pricing"], "cn": ["6年系统更新", "IP68防水", "运营商补贴"] },
+            "targetAudience": { "en": "Conservative upgraders 30-45", "cn": "保守换机用户 30-45" },
+            "radiationAudience": { "en": "Enterprise buyers", "cn": "企业采购" }
+          },
+          {
+            "model": "OPPO Reno 13 5G",
+            "brand": "OPPO",
+            "bom": "$145",
+            "retailPrice": "$279",
+            "grossMargin": "24%",
+            "launchDate": "2025-02",
+            "iterationCycle": { "en": "8 mo", "cn": "8个月" },
+            "salesChannels": { "en": "Offline-first + e-com", "cn": "线下主导+电商" },
+            "priceFloor": "$249",
+            "sellingPoints": { "en": ["AI portrait photo", "Ultra-slim 7.5mm", "ColorOS AI"], "cn": ["AI人像", "超薄7.5mm", "ColorOS AI"] },
+            "targetAudience": { "en": "Young women 20-28", "cn": "年轻女性 20-28" },
+            "radiationAudience": { "en": "Gift buyers, couples", "cn": "礼品购买、情侣" }
+          },
+          {
+            "model": "vivo Y200 GT",
+            "brand": "vivo",
+            "bom": "$128",
+            "retailPrice": "$229",
+            "grossMargin": "20%",
+            "launchDate": "2025-04",
+            "iterationCycle": { "en": "9 mo", "cn": "9个月" },
+            "salesChannels": { "en": "Offline retail dominant", "cn": "线下门店为主" },
+            "priceFloor": "$199",
+            "sellingPoints": { "en": ["6000mAh battery", "Dimensity 8400", "80W flash charge"], "cn": ["6000mAh超大电池", "天玑8400", "80W闪充"] },
+            "targetAudience": { "en": "Blue-collar workers 25-40", "cn": "蓝领工人 25-40" },
+            "radiationAudience": { "en": "Parents buying for kids", "cn": "家长为子女购买" }
+          },
+          {
+            "model": "realme GT Neo 7",
+            "brand": "realme",
+            "bom": "$118",
+            "retailPrice": "$209",
+            "grossMargin": "19%",
+            "launchDate": "2025-05",
+            "iterationCycle": { "en": "7 mo", "cn": "7个月" },
+            "salesChannels": { "en": "Pure e-commerce", "cn": "纯电商" },
+            "priceFloor": "$189",
+            "sellingPoints": { "en": ["Snapdragon 8s Gen 4", "Gaming cooling", "AnTuTu #1 in class"], "cn": ["骁龙8s Gen4", "游戏散热", "同档跑分第一"] },
+            "targetAudience": { "en": "Mobile gamers 18-25", "cn": "手游玩家 18-25" },
+            "radiationAudience": { "en": "Tech enthusiasts", "cn": "数码发烧友" }
+          }
+        ],
+        "asymmetricAdvantages": [
+          {
+            "manufacturer": "Apple",
+            "advantages": { "en": ["Ecosystem lock-in (iCloud/AirDrop/Watch)", "Silicon self-sufficiency (A/M-series)", "Brand premium pricing power (+40% ASP vs market)"], "cn": ["生态锁定（iCloud/AirDrop/Watch）", "芯片自研（A/M系列）", "品牌高端定价权（ASP高于市场均价40%）"] }
+          },
+          {
+            "manufacturer": "Samsung",
+            "advantages": { "en": ["Display vertical integration (AMOLED supply control)", "Global carrier relationship depth", "Widest portfolio ($100–$2000)"], "cn": ["屏幕垂直整合（AMOLED供应控制）", "全球运营商关系深度", "最广产品组合（$100–$2000）"] }
+          },
+          {
+            "manufacturer": "Xiaomi",
+            "advantages": { "en": ["Supply chain cost efficiency (−15% BOM vs peers)", "IoT ecosystem breadth (700+ devices)", "Online channel dominance (58% e-com share CN)"], "cn": ["供应链成本效率（BOM低于同行15%）", "IoT生态广度（700+互联产品）", "线上渠道统治力（中国电商份额58%）"] }
+          },
+          {
+            "manufacturer": "OPPO/vivo (BBK)",
+            "advantages": { "en": ["China's largest offline retail network (500K+ stores)", "Fast iteration cycle (7-8 months)", "Aggressive carrier co-marketing spend"], "cn": ["中国最大线下零售网络（50万+门店）", "快速产品迭代周期（7-8个月）", "激进的运营商联合营销投入"] }
+          },
+          {
+            "manufacturer": "Huawei",
+            "advantages": { "en": ["Self-developed Kirin chipset (supply independence)", "Premium brand equity in China (patriotic premium)", "HarmonyOS ecosystem differentiation"], "cn": ["自研麒麟芯片（供应链自主）", "中国高端品牌资产（国产情怀溢价）", "鸿蒙生态差异化"] }
+          }
+        ],
+        "supplyChainComponents": [
+          {
+            "component": { "en": "SoC (Application Processor)", "cn": "SoC（应用处理器）" },
+            "tier1": ["Qualcomm", "MediaTek"],
+            "tier2": ["Unisoc", "Samsung Exynos"],
+            "maturity": { "en": "Mature", "cn": "成熟" },
+            "priceTrend": { "en": "Stable; mid-tier ASP −3-5% YoY", "cn": "稳定；中端ASP同比降3-5%" },
+            "geopoliticalRisk": { "en": "Medium — US-China advanced node export controls", "cn": "中等 — 美中先进制程出口管控" }
+          },
+          {
+            "component": { "en": "OLED Display Panel", "cn": "OLED显示面板" },
+            "tier1": ["Samsung Display", "BOE"],
+            "tier2": ["CSOT", "Tianma"],
+            "maturity": { "en": "Mature", "cn": "成熟" },
+            "priceTrend": { "en": "Declining 3-5% QoQ for mid-tier", "cn": "中端面板环比下降3-5%" },
+            "geopoliticalRisk": { "en": "Low — diversified supply", "cn": "低 — 供应来源多元" }
+          },
+          {
+            "component": { "en": "Camera Module (Main Sensor)", "cn": "摄像头模组（主摄传感器）" },
+            "tier1": ["Sony", "Samsung ISOCELL"],
+            "tier2": ["OmniVision", "GalaxyCore"],
+            "maturity": { "en": "Mature", "cn": "成熟" },
+            "priceTrend": { "en": "Rising 2-4% for 200MP+; stable for 50MP", "cn": "200MP+上涨2-4%；50MP稳定" },
+            "geopoliticalRisk": { "en": "Low", "cn": "低" }
+          },
+          {
+            "component": { "en": "Battery Cell (Li-Po)", "cn": "电池芯（锂聚合物）" },
+            "tier1": ["ATL", "BYD"],
+            "tier2": ["Sunwoda", "EVE Energy"],
+            "maturity": { "en": "Mature", "cn": "成熟" },
+            "priceTrend": { "en": "Declining 8-12% YoY (lithium price drop)", "cn": "同比下降8-12%（锂价下跌）" },
+            "geopoliticalRisk": { "en": "Low-Medium — lithium supply in Chile/Australia", "cn": "中低 — 锂资源集中于智利/澳大利亚" }
+          },
+          {
+            "component": { "en": "Memory (LPDDR5X + UFS 4.0)", "cn": "内存（LPDDR5X + UFS 4.0）" },
+            "tier1": ["Samsung", "SK Hynix"],
+            "tier2": ["Micron", "CXMT"],
+            "maturity": { "en": "Mature", "cn": "成熟" },
+            "priceTrend": { "en": "Cyclical — rising 5-8% QoQ after trough", "cn": "周期性 — 触底后环比上涨5-8%" },
+            "geopoliticalRisk": { "en": "High — Korea/US concentration; CXMT under export pressure", "cn": "高 — 集中于韩国/美国；长鑫面临出口压力" }
+          }
+        ],
+        "inventoryTurnover": [
+          {
+            "brand": "Apple",
+            "turnoverDays": 8,
+            "depreciationRisk": { "en": "Low — controlled supply, strong residual value", "cn": "低 — 供给可控，残值强" },
+            "skuDecayCurve": [100, 97, 95, 92, 89, 85, 80, 75, 70, 65, 60, 56]
+          },
+          {
+            "brand": "Samsung",
+            "turnoverDays": 38,
+            "depreciationRisk": { "en": "Medium — frequent promo cycles erode ASP", "cn": "中等 — 频繁促销侵蚀ASP" },
+            "skuDecayCurve": [100, 95, 88, 80, 72, 63, 55, 48, 40, 34, 28, 22]
+          },
+          {
+            "brand": "Xiaomi",
+            "turnoverDays": 45,
+            "depreciationRisk": { "en": "Medium-High — aggressive new model pricing", "cn": "中高 — 新品激进定价压缩旧品空间" },
+            "skuDecayCurve": [100, 92, 82, 72, 62, 52, 44, 36, 30, 24, 20, 16]
+          },
+          {
+            "brand": "OPPO",
+            "turnoverDays": 52,
+            "depreciationRisk": { "en": "High — offline channel requires deep discounts", "cn": "高 — 线下渠道推力需要深度折扣" },
+            "skuDecayCurve": [100, 90, 78, 66, 56, 46, 38, 30, 24, 18, 14, 10]
+          },
+          {
+            "brand": "vivo",
+            "turnoverDays": 48,
+            "depreciationRisk": { "en": "Medium-High — similar to OPPO offline model", "cn": "中高 — 与OPPO线下模式类似" },
+            "skuDecayCurve": [100, 91, 80, 69, 58, 48, 40, 32, 26, 20, 16, 12]
+          }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          {
+            "group": { "en": "College Students", "cn": "大学生" },
+            "priceRange": { "en": "$150–250", "cn": "¥1,100–1,800" },
+            "painPoints": [
+              { "rank": 1, "en": "Battery dies before end of day", "cn": "电池撑不到一天结束" },
+              { "rank": 2, "en": "Game frame drops during long sessions", "cn": "长时间游戏掉帧" },
+              { "rank": 3, "en": "Storage fills quickly (64GB base)", "cn": "存储空间很快用满（64GB起步）" },
+              { "rank": 4, "en": "Camera quality too low for social media", "cn": "拍照质量不够发社交媒体" },
+              { "rank": 5, "en": "Screen scratches without Gorilla Glass", "cn": "屏幕没有大猩猩玻璃容易刮花" },
+              { "rank": 6, "en": "Slow charging (no fast charge)", "cn": "充电慢（无快充）" },
+              { "rank": 7, "en": "UI lags after 6 months", "cn": "用半年后界面卡顿" },
+              { "rank": 8, "en": "No NFC for campus card", "cn": "没有NFC刷不了校园卡" },
+              { "rank": 9, "en": "Speaker quality poor for media", "cn": "扬声器看视频效果差" },
+              { "rank": 10, "en": "Bloatware consumes RAM and storage", "cn": "预装应用占内存和存储" }
+            ]
+          },
+          {
+            "group": { "en": "White-collar Workers", "cn": "白领上班族" },
+            "priceRange": { "en": "$300–600", "cn": "¥2,200–4,350" },
+            "painPoints": [
+              { "rank": 1, "en": "Battery degradation after 12 months", "cn": "用12个月后电池明显衰减" },
+              { "rank": 2, "en": "Overheating during video calls", "cn": "视频会议时发热严重" },
+              { "rank": 3, "en": "Night photo quality inconsistent", "cn": "夜景拍照质量不稳定" },
+              { "rank": 4, "en": "Slow OS security patch updates", "cn": "系统安全更新太慢" },
+              { "rank": 5, "en": "Work-life app separation poor", "cn": "工作/生活应用分离差" },
+              { "rank": 6, "en": "Fingerprint unreliable when wet", "cn": "手湿时指纹解锁不灵" },
+              { "rank": 7, "en": "No wireless charging support", "cn": "不支持无线充电" },
+              { "rank": 8, "en": "Display too dim under sunlight", "cn": "户外阳光下屏幕亮度不够" },
+              { "rank": 9, "en": "Notification management chaotic", "cn": "通知管理混乱" },
+              { "rank": 10, "en": "Screen repair cost too high", "cn": "换屏维修成本高" }
+            ]
+          },
+          {
+            "group": { "en": "Blue-collar Workers", "cn": "蓝领工人" },
+            "priceRange": { "en": "$100–200", "cn": "¥725–1,450" },
+            "painPoints": [
+              { "rank": 1, "en": "Phone breaks too easily from drops", "cn": "手机不耐摔，容易碎屏" },
+              { "rank": 2, "en": "Battery barely lasts half day (heavy use)", "cn": "高强度使用下电池撑不了半天" },
+              { "rank": 3, "en": "Signal drops in underground/construction sites", "cn": "地下室/工地信号差" },
+              { "rank": 4, "en": "Storage full from WeChat files", "cn": "微信文件把存储占满" },
+              { "rank": 5, "en": "Slows down after system update", "cn": "系统更新后变卡" },
+              { "rank": 6, "en": "Camera gets dirty in dusty environments", "cn": "灰尘多的环境摄像头容易脏" },
+              { "rank": 7, "en": "Touch screen unreliable with wet/gloved hands", "cn": "戴手套/手湿触屏不灵敏" },
+              { "rank": 8, "en": "Speaker volume not loud enough", "cn": "外放音量不够大" },
+              { "rank": 9, "en": "No IR blaster for appliance control", "cn": "没有红外遥控功能" },
+              { "rank": 10, "en": "GPS inaccurate for delivery navigation", "cn": "GPS定位不准影响送餐导航" }
+            ]
+          },
+          {
+            "group": { "en": "Parents (35–50)", "cn": "家长群体（35-50岁）" },
+            "priceRange": { "en": "$250–500", "cn": "¥1,800–3,625" },
+            "painPoints": [
+              { "rank": 1, "en": "Child screen time management lacks control", "cn": "儿童使用时长管控不够好" },
+              { "rank": 2, "en": "Privacy/safety concerns for family photos", "cn": "家庭照片隐私/数据安全担忧" },
+              { "rank": 3, "en": "Parental control features too complex", "cn": "家长控制功能过于复杂" },
+              { "rank": 4, "en": "Phone slows down after 2 years", "cn": "用两年后手机变慢" },
+              { "rank": 5, "en": "Emergency SOS buried in settings", "cn": "紧急求助功能藏在设置深处" },
+              { "rank": 6, "en": "Family location tracking unreliable", "cn": "家庭定位追踪不可靠" },
+              { "rank": 7, "en": "Too many spam calls/messages", "cn": "垃圾电话/短信太多" },
+              { "rank": 8, "en": "Font size adjustment limited", "cn": "字体大小调节有限" },
+              { "rank": 9, "en": "Backup/transfer process complicated", "cn": "备份/换机过程复杂" },
+              { "rank": 10, "en": "Health app ecosystem fragmented", "cn": "健康应用生态碎片化" }
+            ]
+          },
+          {
+            "group": { "en": "Seniors (55+)", "cn": "银发族（55岁以上）" },
+            "priceRange": { "en": "$100–250", "cn": "¥725–1,800" },
+            "painPoints": [
+              { "rank": 1, "en": "Interface too complex, too many features", "cn": "界面太复杂，功能太多" },
+              { "rank": 2, "en": "Text and icons too small", "cn": "文字和图标太小" },
+              { "rank": 3, "en": "Accidental touches / unintended purchases", "cn": "误触/误购买" },
+              { "rank": 4, "en": "Cannot distinguish scam apps from real ones", "cn": "分不清诈骗应用和正版" },
+              { "rank": 5, "en": "Complicated payment/QR code processes", "cn": "支付/扫码流程复杂" },
+              { "rank": 6, "en": "Volume not loud enough for hearing impaired", "cn": "听力下降后音量不够大" },
+              { "rank": 7, "en": "Difficult to set up WiFi/Bluetooth", "cn": "设置WiFi/蓝牙困难" },
+              { "rank": 8, "en": "Battery status unclear, sudden shutdowns", "cn": "电量不准，突然关机" },
+              { "rank": 9, "en": "Sharing photos to family overly complicated", "cn": "给家人分享照片步骤太多" },
+              { "rank": 10, "en": "No dedicated emergency button", "cn": "没有专门的紧急按钮" }
+            ]
+          },
+          {
+            "group": { "en": "Content Creators", "cn": "内容创作者" },
+            "priceRange": { "en": "$500–1200", "cn": "¥3,625–8,700" },
+            "painPoints": [
+              { "rank": 1, "en": "Video recording overheats after 10 minutes", "cn": "录像10分钟后过热降频" },
+              { "rank": 2, "en": "Storage fills fast with 4K video files", "cn": "4K视频文件快速填满存储" },
+              { "rank": 3, "en": "Audio recording quality poor (no stereo mic)", "cn": "录音质量差（无立体声麦克风）" },
+              { "rank": 4, "en": "Video stabilization causes quality loss", "cn": "视频防抖导致画面裁切/画质损失" },
+              { "rank": 5, "en": "Color accuracy differs from pro monitors", "cn": "色彩准确度与专业显示器有偏差" },
+              { "rank": 6, "en": "File transfer to PC/Mac is slow", "cn": "传文件到电脑速度慢" },
+              { "rank": 7, "en": "Live streaming drains battery in 2 hours", "cn": "直播2小时电量耗尽" },
+              { "rank": 8, "en": "Background noise cancellation insufficient", "cn": "背景噪音消除不够好" },
+              { "rank": 9, "en": "Multi-camera angle switching not smooth", "cn": "多镜头切换不流畅" },
+              { "rank": 10, "en": "No Log/RAW video format support", "cn": "不支持Log/RAW视频格式" }
+            ]
+          },
+          {
+            "group": { "en": "Business Travelers", "cn": "商旅人士" },
+            "priceRange": { "en": "$600–1500", "cn": "¥4,350–10,875" },
+            "painPoints": [
+              { "rank": 1, "en": "Battery drains fast on international roaming", "cn": "国际漫游时电池消耗快" },
+              { "rank": 2, "en": "Dual SIM switching cumbersome", "cn": "双卡切换操作繁琐" },
+              { "rank": 3, "en": "Hotel WiFi connection unstable", "cn": "酒店WiFi连接不稳定" },
+              { "rank": 4, "en": "Document editing on mobile too limited", "cn": "手机上编辑文档功能有限" },
+              { "rank": 5, "en": "VPN conflicts with certain apps", "cn": "VPN与部分应用冲突" },
+              { "rank": 6, "en": "Cross-timezone calendar sync issues", "cn": "跨时区日历同步问题" },
+              { "rank": 7, "en": "Mobile payment not accepted everywhere abroad", "cn": "境外移动支付覆盖不全" },
+              { "rank": 8, "en": "Real-time translation accuracy varies", "cn": "实时翻译准确度不稳定" },
+              { "rank": 9, "en": "Expense receipt scanning unreliable", "cn": "发票扫描识别不可靠" },
+              { "rank": 10, "en": "Foldable screen crease visible in presentations", "cn": "折叠屏折痕在演示时明显" }
+            ]
+          }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [
+            { "en": "best camera phone 2025", "cn": "2025拍照手机推荐" },
+            { "en": "long battery phone", "cn": "续航好的手机" },
+            { "en": "phone under $200", "cn": "2000元以下手机" }
+          ],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": {
+            "k1": [62, 66, 69, 72, 70, 68],
+            "k2": [58, 60, 63, 65, 64, 61],
+            "k3": [49, 55, 58, 56, 53, 54]
+          },
+          "reviewPainTrends": {
+            "categories": [
+              { "en": "Battery", "cn": "续航" },
+              { "en": "Overheating", "cn": "发热" },
+              { "en": "Camera", "cn": "拍照" }
+            ],
+            "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+            "series": [
+              [320, 345, 310, 380, 420, 395],
+              [210, 235, 260, 290, 310, 285],
+              [180, 195, 210, 220, 200, 190]
+            ]
+          }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "124,000",
+          "period": { "en": "Apr–Sep 2025", "cn": "2025年4月–9月" },
+          "monthlyTop10": [
+            {
+              "month": "2025-09",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "Battery degradation", "cn": "续航衰减" }, "count": 2840, "verbatim": { "en": "Bought 8 months ago, battery barely lasts half a day with normal use.", "cn": "买了8个月，正常使用现在电池撑不了半天。" } },
+                { "rank": 2, "topic": { "en": "Overheating throttle", "cn": "发热降频" }, "count": 2210, "verbatim": { "en": "20 minutes of gaming and the phone gets so hot it becomes a slideshow.", "cn": "玩游戏20分钟就烫得降频，变成幻灯片。" } },
+                { "rank": 3, "topic": { "en": "System lag after update", "cn": "更新后卡顿" }, "count": 1950, "verbatim": { "en": "Latest OTA update made everything slower. Regret updating.", "cn": "最新OTA更新后一切都变慢了，后悔升级。" } },
+                { "rank": 4, "topic": { "en": "Camera inconsistency", "cn": "拍照不稳定" }, "count": 1680, "verbatim": { "en": "Same scene, 3 shots look completely different. Where is the AI optimization?", "cn": "同一场景3张照片效果完全不同，AI优化在哪？" } },
+                { "rank": 5, "topic": { "en": "Storage management", "cn": "存储管理" }, "count": 1520, "verbatim": { "en": "128GB filled up in 6 months, mostly by WeChat cache I can't easily clear.", "cn": "128GB六个月就满了，主要是微信缓存清不干净。" } },
+                { "rank": 6, "topic": { "en": "Screen durability", "cn": "屏幕耐用性" }, "count": 1340, "verbatim": { "en": "Screen cracked from a 30cm drop. So much for 'durable glass'.", "cn": "30厘米掉落就碎屏，说好的'耐用玻璃'呢？" } },
+                { "rank": 7, "topic": { "en": "Charging port issues", "cn": "充电口问题" }, "count": 1180, "verbatim": { "en": "USB-C port gets loose after a year. Only charges at certain angles now.", "cn": "USB-C口用一年就松了，只有特定角度才能充电。" } },
+                { "rank": 8, "topic": { "en": "Bloatware/ads", "cn": "预装广告" }, "count": 1050, "verbatim": { "en": "Paid $300 for a phone that shows ads in the settings menu. Unacceptable.", "cn": "花2000块买的手机设置菜单都有广告，无法接受。" } },
+                { "rank": 9, "topic": { "en": "Signal reception", "cn": "信号接收" }, "count": 920, "verbatim": { "en": "Keeps dropping to 3G where my old phone had full 5G bars.", "cn": "老手机满格5G的地方，这台总是掉到3G。" } },
+                { "rank": 10, "topic": { "en": "Fingerprint failure", "cn": "指纹失灵" }, "count": 780, "verbatim": { "en": "Fingerprint sensor fails 1 in 3 times. Faster to just type the PIN.", "cn": "指纹传感器三次有一次失败，还不如直接输密码快。" } }
+              ]
+            },
+            {
+              "month": "2025-08",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "Battery degradation", "cn": "续航衰减" }, "count": 2680, "verbatim": { "en": "Phone dies at 15% battery. The percentage is lying to me.", "cn": "手机在15%电量时就关机了，电量百分比在骗人。" } },
+                { "rank": 2, "topic": { "en": "Overheating throttle", "cn": "发热降频" }, "count": 2340, "verbatim": { "en": "Summer heat + gaming = phone too hot to hold.", "cn": "夏天+游戏=手机烫得握不住。" } },
+                { "rank": 3, "topic": { "en": "Camera inconsistency", "cn": "拍照不稳定" }, "count": 1820, "verbatim": { "en": "Night mode takes 5 seconds and the result is still blurry.", "cn": "夜景模式拍5秒结果还是糊的。" } },
+                { "rank": 4, "topic": { "en": "System lag after update", "cn": "更新后卡顿" }, "count": 1760, "verbatim": { "en": "Every update makes my 1-year-old phone feel like a 3-year-old phone.", "cn": "每次更新都让一年的手机感觉像用了三年。" } },
+                { "rank": 5, "topic": { "en": "Storage management", "cn": "存储管理" }, "count": 1580, "verbatim": { "en": "System takes 30GB. Apps take 50GB. Where is my storage?", "cn": "系统占30GB，应用占50GB，我的存储呢？" } },
+                { "rank": 6, "topic": { "en": "Screen durability", "cn": "屏幕耐用性" }, "count": 1280, "verbatim": { "en": "Micro scratches visible after 2 weeks without screen protector.", "cn": "不贴膜两周就有细微划痕了。" } },
+                { "rank": 7, "topic": { "en": "Bloatware/ads", "cn": "预装广告" }, "count": 1120, "verbatim": { "en": "File manager shows ads. A FILE MANAGER.", "cn": "文件管理器都弹广告，文件管理器啊！" } },
+                { "rank": 8, "topic": { "en": "Charging port issues", "cn": "充电口问题" }, "count": 980, "verbatim": { "en": "Fast charging stopped working. Regular speed only now.", "cn": "快充失效了，只能普通速度充电。" } },
+                { "rank": 9, "topic": { "en": "Signal reception", "cn": "信号接收" }, "count": 860, "verbatim": { "en": "Elevator = no signal. My 2020 phone had signal in elevators.", "cn": "进电梯就没信号，我2020年的手机电梯里还有信号。" } },
+                { "rank": 10, "topic": { "en": "WiFi connectivity", "cn": "WiFi连接" }, "count": 740, "verbatim": { "en": "WiFi disconnects randomly 3-4 times per day. Restart fixes it temporarily.", "cn": "WiFi每天随机断连3-4次，重启临时解决。" } }
+              ]
+            },
+            {
+              "month": "2025-07",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "Overheating throttle", "cn": "发热降频" }, "count": 2950, "verbatim": { "en": "July heat wave + navigation = phone shuts down from overheating.", "cn": "7月高温+导航=手机过热关机。" } },
+                { "rank": 2, "topic": { "en": "Battery degradation", "cn": "续航衰减" }, "count": 2520, "verbatim": { "en": "Bought in January, battery health already at 89%. Six months!", "cn": "一月份买的，电池健康度已经到89%了，才六个月！" } },
+                { "rank": 3, "topic": { "en": "Camera inconsistency", "cn": "拍照不稳定" }, "count": 2080, "verbatim": { "en": "Vacation photos all overexposed. Wasted trip memories.", "cn": "度假照片全过曝了，浪费了旅行回忆。" } },
+                { "rank": 4, "topic": { "en": "System lag", "cn": "系统卡顿" }, "count": 1690, "verbatim": { "en": "Animations stutter. This is a flagship from 6 months ago!", "cn": "动画都卡顿，这可是半年前的旗舰啊！" } },
+                { "rank": 5, "topic": { "en": "Storage management", "cn": "存储管理" }, "count": 1420, "verbatim": { "en": "Photo library alone is 45GB. Cloud storage subscription too expensive.", "cn": "光照片库就45GB了，云存储订阅太贵。" } },
+                { "rank": 6, "topic": { "en": "Bloatware/ads", "cn": "预装广告" }, "count": 1280, "verbatim": { "en": "Lock screen ads appeared after a system update. Did not consent to this.", "cn": "系统更新后锁屏出现广告，我没同意过。" } },
+                { "rank": 7, "topic": { "en": "Screen durability", "cn": "屏幕耐用性" }, "count": 1150, "verbatim": { "en": "Green line appeared on screen after 4 months. Known OLED defect.", "cn": "用了4个月屏幕出现绿线，已知OLED缺陷。" } },
+                { "rank": 8, "topic": { "en": "Charging port issues", "cn": "充电口问题" }, "count": 1020, "verbatim": { "en": "Wireless charging coil misaligned, only works with official charger.", "cn": "无线充电线圈位置不对，只有官方充电器能用。" } },
+                { "rank": 9, "topic": { "en": "Signal reception", "cn": "信号接收" }, "count": 890, "verbatim": { "en": "5G icon shows but speed test gives 4G speeds.", "cn": "显示5G图标但测速只有4G水平。" } },
+                { "rank": 10, "topic": { "en": "Fingerprint failure", "cn": "指纹失灵" }, "count": 810, "verbatim": { "en": "After swimming, fingerprint does not work for hours even when dry.", "cn": "游泳后即使擦干了指纹好几个小时都不灵。" } }
+              ]
+            },
+            {
+              "month": "2025-06",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "Battery degradation", "cn": "续航衰减" }, "count": 2380, "verbatim": { "en": "Screen-on time went from 8h to 5h in 9 months.", "cn": "亮屏时间从8小时降到5小时，才9个月。" } },
+                { "rank": 2, "topic": { "en": "System lag after update", "cn": "更新后卡顿" }, "count": 2150, "verbatim": { "en": "Android 15 update ruined my phone. Cannot downgrade.", "cn": "Android 15更新毁了我的手机，还不能降级。" } },
+                { "rank": 3, "topic": { "en": "Overheating throttle", "cn": "发热降频" }, "count": 1880, "verbatim": { "en": "Phone heats up just browsing social media. Not even gaming.", "cn": "刷社交媒体都发热，还没打游戏呢。" } },
+                { "rank": 4, "topic": { "en": "Camera inconsistency", "cn": "拍照不稳定" }, "count": 1620, "verbatim": { "en": "AI beautification makes me look like a different person. Want realistic photos.", "cn": "AI美颜把我拍成另一个人，想要真实照片。" } },
+                { "rank": 5, "topic": { "en": "Storage management", "cn": "存储管理" }, "count": 1490, "verbatim": { "en": "'Other' category takes 25GB and I cannot figure out what it is.", "cn": "'其他'分类占了25GB，搞不清是什么。" } },
+                { "rank": 6, "topic": { "en": "Screen durability", "cn": "屏幕耐用性" }, "count": 1310, "verbatim": { "en": "Foldable crease is getting worse. Visible in every photo.", "cn": "折叠屏折痕越来越明显，拍照都能看到。" } },
+                { "rank": 7, "topic": { "en": "Bloatware/ads", "cn": "预装广告" }, "count": 1160, "verbatim": { "en": "Push notifications from system apps I cannot uninstall. This is harassment.", "cn": "卸载不了的系统应用推送通知，这是骚扰。" } },
+                { "rank": 8, "topic": { "en": "Charging port issues", "cn": "充电口问题" }, "count": 960, "verbatim": { "en": "Lint gets stuck in USB-C port. Had to use a toothpick to clean it.", "cn": "USB-C口进灰堵住了，得用牙签清理。" } },
+                { "rank": 9, "topic": { "en": "WiFi connectivity", "cn": "WiFi连接" }, "count": 830, "verbatim": { "en": "5GHz WiFi drops connection when I walk to the next room.", "cn": "走到隔壁房间5GHz WiFi就断了。" } },
+                { "rank": 10, "topic": { "en": "Fingerprint failure", "cn": "指纹失灵" }, "count": 760, "verbatim": { "en": "Registered 5 fingers. None work reliably in winter with dry skin.", "cn": "录了5个手指，冬天皮肤干燥时没一个好用。" } }
+              ]
+            },
+            {
+              "month": "2025-05",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "Battery degradation", "cn": "续航衰减" }, "count": 2560, "verbatim": { "en": "Have to carry a power bank everywhere now. Defeats the purpose of portable.", "cn": "现在必须随身带充电宝，便携性何在。" } },
+                { "rank": 2, "topic": { "en": "System lag after update", "cn": "更新后卡顿" }, "count": 1980, "verbatim": { "en": "Keyboard input delay after update. Typing is now painful.", "cn": "更新后键盘输入延迟，打字很痛苦。" } },
+                { "rank": 3, "topic": { "en": "Overheating throttle", "cn": "发热降频" }, "count": 1750, "verbatim": { "en": "Camera app crashes from overheating when recording 4K.", "cn": "录4K时相机应用过热崩溃。" } },
+                { "rank": 4, "topic": { "en": "Camera inconsistency", "cn": "拍照不稳定" }, "count": 1580, "verbatim": { "en": "Portrait mode cuts off my ears. AI edge detection is terrible.", "cn": "人像模式把我耳朵切掉了，AI边缘检测太差。" } },
+                { "rank": 5, "topic": { "en": "Storage management", "cn": "存储管理" }, "count": 1420, "verbatim": { "en": "App cache grows endlessly. 'Clear cache' button does not actually work.", "cn": "应用缓存无限增长，'清除缓存'按钮根本没用。" } },
+                { "rank": 6, "topic": { "en": "Bloatware/ads", "cn": "预装广告" }, "count": 1280, "verbatim": { "en": "Browser homepage hijacked by manufacturer's news feed.", "cn": "浏览器首页被厂商新闻流劫持。" } },
+                { "rank": 7, "topic": { "en": "Screen durability", "cn": "屏幕耐用性" }, "count": 1090, "verbatim": { "en": "Screen protector bubbles after 1 month. Curved edge design is the problem.", "cn": "贴膜一个月起泡，曲面屏设计的锅。" } },
+                { "rank": 8, "topic": { "en": "Signal reception", "cn": "信号接收" }, "count": 950, "verbatim": { "en": "Modem overheats and kills signal in summer. Winter was fine.", "cn": "调制解调器过热断信号，冬天没问题。" } },
+                { "rank": 9, "topic": { "en": "Charging port issues", "cn": "充电口问题" }, "count": 840, "verbatim": { "en": "Third-party cables no longer trigger fast charging after OTA update.", "cn": "OTA更新后第三方线不触发快充了。" } },
+                { "rank": 10, "topic": { "en": "WiFi connectivity", "cn": "WiFi连接" }, "count": 720, "verbatim": { "en": "WiFi 6E router at home but phone only connects at WiFi 5 speeds.", "cn": "家里WiFi 6E路由器但手机只连WiFi 5速度。" } }
+              ]
+            },
+            {
+              "month": "2025-04",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "Battery degradation", "cn": "续航衰减" }, "count": 2420, "verbatim": { "en": "Brand new phone and battery only lasts 6 hours. What happened to '2-day battery'?", "cn": "全新手机电池只撑6小时，说好的'两天续航'呢？" } },
+                { "rank": 2, "topic": { "en": "System lag after update", "cn": "更新后卡顿" }, "count": 1890, "verbatim": { "en": "Security patch broke my widgets. Tech support says 'wait for next update'.", "cn": "安全补丁把我的小组件搞坏了，客服说'等下次更新'。" } },
+                { "rank": 3, "topic": { "en": "Overheating throttle", "cn": "发热降频" }, "count": 1620, "verbatim": { "en": "Navigation + music + charging = too hot warning in 15 minutes.", "cn": "导航+音乐+充电=15分钟就过热警告。" } },
+                { "rank": 4, "topic": { "en": "Camera inconsistency", "cn": "拍照不稳定" }, "count": 1480, "verbatim": { "en": "Zoom past 5x is completely unusable. Why advertise 100x zoom?", "cn": "5倍以上变焦完全没法看，为什么宣传100倍变焦？" } },
+                { "rank": 5, "topic": { "en": "Bloatware/ads", "cn": "预装广告" }, "count": 1350, "verbatim": { "en": "15 pre-installed apps I cannot remove. Taking up 3GB out of the box.", "cn": "15个卸载不了的预装应用，出厂就占3GB。" } },
+                { "rank": 6, "topic": { "en": "Storage management", "cn": "存储管理" }, "count": 1220, "verbatim": { "en": "256GB should be enough but system + updates alone eat 45GB.", "cn": "256GB应该够用但系统+更新就吃掉45GB。" } },
+                { "rank": 7, "topic": { "en": "Screen durability", "cn": "屏幕耐用性" }, "count": 1080, "verbatim": { "en": "Dropped from pocket height onto carpet. Screen cracked.", "cn": "从口袋高度掉到地毯上就碎屏。" } },
+                { "rank": 8, "topic": { "en": "Fingerprint failure", "cn": "指纹失灵" }, "count": 920, "verbatim": { "en": "Under-display sensor needs 3 attempts. Screen protector makes it worse.", "cn": "屏下传感器要按3次，贴了膜更糟糕。" } },
+                { "rank": 9, "topic": { "en": "Charging port issues", "cn": "充电口问题" }, "count": 800, "verbatim": { "en": "MagSafe-style charging only works with the $40 official puck. No third-party support.", "cn": "MagSafe式充电只支持40美元的官方充电器，没有第三方支持。" } },
+                { "rank": 10, "topic": { "en": "Signal reception", "cn": "信号接收" }, "count": 680, "verbatim": { "en": "Rural area coverage worse than my 3-year-old phone. Antenna regression.", "cn": "农村信号比我3年前的手机还差，天线退步了。" } }
+              ]
+            }
+          ]
+        }
       }
     },
     "glasses": {
@@ -112,6 +593,74 @@
         "repurchase": "35%",
         "repurchaseChange": 14.2,
         "donut": [40, 38, 15, 7]
+      },
+      "macro": {
+        "marketSummary": { "en": "Smart glasses are in hyper-growth at 39% YoY; AI multimodal capabilities are the key differentiation axis.", "cn": "智能眼镜处于高速增长期，同比增长39%；AI多模态能力是核心差异化轴。" },
+        "strategicRecommendation": { "en": "Prioritize weight reduction and AI integration; form factor and battery life are the two biggest adoption barriers.", "cn": "优先突破轻量化与AI集成；外形重量和续航是两大最大采纳障碍。" },
+        "hypeCycleStage": {
+          "stage": "price_capture",
+          "label": { "en": "Price Capture Phase", "cn": "价格获取期" },
+          "description": { "en": "Emerging category with rapidly growing demand; AI camera+LLM features justify premium pricing.", "cn": "新兴品类，需求快速增长；AI摄像头+LLM功能支撑高端定价。" }
+        }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          { "band": { "en": "Entry (<$200)", "cn": "入门级 (<¥1,450)" }, "players": [{ "brand": "Xiaomi Smart Glasses", "share": "32%" }, { "brand": "Rokid", "share": "22%" }], "costStructure": { "avgBom": "$85", "avgRetailPrice": "$159", "avgGrossMargin": "22%" } },
+          { "band": { "en": "Mid ($200–$499)", "cn": "中端 ($200–$499)" }, "players": [{ "brand": "Meta Ray-Ban", "share": "45%" }, { "brand": "Xreal", "share": "18%" }], "costStructure": { "avgBom": "$165", "avgRetailPrice": "$329", "avgGrossMargin": "32%" } },
+          { "band": { "en": "Premium ($500+)", "cn": "高端 ($500+)" }, "players": [{ "brand": "Apple Vision Pro", "share": "38%" }, { "brand": "Xreal Ultra", "share": "20%" }], "costStructure": { "avgBom": "$380", "avgRetailPrice": "$899", "avgGrossMargin": "40%" } }
+        ],
+        "coreModelTeardown": {
+          "model": "Meta Ray-Ban Smart Glasses Gen 2",
+          "bom": "$168", "retailPrice": "$299", "grossMargin": "32%",
+          "iterationCycle": { "en": "14 months", "cn": "14个月" },
+          "salesChannels": { "en": "Brand direct + optical stores", "cn": "品牌直营+眼镜店" },
+          "priceFloor": "$249", "launchDate": "2024-09",
+          "sellingPoints": { "en": ["Llama AI on-device", "12MP camera", "Open-ear audio"], "cn": ["Llama端侧AI", "1200万像素摄像头", "开放式音频"] },
+          "targetAudience": { "en": "Tech-forward millennials 25-38", "cn": "科技前沿千禧代 25-38" },
+          "radiationAudience": { "en": "Fashion-conscious early adopters", "cn": "时尚意识早期用户" }
+        },
+        "competitorComparison": [
+          { "model": "Meta Ray-Ban Gen 2", "brand": "Meta", "bom": "$168", "retailPrice": "$299", "grossMargin": "32%", "launchDate": "2024-09", "iterationCycle": { "en": "14 mo", "cn": "14个月" }, "salesChannels": { "en": "Brand + optical", "cn": "品牌+眼镜店" }, "priceFloor": "$249", "sellingPoints": { "en": ["Llama AI", "12MP camera", "Open-ear audio"], "cn": ["Llama AI", "1200万像素", "开放式音频"] }, "targetAudience": { "en": "Millennials 25-38", "cn": "千禧代 25-38" }, "radiationAudience": { "en": "Fashion early adopters", "cn": "时尚早期用户" } },
+          { "model": "Xreal Air 3 Pro", "brand": "Xreal", "bom": "$195", "retailPrice": "$399", "grossMargin": "28%", "launchDate": "2025-01", "iterationCycle": { "en": "12 mo", "cn": "12个月" }, "salesChannels": { "en": "E-com + gaming channel", "cn": "电商+游戏渠道" }, "priceFloor": "$349", "sellingPoints": { "en": ["AR display 120Hz", "PC/console compatibility", "Lightweight 72g"], "cn": ["AR显示120Hz", "PC/主机兼容", "超轻72g"] }, "targetAudience": { "en": "Gamers and content consumers 18-30", "cn": "游戏玩家和内容消费者 18-30" }, "radiationAudience": { "en": "Remote workers", "cn": "远程工作者" } },
+          { "model": "Rokid Max 2", "brand": "Rokid", "bom": "$142", "retailPrice": "$268", "grossMargin": "25%", "launchDate": "2024-11", "iterationCycle": { "en": "10 mo", "cn": "10个月" }, "salesChannels": { "en": "E-com dominant (CN)", "cn": "电商主导（中国市场）" }, "priceFloor": "$229", "sellingPoints": { "en": ["YodaOS AI", "4K Micro OLED", "Developer-friendly SDK"], "cn": ["YodaOS AI", "4K Micro OLED", "开发者友好SDK"] }, "targetAudience": { "en": "CN tech enthusiasts and developers", "cn": "中国科技爱好者和开发者" }, "radiationAudience": { "en": "Enterprise trial users", "cn": "企业试用用户" } }
+        ],
+        "asymmetricAdvantages": [
+          { "manufacturer": "Meta", "advantages": { "en": ["Social graph integration (Instagram/WhatsApp sharing)", "Llama AI at scale", "Ray-Ban brand heritage"], "cn": ["社交图谱整合（Instagram/WhatsApp分享）", "Llama AI规模化", "Ray-Ban品牌传承"] } },
+          { "manufacturer": "Apple", "advantages": { "en": ["visionOS ecosystem depth", "Neural Engine performance", "Premium retail experience"], "cn": ["visionOS生态深度", "神经引擎性能", "高端零售体验"] } },
+          { "manufacturer": "Xreal/Rokid (CN)", "advantages": { "en": ["Cost-efficient waveguide supply chain", "Gaming/productivity positioning", "CN market developer ecosystem"], "cn": ["低成本光波导供应链", "游戏/生产力定位", "中国市场开发者生态"] } }
+        ],
+        "supplyChainComponents": [
+          { "component": { "en": "Waveguide Display", "cn": "光波导显示器" }, "tier1": ["DigiLens", "WaveOptics"], "tier2": ["Lensata", "Lumus"], "maturity": { "en": "Emerging", "cn": "新兴" }, "priceTrend": { "en": "Declining 15-20% YoY as scale increases", "cn": "随规模扩大同比降15-20%" }, "geopoliticalRisk": { "en": "Medium — IP concentrated in US/EU", "cn": "中等 — IP集中于美国/欧盟" } },
+          { "component": { "en": "AI Processing Chip (NPU)", "cn": "AI处理芯片（NPU）" }, "tier1": ["Qualcomm Snapdragon AR", "Apple M/R-series"], "tier2": ["MediaTek Dimensity AR", "Rockchip"], "maturity": { "en": "Growing", "cn": "增长期" }, "priceTrend": { "en": "Stable; high demand driving premium", "cn": "稳定；高需求维持溢价" }, "geopoliticalRisk": { "en": "Medium-High — advanced node export controls", "cn": "中高 — 先进制程出口管控" } },
+          { "component": { "en": "Miniature Battery", "cn": "微型电池" }, "tier1": ["ATL", "Murata"], "tier2": ["Varta", "BYD"], "maturity": { "en": "Mature (limited by form factor)", "cn": "成熟（受外形限制）" }, "priceTrend": { "en": "Stable, capacity improvements gradual", "cn": "稳定，容量改善渐进" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } }
+        ],
+        "inventoryTurnover": [
+          { "brand": "Meta Ray-Ban", "turnoverDays": 22, "depreciationRisk": { "en": "Low-Medium — strong brand holds value", "cn": "中低 — 品牌强，保值较好" }, "skuDecayCurve": [100, 96, 91, 85, 78, 70, 62, 54, 46, 38, 32, 26] },
+          { "brand": "Xreal", "turnoverDays": 35, "depreciationRisk": { "en": "Medium — rapid iteration hurts older models", "cn": "中等 — 快速迭代打压旧款" }, "skuDecayCurve": [100, 93, 84, 74, 64, 54, 45, 36, 28, 22, 16, 12] },
+          { "brand": "Rokid", "turnoverDays": 42, "depreciationRisk": { "en": "Medium-High — limited brand premium, price-sensitive market", "cn": "中高 — 品牌溢价有限，市场价格敏感" }, "skuDecayCurve": [100, 90, 78, 66, 55, 44, 35, 28, 22, 16, 12, 8] }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          { "group": { "en": "Tech Enthusiasts", "cn": "科技发烧友" }, "priceRange": { "en": "$250–500", "cn": "¥1,800–3,625" }, "painPoints": [{ "rank": 1, "en": "Battery lasts only 2-3 hours", "cn": "续航只有2-3小时" }, { "rank": 2, "en": "Limited AI assistant capabilities vs phone", "cn": "AI助手功能远不如手机" }, { "rank": 3, "en": "App ecosystem too limited", "cn": "应用生态太有限" }, { "rank": 4, "en": "Too heavy for all-day wear (>50g)", "cn": "超过50g无法全天佩戴" }, { "rank": 5, "en": "Looks too 'techy', social stigma", "cn": "外观太'科技感'，社交尴尬" }, { "rank": 6, "en": "Connectivity drops between phone and glasses", "cn": "手机和眼镜连接经常断开" }, { "rank": 7, "en": "Overheating during extended AI use", "cn": "长时间AI使用发热严重" }, { "rank": 8, "en": "Camera triggers privacy concerns from others", "cn": "摄像头引发他人隐私担忧" }, { "rank": 9, "en": "Field of view (FoV) too narrow for AR", "cn": "AR视野角度太窄" }, { "rank": 10, "en": "No prescription lens support", "cn": "不支持度数镜片" }] },
+          { "group": { "en": "Professionals", "cn": "专业职场人士" }, "priceRange": { "en": "$400–1000", "cn": "¥2,900–7,250" }, "painPoints": [{ "rank": 1, "en": "Cannot use in bright outdoor sunlight", "cn": "强烈户外阳光下无法使用" }, { "rank": 2, "en": "Audio leakage in quiet meeting rooms", "cn": "安静会议室音频泄漏" }, { "rank": 3, "en": "Battery dies during full work day", "cn": "工作日续航不够" }, { "rank": 4, "en": "Setup and pairing process too complex", "cn": "设置配对过程太复杂" }, { "rank": 5, "en": "Insufficient enterprise security features", "cn": "企业安全功能不足" }, { "rank": 6, "en": "Prescription integration too expensive", "cn": "度数定制集成太贵" }, { "rank": 7, "en": "Display text hard to read in motion", "cn": "移动时显示文字难以阅读" }, { "rank": 8, "en": "Software updates break enterprise workflows", "cn": "软件更新破坏企业工作流程" }, { "rank": 9, "en": "No enterprise MDM support", "cn": "不支持企业MDM管理" }, { "rank": 10, "en": "IP rating insufficient for field work", "cn": "防护等级不足于野外作业" }] },
+          { "group": { "en": "Fashion-conscious Users", "cn": "时尚意识用户" }, "priceRange": { "en": "$200–400", "cn": "¥1,450–2,900" }, "painPoints": [{ "rank": 1, "en": "Limited style/frame options", "cn": "款式/镜框选择太少" }, { "rank": 2, "en": "Charging case too bulky", "cn": "充电盒太大不好携带" }, { "rank": 3, "en": "Visible technology ruins aesthetic", "cn": "外露的科技元素影响美观" }, { "rank": 4, "en": "Cannot match with prescription lenses", "cn": "无法搭配度数镜片" }, { "rank": 5, "en": "Speaker sound quality poor for music", "cn": "扬声器音质不适合听音乐" }, { "rank": 6, "en": "Smudges on camera lens hard to clean", "cn": "摄像头镜片指纹难清洁" }, { "rank": 7, "en": "Not water/sweat resistant enough", "cn": "防水/防汗能力不足" }, { "rank": 8, "en": "Feels fragile for active lifestyle", "cn": "活跃生活方式下感觉易碎" }, { "rank": 9, "en": "No custom engraving/personalization", "cn": "不支持定制刻字/个性化" }, { "rank": 10, "en": "Price too high vs regular glasses", "cn": "相比普通眼镜价格太贵" }] }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [{ "en": "best AI smart glasses 2025", "cn": "2025智能眼镜推荐" }, { "en": "smart glasses all day battery", "cn": "续航好的智能眼镜" }, { "en": "AR glasses under $300", "cn": "3000元以下AR眼镜" }],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": { "k1": [45, 52, 58, 65, 72, 78], "k2": [38, 42, 46, 50, 54, 56], "k3": [28, 32, 36, 40, 44, 48] },
+          "reviewPainTrends": { "categories": [{ "en": "Battery", "cn": "续航" }, { "en": "Weight", "cn": "重量" }, { "en": "App Ecosystem", "cn": "应用生态" }], "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"], "series": [[180, 210, 245, 280, 320, 350], [140, 155, 168, 175, 182, 190], [95, 108, 120, 135, 148, 162]] }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "18,500",
+          "period": { "en": "Apr–Sep 2025", "cn": "2025年4月–9月" },
+          "monthlyTop10": [
+            { "month": "2025-09", "painPoints": [{ "rank": 1, "topic": { "en": "Battery life", "cn": "续航" }, "count": 620, "verbatim": { "en": "2.5 hours of real use before needing to charge. Cannot leave home without the case.", "cn": "实际使用2.5小时就要充电，出门必须带充电盒。" } }, { "rank": 2, "topic": { "en": "Weight", "cn": "重量" }, "count": 485, "verbatim": { "en": "Nose bridge hurts after 1 hour. 58g is too heavy.", "cn": "戴一小时鼻梁就痛，58g太重了。" } }, { "rank": 3, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 410, "verbatim": { "en": "Only 12 apps available. My phone has 200. Not ready yet.", "cn": "只有12个应用，我手机有200个，还没准备好。" } }, { "rank": 4, "topic": { "en": "Social stigma", "cn": "社交尴尬" }, "count": 368, "verbatim": { "en": "People think I am recording them everywhere I go. Exhausting to explain.", "cn": "到处都有人认为我在录他们，解释起来很累。" } }, { "rank": 5, "topic": { "en": "AI assistant quality", "cn": "AI助手质量" }, "count": 325, "verbatim": { "en": "Asked it 3 questions, 2 were wrong. $329 for this?", "cn": "问了3个问题2个答错，花了2400块买这个？" } }, { "rank": 6, "topic": { "en": "Overheating", "cn": "发热" }, "count": 280, "verbatim": { "en": "Gets uncomfortably warm on the temple after 20 min of AI use.", "cn": "AI使用20分钟后太阳穴位置变得很烫。" } }, { "rank": 7, "topic": { "en": "Audio leakage", "cn": "音频泄漏" }, "count": 245, "verbatim": { "en": "People 2 meters away can hear my assistant responses clearly.", "cn": "2米外的人能清楚听到我助手的回答。" } }, { "rank": 8, "topic": { "en": "Connectivity stability", "cn": "连接稳定性" }, "count": 210, "verbatim": { "en": "Bluetooth drops 3-4 times per hour. Reconnection takes 10 seconds.", "cn": "蓝牙每小时断开3-4次，重连需要10秒。" } }, { "rank": 9, "topic": { "en": "Camera image quality", "cn": "拍照画质" }, "count": 178, "verbatim": { "en": "12MP sounds impressive but the fixed lens and small sensor ruin quality.", "cn": "1200万像素听起来不错，但固定焦距和小传感器毁了画质。" } }, { "rank": 10, "topic": { "en": "Case durability", "cn": "充电盒耐用性" }, "count": 152, "verbatim": { "en": "Hinge on charging case broke after 2 months of normal use.", "cn": "充电盒合页正常使用2个月就坏了。" } }] },
+            { "month": "2025-08", "painPoints": [{ "rank": 1, "topic": { "en": "Battery life", "cn": "续航" }, "count": 590, "verbatim": { "en": "Promised 5 hours, got 2.5. Marketing needs to be honest.", "cn": "承诺5小时，实际2.5小时，营销需要诚实。" } }, { "rank": 2, "topic": { "en": "Overheating", "cn": "发热" }, "count": 520, "verbatim": { "en": "August heat + AI features = too hot to wear comfortably.", "cn": "8月高温+AI功能=烫到戴不住。" } }, { "rank": 3, "topic": { "en": "Weight", "cn": "重量" }, "count": 458, "verbatim": { "en": "58g does not sound much but try wearing it 6 hours.", "cn": "58g听起来不多，但试试戴6个小时。" } }, { "rank": 4, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 395, "verbatim": { "en": "Developers are not interested. Less apps now than 6 months ago.", "cn": "开发者不感兴趣，现在应用比6个月前还少了。" } }, { "rank": 5, "topic": { "en": "AI assistant quality", "cn": "AI助手质量" }, "count": 340, "verbatim": { "en": "Hallucinates basic facts. Cannot trust it for anything important.", "cn": "基本事实都会产生幻觉，重要事情不敢用。" } }, { "rank": 6, "topic": { "en": "Social stigma", "cn": "社交尴尬" }, "count": 298, "verbatim": { "en": "Restaurant asked me to remove them. Third time this month.", "cn": "餐厅要求我摘掉，这是本月第三次了。" } }, { "rank": 7, "topic": { "en": "Audio leakage", "cn": "音频泄漏" }, "count": 256, "verbatim": { "en": "Open-ear speaker is a privacy nightmare in public.", "cn": "开放式扬声器在公共场所是隐私噩梦。" } }, { "rank": 8, "topic": { "en": "Connectivity stability", "cn": "连接稳定性" }, "count": 218, "verbatim": { "en": "Disconnects when phone screen turns off. Defeats the purpose.", "cn": "手机屏幕关闭时就断连，失去了产品意义。" } }, { "rank": 9, "topic": { "en": "Case durability", "cn": "充电盒耐用性" }, "count": 185, "verbatim": { "en": "Magnetic closure weakened in 3 months. Opens in my bag now.", "cn": "磁力扣3个月就弱了，现在在包里会自动开。" } }, { "rank": 10, "topic": { "en": "Camera image quality", "cn": "拍照画质" }, "count": 162, "verbatim": { "en": "My 2019 phone takes better photos. Fixed lens is the bottleneck.", "cn": "我2019年的手机拍得更好，固定镜头是瓶颈。" } }] },
+            { "month": "2025-07", "painPoints": [{ "rank": 1, "topic": { "en": "Battery life", "cn": "续航" }, "count": 558, "verbatim": { "en": "Need to charge twice a day for moderate use. Not practical.", "cn": "中度使用每天要充两次电，不实用。" } }, { "rank": 2, "topic": { "en": "Overheating", "cn": "发热" }, "count": 495, "verbatim": { "en": "Metal frame conducts heat. Literally cannot hold it during a navigation session.", "cn": "金属镜框导热，导航时字面意思烫得拿不住。" } }, { "rank": 3, "topic": { "en": "Weight", "cn": "重量" }, "count": 420, "verbatim": { "en": "Got a headache from wearing them 4 hours. Not sustainable.", "cn": "戴了4小时头痛，不可持续。" } }, { "rank": 4, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 365, "verbatim": { "en": "Promised 50 apps at launch. Still 12 nine months later.", "cn": "发布时承诺50个应用，九个月后还是12个。" } }, { "rank": 5, "topic": { "en": "Social stigma", "cn": "社交尴尬" }, "count": 312, "verbatim": { "en": "Friend asked if I was filming them. Lost the friend.", "cn": "朋友问我是否在拍他，失去了这个朋友。" } }, { "rank": 6, "topic": { "en": "AI assistant quality", "cn": "AI助手质量" }, "count": 268, "verbatim": { "en": "Voice recognition fails 30% of the time in street noise.", "cn": "街道噪音中语音识别30%的时间失败。" } }, { "rank": 7, "topic": { "en": "Connectivity stability", "cn": "连接稳定性" }, "count": 228, "verbatim": { "en": "iOS 18 update broke the companion app. 3 weeks without fix.", "cn": "iOS 18更新破坏了配套应用，3周没有修复。" } }, { "rank": 8, "topic": { "en": "Audio leakage", "cn": "音频泄漏" }, "count": 195, "verbatim": { "en": "Whisper mode is still audible at 1.5m. Library problem.", "cn": "耳语模式在1.5米处仍可听见，图书馆成问题。" } }, { "rank": 9, "topic": { "en": "Camera image quality", "cn": "拍照画质" }, "count": 168, "verbatim": { "en": "Lens fogging from sweat in summer. Photos ruined.", "cn": "夏天出汗导致镜头起雾，照片毁掉了。" } }, { "rank": 10, "topic": { "en": "Case durability", "cn": "充电盒耐用性" }, "count": 145, "verbatim": { "en": "USB-C port on case is flimsy. Already replaced the case once.", "cn": "充电盒上的USB-C口很脆弱，已经换过一次充电盒了。" } }] }
+          ]
+        }
       }
     },
     "wearables": {
@@ -169,6 +718,61 @@
         "repurchase": "52%",
         "repurchaseChange": 5.8,
         "donut": [42, 30, 14, 14]
+      },
+      "macro": {
+        "marketSummary": { "en": "Smartwatches have fully replaced bands as the primary wearable; Apple commands 38% revenue share driven by health monitoring differentiation.", "cn": "智能手表已全面替代手环成为穿戴主力；Apple凭借健康监测差异化占据38%营收份额。" },
+        "strategicRecommendation": { "en": "Invest in sensor accuracy certification (medical-grade SpO2, AFib detection) to command premium; price alone cannot compete against Apple and Samsung.", "cn": "投资传感器精度认证（医疗级血氧、房颤检测）以支撑高端定价；纯价格竞争无法抗衡Apple和Samsung。" },
+        "hypeCycleStage": { "stage": "price_capture", "label": { "en": "Price Capture Phase", "cn": "价格获取期" }, "description": { "en": "Growing penetration with health features driving premium mix; top brands commanding 40%+ gross margins.", "cn": "健康功能驱动高端结构，渗透率持续增长；头部品牌毛利率超40%。" } }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          { "band": { "en": "Entry (<$100)", "cn": "入门级 (<¥725)" }, "players": [{ "brand": "Xiaomi Mi Band", "share": "34%" }, { "brand": "Noise", "share": "22%" }, { "brand": "realme Watch", "share": "15%" }], "costStructure": { "avgBom": "$32", "avgRetailPrice": "$65", "avgGrossMargin": "19%" } },
+          { "band": { "en": "Mid ($100–$299)", "cn": "中端 ($100–$299)" }, "players": [{ "brand": "Samsung Galaxy Watch", "share": "28%" }, { "brand": "Huawei Watch", "share": "18%" }, { "brand": "Garmin Vivoactive", "share": "14%" }], "costStructure": { "avgBom": "$85", "avgRetailPrice": "$199", "avgGrossMargin": "30%" } },
+          { "band": { "en": "Premium ($300+)", "cn": "高端 ($300+)" }, "players": [{ "brand": "Apple Watch", "share": "52%" }, { "brand": "Garmin Fenix", "share": "16%" }, { "brand": "Samsung Galaxy Ultra", "share": "12%" }], "costStructure": { "avgBom": "$155", "avgRetailPrice": "$429", "avgGrossMargin": "42%" } }
+        ],
+        "coreModelTeardown": { "model": "Samsung Galaxy Watch 7", "bom": "$82", "retailPrice": "$199", "grossMargin": "29%", "iterationCycle": { "en": "12 months", "cn": "12个月" }, "salesChannels": { "en": "Carrier bundles + brand retail", "cn": "运营商捆绑+品牌直营" }, "priceFloor": "$169", "launchDate": "2025-01", "sellingPoints": { "en": ["AFib detection FDA-cleared", "Sleep coaching AI", "Wear OS 5"], "cn": ["FDA认证房颤检测", "睡眠AI教练", "Wear OS 5"] }, "targetAudience": { "en": "Android users 28-45", "cn": "Android用户 28-45" }, "radiationAudience": { "en": "Health-conscious adults", "cn": "健康意识成年人" } },
+        "competitorComparison": [
+          { "model": "Samsung Galaxy Watch 7", "brand": "Samsung", "bom": "$82", "retailPrice": "$199", "grossMargin": "29%", "launchDate": "2025-01", "iterationCycle": { "en": "12 mo", "cn": "12个月" }, "salesChannels": { "en": "Carrier + retail", "cn": "运营商+零售" }, "priceFloor": "$169", "sellingPoints": { "en": ["AFib FDA-cleared", "Sleep AI", "Wear OS 5"], "cn": ["FDA认证房颤", "睡眠AI", "Wear OS 5"] }, "targetAudience": { "en": "Android users 28-45", "cn": "Android用户 28-45" }, "radiationAudience": { "en": "Health-conscious adults", "cn": "健康意识成人" } },
+          { "model": "Apple Watch Series 11", "brand": "Apple", "bom": "$155", "retailPrice": "$429", "grossMargin": "42%", "launchDate": "2025-09", "iterationCycle": { "en": "12 mo", "cn": "12个月" }, "salesChannels": { "en": "Apple Store + carriers", "cn": "苹果零售+运营商" }, "priceFloor": "$399", "sellingPoints": { "en": ["Blood glucose (non-invasive)", "watchOS AI health", "Ecosystem integration"], "cn": ["无创血糖", "watchOS AI健康", "生态集成"] }, "targetAudience": { "en": "iPhone users 25-50", "cn": "iPhone用户 25-50" }, "radiationAudience": { "en": "Fitness enthusiasts, seniors", "cn": "健身爱好者、老年人" } },
+          { "model": "Garmin Forerunner 965", "brand": "Garmin", "bom": "$128", "retailPrice": "$349", "grossMargin": "36%", "launchDate": "2024-06", "iterationCycle": { "en": "18 mo", "cn": "18个月" }, "salesChannels": { "en": "Specialty sports retail + e-com", "cn": "运动专业零售+电商" }, "priceFloor": "$299", "sellingPoints": { "en": ["Multi-sport GPS", "20-day battery", "Training load analysis"], "cn": ["多运动GPS", "20天续航", "训练负荷分析"] }, "targetAudience": { "en": "Serious athletes 25-45", "cn": "专业运动员 25-45" }, "radiationAudience": { "en": "Outdoor adventure enthusiasts", "cn": "户外探险爱好者" } }
+        ],
+        "asymmetricAdvantages": [
+          { "manufacturer": "Apple", "advantages": { "en": ["watchOS health data monopoly (8+ years of user data)", "Seamless iPhone ecosystem", "Annual health feature announcements create upgrade cycle"], "cn": ["watchOS健康数据垄断（8年以上用户数据）", "无缝iPhone生态", "年度健康功能发布创造换机周期"] } },
+          { "manufacturer": "Garmin", "advantages": { "en": ["Sports science credibility (elite athlete partnerships)", "Best-in-class GPS accuracy", "2-4 week battery life in GPS mode"], "cn": ["运动科学公信力（精英运动员合作）", "同类最佳GPS精度", "GPS模式2-4周续航"] } },
+          { "manufacturer": "Samsung/Xiaomi", "advantages": { "en": ["Android ecosystem integration", "Competitive pricing at mid-tier", "Wide distribution via phone channels"], "cn": ["Android生态集成", "中端价格竞争力", "通过手机渠道广泛分发"] } }
+        ],
+        "supplyChainComponents": [
+          { "component": { "en": "AMOLED Display (Round/Square)", "cn": "AMOLED显示屏（圆形/方形）" }, "tier1": ["Samsung Display", "LG Display"], "tier2": ["BOE", "Tianma"], "maturity": { "en": "Mature", "cn": "成熟" }, "priceTrend": { "en": "Declining 5-8% YoY", "cn": "同比下降5-8%" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } },
+          { "component": { "en": "Health Sensor Array (SpO2/ECG/PPG)", "cn": "健康传感器组合（血氧/心电/光电）" }, "tier1": ["Texas Instruments", "Silicon Laboratories"], "tier2": ["Analog Devices", "Maxim"], "maturity": { "en": "Mature (PPG/SpO2); Growing (ECG)", "cn": "成熟（PPG/血氧）；增长（心电）" }, "priceTrend": { "en": "Stable; premium for medical-grade certification", "cn": "稳定；医疗级认证有溢价" }, "geopoliticalRisk": { "en": "Low-Medium", "cn": "中低" } },
+          { "component": { "en": "Low-Power SoC (Cortex-M)", "cn": "低功耗SoC（Cortex-M）" }, "tier1": ["Nordic Semi", "Qualcomm QCC"], "tier2": ["Dialog Semi", "Ambiq Micro"], "maturity": { "en": "Mature", "cn": "成熟" }, "priceTrend": { "en": "Stable", "cn": "稳定" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } }
+        ],
+        "inventoryTurnover": [
+          { "brand": "Apple Watch", "turnoverDays": 12, "depreciationRisk": { "en": "Low — annual upgrade cycle, strong trade-in value", "cn": "低 — 年度换机周期，换机回收价值强" }, "skuDecayCurve": [100, 96, 92, 87, 82, 76, 70, 64, 57, 50, 44, 38] },
+          { "brand": "Samsung Galaxy Watch", "turnoverDays": 32, "depreciationRisk": { "en": "Medium — carrier deals compress street price quickly", "cn": "中等 — 运营商优惠快速压低成交价" }, "skuDecayCurve": [100, 94, 86, 78, 68, 58, 49, 41, 34, 28, 22, 18] },
+          { "brand": "Garmin", "turnoverDays": 28, "depreciationRisk": { "en": "Low-Medium — long lifecycle, loyal sports community", "cn": "中低 — 生命周期长，运动社群忠诚" }, "skuDecayCurve": [100, 95, 90, 84, 78, 72, 65, 59, 53, 47, 42, 37] }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          { "group": { "en": "Sports Enthusiasts", "cn": "运动爱好者" }, "priceRange": { "en": "$150–400", "cn": "¥1,100–2,900" }, "painPoints": [{ "rank": 1, "en": "GPS takes too long to acquire signal", "cn": "GPS信号获取时间太长" }, { "rank": 2, "en": "Heart rate inaccurate during high-intensity intervals", "cn": "高强度间歇运动时心率不准" }, { "rank": 3, "en": "Battery dies mid-marathon", "cn": "马拉松中途没电" }, { "rank": 4, "en": "Swimming mode leaks water at >2m depth", "cn": "2米以上水深游泳模式漏水" }, { "rank": 5, "en": "VO2 max calculation inconsistent", "cn": "最大摄氧量计算不稳定" }, { "rank": 6, "en": "Music storage too limited for long runs", "cn": "长跑音乐存储容量不足" }, { "rank": 7, "en": "Screen hard to read in direct sunlight", "cn": "直射阳光下屏幕难以阅读" }, { "rank": 8, "en": "Training plan AI not personalized enough", "cn": "训练计划AI个性化不够" }, { "rank": 9, "en": "Notification silencing during workouts unreliable", "cn": "运动中通知静音不可靠" }, { "rank": 10, "en": "Strap causes skin irritation after sweat", "cn": "出汗后表带引起皮肤过敏" }] },
+          { "group": { "en": "Health-focused Adults", "cn": "健康关注成年人" }, "priceRange": { "en": "$200–500", "cn": "¥1,450–3,625" }, "painPoints": [{ "rank": 1, "en": "SpO2 readings inconsistent throughout day", "cn": "全天血氧读数不一致" }, { "rank": 2, "en": "Sleep stage tracking inaccurate vs clinical", "cn": "睡眠分期追踪与临床结果不符" }, { "rank": 3, "en": "ECG feature unavailable in some countries", "cn": "心电图功能在某些国家不可用" }, { "rank": 4, "en": "Health data not shareable with doctor's system", "cn": "健康数据无法分享给医生系统" }, { "rank": 5, "en": "Stress score feels arbitrary/inaccurate", "cn": "压力评分感觉随意/不准确" }, { "rank": 6, "en": "Women's cycle tracking limited", "cn": "女性月经周期追踪功能有限" }, { "rank": 7, "en": "Battery drains faster with always-on health monitoring", "cn": "始终开启健康监测耗电更快" }, { "rank": 8, "en": "App data locked in proprietary ecosystem", "cn": "应用数据被锁定在专有生态系统" }, { "rank": 9, "en": "Weight management suggestions too generic", "cn": "体重管理建议太泛化" }, { "rank": 10, "en": "Alerts for anomalies cause unnecessary anxiety", "cn": "异常警报造成不必要的焦虑" }] },
+          { "group": { "en": "Fashion-conscious Users", "cn": "时尚消费者" }, "priceRange": { "en": "$100–350", "cn": "¥725–2,538" }, "painPoints": [{ "rank": 1, "en": "Rectangular screen looks like a gadget not a watch", "cn": "方形屏幕看起来像小工具不像手表" }, { "rank": 2, "en": "Strap options limited for formal occasions", "cn": "正式场合表带选择有限" }, { "rank": 3, "en": "Watch face customization too limited", "cn": "表盘自定义选择太少" }, { "rank": 4, "en": "Always-on display too battery-draining", "cn": "常亮显示耗电太快" }, { "rank": 5, "en": "Scratches on glass visible quickly", "cn": "玻璃表面容易出现划痕" }, { "rank": 6, "en": "Too thick to wear under tight sleeves", "cn": "太厚在紧袖衬衫下不舒适" }, { "rank": 7, "en": "Charging puck loses contact frequently", "cn": "充电底座接触经常失灵" }, { "rank": 8, "en": "Notification buzzes too strong in meetings", "cn": "会议中通知震动太强" }, { "rank": 9, "en": "Haptic motor not subtle enough", "cn": "触觉马达反馈不够细腻" }, { "rank": 10, "en": "Limited third-party watch face marketplace", "cn": "第三方表盘市场很有限" }] }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [{ "en": "best smartwatch for health", "cn": "健康监测智能手表推荐" }, { "en": "smartwatch long battery life", "cn": "续航长的智能手表" }, { "en": "smartwatch under 200", "cn": "1500元以下智能手表" }],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": { "k1": [72, 76, 80, 84, 88, 92], "k2": [55, 58, 62, 66, 70, 74], "k3": [48, 52, 56, 60, 64, 68] },
+          "reviewPainTrends": { "categories": [{ "en": "Battery", "cn": "续航" }, { "en": "Accuracy", "cn": "准确度" }, { "en": "Comfort", "cn": "舒适度" }], "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"], "series": [[280, 310, 295, 340, 365, 380], [195, 220, 245, 268, 290, 310], [145, 158, 172, 185, 198, 212]] }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "68,000",
+          "period": { "en": "Apr–Sep 2025", "cn": "2025年4月–9月" },
+          "monthlyTop10": [
+            { "month": "2025-09", "painPoints": [{ "rank": 1, "topic": { "en": "Battery life", "cn": "续航" }, "count": 1240, "verbatim": { "en": "2-day battery with AOD. Not the 3 days marketed.", "cn": "开启常亮显示只有2天续航，不是宣传的3天。" } }, { "rank": 2, "topic": { "en": "Health accuracy", "cn": "健康准确度" }, "count": 980, "verbatim": { "en": "SpO2 reads 98% when I feel terrible and my pulse ox says 94%.", "cn": "我感觉很差时读数98%，血氧仪却显示94%。" } }, { "rank": 3, "topic": { "en": "GPS accuracy", "cn": "GPS精度" }, "count": 820, "verbatim": { "en": "Run route looks like I went through buildings. 200m GPS error.", "cn": "跑步路线看起来像穿过了建筑物，GPS误差200米。" } }, { "rank": 4, "topic": { "en": "Strap irritation", "cn": "表带过敏" }, "count": 680, "verbatim": { "en": "Nickel in clasp gave me a rash. Had to buy a third-party strap.", "cn": "表扣中的镍成分引起皮疹，只能买第三方表带。" } }, { "rank": 5, "topic": { "en": "Screen durability", "cn": "表镜耐用性" }, "count": 560, "verbatim": { "en": "Sapphire glass scratched in 2 months. False advertising.", "cn": "蓝宝石玻璃2个月就有划痕，虚假宣传。" } }, { "rank": 6, "topic": { "en": "Charging speed", "cn": "充电速度" }, "count": 485, "verbatim": { "en": "Takes 2 hours to charge. Should not take longer than my phone.", "cn": "充满电需要2小时，不应该比手机还慢。" } }, { "rank": 7, "topic": { "en": "Software bugs", "cn": "软件Bug" }, "count": 420, "verbatim": { "en": "Step counter resets randomly. Lost 3 days of data.", "cn": "步数计数器随机重置，丢失了3天数据。" } }, { "rank": 8, "topic": { "en": "Water resistance", "cn": "防水性" }, "count": 368, "verbatim": { "en": "Rated 5ATM but fogged up after 30 min pool swim.", "cn": "防水5ATM但泳池游泳30分钟后进水起雾。" } }, { "rank": 9, "topic": { "en": "Notification delay", "cn": "通知延迟" }, "count": 312, "verbatim": { "en": "Notifications arrive 30 seconds late. Missed calls as a result.", "cn": "通知延迟30秒到达，因此漏接了电话。" } }, { "rank": 10, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 265, "verbatim": { "en": "My favorite fitness app is not available for this watch OS.", "cn": "我最喜欢的健身应用在这个手表OS上没有。" } }] },
+            { "month": "2025-08", "painPoints": [{ "rank": 1, "topic": { "en": "Battery life", "cn": "续航" }, "count": 1180, "verbatim": { "en": "Died during a hike. I had 40% when I started.", "cn": "徒步途中没电了，出发时还有40%。" } }, { "rank": 2, "topic": { "en": "Health accuracy", "cn": "健康准确度" }, "count": 920, "verbatim": { "en": "Heart rate went from 120 to 45 during sprint. Clearly wrong.", "cn": "冲刺跑步时心率从120突然到45，明显不对。" } }, { "rank": 3, "topic": { "en": "GPS accuracy", "cn": "GPS精度" }, "count": 780, "verbatim": { "en": "Took 4 minutes to find GPS signal. My run was half over.", "cn": "找GPS信号花了4分钟，跑步都进行一半了。" } }, { "rank": 4, "topic": { "en": "Strap irritation", "cn": "表带过敏" }, "count": 645, "verbatim": { "en": "Summer sweat + silicone band = skin rash after 1 week.", "cn": "夏天出汗+硅胶表带=一周后皮疹。" } }, { "rank": 5, "topic": { "en": "Screen durability", "cn": "表镜耐用性" }, "count": 532, "verbatim": { "en": "Gorilla Glass scratched badly at a gym. Not scratch-resistant at all.", "cn": "在健身房大猩猩玻璃严重刮花，根本不防刮。" } }, { "rank": 6, "topic": { "en": "Charging speed", "cn": "充电速度" }, "count": 458, "verbatim": { "en": "No wireless charging in 2025 is inexcusable.", "cn": "2025年还没有无线充电，无法接受。" } }, { "rank": 7, "topic": { "en": "Software bugs", "cn": "软件Bug" }, "count": 395, "verbatim": { "en": "Sleep tracking recorded 8 hours of sleep while I was awake.", "cn": "睡眠追踪在我清醒时记录了8小时睡眠。" } }, { "rank": 8, "topic": { "en": "Water resistance", "cn": "防水性" }, "count": 342, "verbatim": { "en": "Screen cracked underwater despite 5ATM rating. No coverage under warranty.", "cn": "尽管5ATM防水，水下屏幕碎了，保修不覆盖。" } }, { "rank": 9, "topic": { "en": "Notification delay", "cn": "通知延迟" }, "count": 285, "verbatim": { "en": "Messages arrive on watch 1 minute after they arrive on phone.", "cn": "手表收到消息比手机晚1分钟。" } }, { "rank": 10, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 238, "verbatim": { "en": "The calculator app is missing. How is a smartwatch missing a calculator?", "cn": "没有计算器应用，智能手表怎么能没有计算器？" } }] },
+            { "month": "2025-07", "painPoints": [{ "rank": 1, "topic": { "en": "Battery life", "cn": "续航" }, "count": 1120, "verbatim": { "en": "Hot weather drains battery 30% faster. Not usable in summer.", "cn": "热天电池快30%，夏天没法用。" } }, { "rank": 2, "topic": { "en": "Health accuracy", "cn": "健康准确度" }, "count": 865, "verbatim": { "en": "Step count is off by 20% compared to my pedometer.", "cn": "步数比我的计步器少了20%。" } }, { "rank": 3, "topic": { "en": "Strap irritation", "cn": "表带过敏" }, "count": 720, "verbatim": { "en": "Worst month for strap rash. July is brutal with this watch.", "cn": "表带皮疹最严重的月份，七月戴这块表太痛苦。" } }, { "rank": 4, "topic": { "en": "GPS accuracy", "cn": "GPS精度" }, "count": 658, "verbatim": { "en": "GPS drift of 500m during my 10k run. Pace was completely wrong.", "cn": "10公里跑步GPS漂移500米，配速完全错误。" } }, { "rank": 5, "topic": { "en": "Screen durability", "cn": "表镜耐用性" }, "count": 498, "verbatim": { "en": "Corner chipped from a minor knock. Weak bezel.", "cn": "轻微磕碰就掉了一块角，表圈太脆弱。" } }, { "rank": 6, "topic": { "en": "Charging speed", "cn": "充电速度" }, "count": 425, "verbatim": { "en": "Had to charge before morning run then again before bed.", "cn": "晨跑前要充电，睡前还要再充一次。" } }, { "rank": 7, "topic": { "en": "Software bugs", "cn": "软件Bug" }, "count": 368, "verbatim": { "en": "July update broke the alarm function. Overslept twice.", "cn": "七月更新把闹钟功能搞坏了，睡过头了两次。" } }, { "rank": 8, "topic": { "en": "Water resistance", "cn": "防水性" }, "count": 302, "verbatim": { "en": "Condensation inside screen after beach swim. Sealed incorrectly.", "cn": "海滩游泳后屏幕内有水汽，密封有问题。" } }, { "rank": 9, "topic": { "en": "Notification delay", "cn": "通知延迟" }, "count": 258, "verbatim": { "en": "Bluetooth range is terrible. Drops if phone is in the next room.", "cn": "蓝牙范围太差，手机在隔壁房间就断连。" } }, { "rank": 10, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 218, "verbatim": { "en": "Strava integration broke after the watch OS update. No fix in 3 weeks.", "cn": "手表OS更新后Strava集成坏了，3周没有修复。" } }] }
+          ]
+        }
       }
     },
     "smart-home": {
@@ -226,6 +830,61 @@
         "repurchase": "58%",
         "repurchaseChange": 4.6,
         "donut": [16, 36, 30, 18]
+      },
+      "macro": {
+        "marketSummary": { "en": "Smart home market grows at 9.5% driven by ecosystem lock-in; Matter protocol adoption accelerates cross-brand interoperability but compresses premium positioning.", "cn": "智能家居市场以9.5%增长，生态锁定是核心驱动；Matter协议普及加速跨品牌互联但压缩了高端定位空间。" },
+        "strategicRecommendation": { "en": "Anchor to one of the 3 major ecosystems (Amazon/Google/Apple) or build differentiated vertical (security/energy management); neutral products lose relevance under Matter.", "cn": "锚定三大生态之一（Amazon/Google/Apple）或构建差异化垂直赛道（安防/能源管理）；Matter普及后中立产品将失去竞争力。" },
+        "hypeCycleStage": { "stage": "price_capture", "label": { "en": "Price Capture Phase", "cn": "价格获取期" }, "description": { "en": "Growing category with high ecosystem switching cost; security/energy verticals command strong margins.", "cn": "增长型品类，生态切换成本高；安防/能源管理垂直品类毛利率强劲。" } }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          { "band": { "en": "Entry (<$50)", "cn": "入门级 (<¥362)" }, "players": [{ "brand": "Xiaomi Smart", "share": "28%" }, { "brand": "Amazon Basics", "share": "20%" }, { "brand": "TP-Link Tapo", "share": "15%" }], "costStructure": { "avgBom": "$18", "avgRetailPrice": "$35", "avgGrossMargin": "22%" } },
+          { "band": { "en": "Mid ($50–$199)", "cn": "中端 ($50–$199)" }, "players": [{ "brand": "Amazon Echo", "share": "24%" }, { "brand": "Google Nest", "share": "20%" }, { "brand": "Arlo", "share": "12%" }], "costStructure": { "avgBom": "$55", "avgRetailPrice": "$129", "avgGrossMargin": "30%" } },
+          { "band": { "en": "Premium ($200+)", "cn": "高端 ($200+)" }, "players": [{ "brand": "Apple HomePod", "share": "22%" }, { "brand": "Sonos", "share": "18%" }, { "brand": "Lutron", "share": "14%" }], "costStructure": { "avgBom": "$95", "avgRetailPrice": "$299", "avgGrossMargin": "40%" } }
+        ],
+        "coreModelTeardown": { "model": "Amazon Echo Show 15", "bom": "$68", "retailPrice": "$149", "grossMargin": "28%", "iterationCycle": { "en": "18 months", "cn": "18个月" }, "salesChannels": { "en": "Amazon.com first + retail", "cn": "Amazon.com主销+零售" }, "priceFloor": "$119", "launchDate": "2025-02", "sellingPoints": { "en": ["Alexa AI hub", "15.6\" display dashboard", "Matter controller"], "cn": ["Alexa AI中枢", "15.6英寸仪表板", "Matter控制器"] }, "targetAudience": { "en": "Whole-home users 30-50", "cn": "全屋智能用户 30-50" }, "radiationAudience": { "en": "Home office workers", "cn": "家庭办公族" } },
+        "competitorComparison": [
+          { "model": "Amazon Echo Show 15", "brand": "Amazon", "bom": "$68", "retailPrice": "$149", "grossMargin": "28%", "launchDate": "2025-02", "iterationCycle": { "en": "18 mo", "cn": "18个月" }, "salesChannels": { "en": "Amazon direct", "cn": "Amazon直销" }, "priceFloor": "$119", "sellingPoints": { "en": ["Alexa AI", "15.6\" display", "Matter hub"], "cn": ["Alexa AI", "15.6英寸屏", "Matter中枢"] }, "targetAudience": { "en": "Whole-home 30-50", "cn": "全屋用户 30-50" }, "radiationAudience": { "en": "Home office workers", "cn": "家庭办公族" } },
+          { "model": "Google Nest Hub Max", "brand": "Google", "bom": "$72", "retailPrice": "$169", "grossMargin": "30%", "launchDate": "2024-11", "iterationCycle": { "en": "20 mo", "cn": "20个月" }, "salesChannels": { "en": "Google Store + retail", "cn": "Google商店+零售" }, "priceFloor": "$139", "sellingPoints": { "en": ["Gemini AI assistant", "Google Photos display", "Presence detection"], "cn": ["Gemini AI助手", "Google Photos展示", "存在感应"] }, "targetAudience": { "en": "Android/Pixel users 25-45", "cn": "Android/Pixel用户 25-45" }, "radiationAudience": { "en": "Families with kids", "cn": "有孩子的家庭" } },
+          { "model": "Apple HomePod 3", "brand": "Apple", "bom": "$95", "retailPrice": "$329", "grossMargin": "42%", "launchDate": "2025-03", "iterationCycle": { "en": "24 mo", "cn": "24个月" }, "salesChannels": { "en": "Apple Store exclusive", "cn": "Apple Store独家" }, "priceFloor": "$299", "sellingPoints": { "en": ["HomeKit ecosystem hub", "Spatial Audio", "Thread/Matter border router"], "cn": ["HomeKit生态中枢", "空间音频", "Thread/Matter边界路由器"] }, "targetAudience": { "en": "Apple ecosystem users 28-55", "cn": "Apple生态用户 28-55" }, "radiationAudience": { "en": "Premium audio enthusiasts", "cn": "高端音频爱好者" } }
+        ],
+        "asymmetricAdvantages": [
+          { "manufacturer": "Amazon", "advantages": { "en": ["Shopping data advantage for recommendations", "Alexa developer ecosystem (80K+ skills)", "AWS backend scale for smart home AI"], "cn": ["购物数据推荐优势", "Alexa开发者生态（8万+技能）", "AWS后端规模支撑智能家居AI"] } },
+          { "manufacturer": "Google", "advantages": { "en": ["Gemini AI integration", "YouTube/Maps integration", "Android device ecosystem reach"], "cn": ["Gemini AI集成", "YouTube/地图集成", "Android设备生态覆盖"] } },
+          { "manufacturer": "Xiaomi/Aqara", "advantages": { "en": ["Lowest BOM cost (-30% vs US brands)", "Widest sensor/device variety (2000+ SKUs)", "Strong China offline distribution"], "cn": ["最低BOM成本（低于美国品牌30%）", "最广传感器/设备品类（2000+SKU）", "中国强大线下分销"] } }
+        ],
+        "supplyChainComponents": [
+          { "component": { "en": "WiFi/BT/Zigbee/Matter SoC", "cn": "WiFi/BT/Zigbee/Matter SoC" }, "tier1": ["Silicon Labs", "Espressif"], "tier2": ["Nordic Semi", "MediaTek MT7697"], "maturity": { "en": "Mature", "cn": "成熟" }, "priceTrend": { "en": "Declining 8-12% YoY — Matter adoption driving volume", "cn": "同比降8-12% — Matter普及驱动规模" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } },
+          { "component": { "en": "MEMS Microphone Array", "cn": "MEMS麦克风阵列" }, "tier1": ["Knowles", "AAC Technologies"], "tier2": ["BSE", "Goertek"], "maturity": { "en": "Mature", "cn": "成熟" }, "priceTrend": { "en": "Stable", "cn": "稳定" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } },
+          { "component": { "en": "Smart Home Hub SoC (with AI)", "cn": "智能家居Hub SoC（含AI）" }, "tier1": ["Ambarella", "Qualcomm QCS6490"], "tier2": ["Rockchip RK3588", "NXP iMX8M"], "maturity": { "en": "Growing", "cn": "增长期" }, "priceTrend": { "en": "Stable; premium for edge AI capability", "cn": "稳定；边缘AI能力有溢价" }, "geopoliticalRisk": { "en": "Medium — US export controls on Ambarella", "cn": "中等 — 美国对Ambarella出口管控" } }
+        ],
+        "inventoryTurnover": [
+          { "brand": "Amazon Echo", "turnoverDays": 30, "depreciationRisk": { "en": "Low — frequent Prime Day discounts clear inventory fast", "cn": "低 — Prime Day促销快速清库存" }, "skuDecayCurve": [100, 94, 87, 79, 71, 63, 55, 48, 41, 35, 29, 24] },
+          { "brand": "Google Nest", "turnoverDays": 42, "depreciationRisk": { "en": "Medium — slower iteration than Amazon", "cn": "中等 — 迭代速度慢于Amazon" }, "skuDecayCurve": [100, 93, 85, 76, 67, 58, 50, 43, 36, 30, 24, 20] },
+          { "brand": "Xiaomi Smart", "turnoverDays": 55, "depreciationRisk": { "en": "Medium-High — aggressive new SKU launches compress old models", "cn": "中高 — 新SKU激进发布压缩旧型号" }, "skuDecayCurve": [100, 90, 78, 66, 55, 45, 36, 28, 22, 17, 13, 10] }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          { "group": { "en": "Whole-home Integrators", "cn": "全屋智能用户" }, "priceRange": { "en": "$500–3000+", "cn": "¥3,625–21,750+" }, "painPoints": [{ "rank": 1, "en": "Cross-brand device compatibility issues", "cn": "跨品牌设备兼容性问题" }, { "rank": 2, "en": "Single point of failure when hub goes offline", "cn": "Hub离线时全屋功能失效" }, { "rank": 3, "en": "Setup complexity requires professional installation", "cn": "设置复杂需要专业安装" }, { "rank": 4, "en": "Privacy concerns — always-on microphones", "cn": "隐私担忧 — 始终开启的麦克风" }, { "rank": 5, "en": "Automation rules hard to debug when broken", "cn": "自动化规则出错时难以排查" }, { "rank": 6, "en": "No unified energy monitoring dashboard", "cn": "没有统一的能源监测仪表板" }, { "rank": 7, "en": "Devices stop working after cloud service shutdown", "cn": "云服务关闭后设备停止工作" }, { "rank": 8, "en": "Guest access management cumbersome", "cn": "访客权限管理繁琐" }, { "rank": 9, "en": "Voice command recognition in noisy rooms poor", "cn": "嘈杂房间语音命令识别差" }, { "rank": 10, "en": "App fatigue — too many separate brand apps", "cn": "应用疲劳 — 太多独立品牌应用" }] },
+          { "group": { "en": "Pragmatic Single-device Buyers", "cn": "实用主义单品购买者" }, "priceRange": { "en": "$30–150", "cn": "¥218–1,088" }, "painPoints": [{ "rank": 1, "en": "Setup takes too long (>30 min)", "cn": "设置时间太长（超过30分钟）" }, { "rank": 2, "en": "Requires subscription for basic features", "cn": "基础功能需要付费订阅" }, { "rank": 3, "en": "Device stops working after 2-3 years", "cn": "设备2-3年后停止工作" }, { "rank": 4, "en": "False alarms from motion sensors", "cn": "运动传感器频繁误报" }, { "rank": 5, "en": "Voice assistant mishears commands", "cn": "语音助手经常误听命令" }, { "rank": 6, "en": "WiFi drops causing device offline", "cn": "WiFi断开导致设备离线" }, { "rank": 7, "en": "LED indicator light too bright at night", "cn": "夜间指示灯太亮" }, { "rank": 8, "en": "Cannot use without smartphone", "cn": "没有智能手机无法使用" }, { "rank": 9, "en": "Limited customization without app", "cn": "没有应用限制自定义" }, { "rank": 10, "en": "Firmware updates break existing functionality", "cn": "固件更新破坏已有功能" }] },
+          { "group": { "en": "Renters / Non-owners", "cn": "租房者/非房产拥有者" }, "priceRange": { "en": "$20–80", "cn": "¥145–580" }, "painPoints": [{ "rank": 1, "en": "Cannot drill walls for permanent installation", "cn": "不能打孔墙面永久安装" }, { "rank": 2, "en": "Landlord prohibits smart lock installation", "cn": "房东禁止安装智能门锁" }, { "rank": 3, "en": "Device not portable when moving", "cn": "搬家时设备难以带走" }, { "rank": 4, "en": "Smart plugs limited without wiring knowledge", "cn": "智能插座功能受限" }, { "rank": 5, "en": "WiFi router not accessible (landlord controlled)", "cn": "无法访问WiFi路由器（房东控制）" }, { "rank": 6, "en": "Shared living spaces create privacy conflicts", "cn": "合租空间造成隐私冲突" }, { "rank": 7, "en": "Security cameras conflict with housemates", "cn": "安防摄像头与室友产生冲突" }, { "rank": 8, "en": "No control over building-wide systems (heat/AC)", "cn": "无法控制楼栋公共系统（暖气/空调）" }, { "rank": 9, "en": "Deposit deduction risk from device installation", "cn": "设备安装有押金扣除风险" }, { "rank": 10, "en": "Cannot justify cost for temporary living", "cn": "临时居住无法证明成本合理" }] }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [{ "en": "best smart home hub 2025", "cn": "2025最佳智能家居Hub" }, { "en": "smart home Matter compatible", "cn": "支持Matter的智能家居" }, { "en": "smart home starter kit", "cn": "智能家居入门套装" }],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": { "k1": [58, 62, 66, 70, 74, 78], "k2": [42, 48, 54, 60, 66, 72], "k3": [35, 38, 42, 46, 50, 54] },
+          "reviewPainTrends": { "categories": [{ "en": "Compatibility", "cn": "兼容性" }, { "en": "Privacy", "cn": "隐私" }, { "en": "Reliability", "cn": "可靠性" }], "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"], "series": [[245, 268, 285, 310, 332, 358], [185, 198, 215, 228, 245, 262], [165, 178, 192, 208, 222, 238]] }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "42,000",
+          "period": { "en": "Apr–Sep 2025", "cn": "2025年4月–9月" },
+          "monthlyTop10": [
+            { "month": "2025-09", "painPoints": [{ "rank": 1, "topic": { "en": "Cross-brand compatibility", "cn": "跨品牌兼容" }, "count": 892, "verbatim": { "en": "Matter promised everything works together. My Arlo camera still does not work with my Amazon hub.", "cn": "Matter承诺所有设备互联，但我的Arlo摄像头还是不能和Amazon Hub配合。" } }, { "rank": 2, "topic": { "en": "Cloud dependency", "cn": "云端依赖" }, "count": 745, "verbatim": { "en": "Internet went down for 4 hours. Could not turn off my own lights.", "cn": "网络断了4小时，我连自己家的灯都关不掉。" } }, { "rank": 3, "topic": { "en": "Privacy concerns", "cn": "隐私担忧" }, "count": 620, "verbatim": { "en": "Alexa sent a recording of my private conversation to a contact. Never again.", "cn": "Alexa把我私人对话的录音发给了联系人，再也不用了。" } }, { "rank": 4, "topic": { "en": "Setup complexity", "cn": "设置复杂度" }, "count": 548, "verbatim": { "en": "Spent 3 hours setting up. My 65-year-old father could never do this alone.", "cn": "设置花了3小时，我65岁的父亲永远无法独立完成。" } }, { "rank": 5, "topic": { "en": "False alarms", "cn": "误报警" }, "count": 482, "verbatim": { "en": "Motion sensor triggered 12 times last night by passing cars. Alarm fatigue is real.", "cn": "运动传感器昨晚被过路车辆触发了12次，警报疲劳是真实的。" } }, { "rank": 6, "topic": { "en": "Subscription cost", "cn": "订阅费用" }, "count": 415, "verbatim": { "en": "Device costs $89. Subscription costs $96/year. I own nothing?", "cn": "设备89美元，订阅每年96美元，我拥有什么？" } }, { "rank": 7, "topic": { "en": "Device longevity", "cn": "设备寿命" }, "count": 358, "verbatim": { "en": "Cloud support ended for my 3-year-old device. Just stopped working.", "cn": "我3年的设备云端支持终止，直接停止工作了。" } }, { "rank": 8, "topic": { "en": "Voice recognition", "cn": "语音识别" }, "count": 302, "verbatim": { "en": "Alexa thinks 'turn off bedroom light' means 'call my brother'.", "cn": "Alexa认为'关卧室灯'的意思是'给我哥哥打电话'。" } }, { "rank": 9, "topic": { "en": "App reliability", "cn": "应用可靠性" }, "count": 258, "verbatim": { "en": "App update broke geofencing. Lights no longer turn off when I leave.", "cn": "应用更新破坏了地理围栏，离家后灯不自动关了。" } }, { "rank": 10, "topic": { "en": "Energy monitoring", "cn": "能源监控" }, "count": 215, "verbatim": { "en": "Smart plugs show power usage but there is no overall home dashboard.", "cn": "智能插座显示用电量但没有全屋统一仪表板。" } }] },
+            { "month": "2025-08", "painPoints": [{ "rank": 1, "topic": { "en": "Cloud dependency", "cn": "云端依赖" }, "count": 845, "verbatim": { "en": "Server maintenance = lights stuck on for 2 hours. Unacceptable.", "cn": "服务器维护=灯卡着开了2小时，无法接受。" } }, { "rank": 2, "topic": { "en": "Cross-brand compatibility", "cn": "跨品牌兼容" }, "count": 812, "verbatim": { "en": "Bought Matter-certified products. Half still do not talk to each other.", "cn": "买了Matter认证产品，一半还是不能互联。" } }, { "rank": 3, "topic": { "en": "False alarms", "cn": "误报警" }, "count": 695, "verbatim": { "en": "Summer insects keep triggering outdoor motion sensors at night.", "cn": "夏天昆虫不断触发户外夜间运动传感器。" } }, { "rank": 4, "topic": { "en": "Privacy concerns", "cn": "隐私担忧" }, "count": 592, "verbatim": { "en": "Security camera footage stored on company servers abroad. Not comfortable.", "cn": "安防摄像头录像存在境外服务器，很不安心。" } }, { "rank": 5, "topic": { "en": "Setup complexity", "cn": "设置复杂度" }, "count": 512, "verbatim": { "en": "Why does setting up a $30 light bulb require a 20-step process?", "cn": "为什么设置一个30美元的灯泡需要20个步骤？" } }, { "rank": 6, "topic": { "en": "Subscription cost", "cn": "订阅费用" }, "count": 445, "verbatim": { "en": "Arlo wants $10/month to access recordings I made on my own camera.", "cn": "Arlo要每月10美元才能查看我自己摄像头录的视频。" } }, { "rank": 7, "topic": { "en": "Device longevity", "cn": "设备寿命" }, "count": 382, "verbatim": { "en": "Google dropped support for my Nest thermostat after 4 years. Forced upgrade.", "cn": "Google 4年后停止支持我的Nest温控器，被迫升级。" } }, { "rank": 8, "topic": { "en": "Voice recognition", "cn": "语音识别" }, "count": 325, "verbatim": { "en": "Kids' voices not recognized consistently. My 8-year-old frustrated.", "cn": "孩子的声音不能稳定识别，我8岁的孩子很沮丧。" } }, { "rank": 9, "topic": { "en": "App reliability", "cn": "应用可靠性" }, "count": 278, "verbatim": { "en": "Had to force-restart the hub 3 times this month. Should be zero.", "cn": "这个月不得不强制重启Hub 3次，应该一次都不需要。" } }, { "rank": 10, "topic": { "en": "Energy monitoring", "cn": "能源监控" }, "count": 232, "verbatim": { "en": "I can see each device's usage but not the total home cost.", "cn": "我能看到每个设备用电量但看不到全屋总成本。" } }] },
+            { "month": "2025-07", "painPoints": [{ "rank": 1, "topic": { "en": "Cross-brand compatibility", "cn": "跨品牌兼容" }, "count": 778, "verbatim": { "en": "Matter version 1.3 broke my version 1.1 devices. No warning.", "cn": "Matter 1.3版本破坏了我的1.1版本设备，没有任何警告。" } }, { "rank": 2, "topic": { "en": "Cloud dependency", "cn": "云端依赖" }, "count": 715, "verbatim": { "en": "Heat wave + cloud outage = no AC control for 4 hours. This is dangerous.", "cn": "热浪+云端故障=4小时无法控制空调，这很危险。" } }, { "rank": 3, "topic": { "en": "False alarms", "cn": "误报警" }, "count": 645, "verbatim": { "en": "Smoke detector false alarm at 3am. Three times in July.", "cn": "烟雾探测器凌晨3点误报，七月就发生了三次。" } }, { "rank": 4, "topic": { "en": "Privacy concerns", "cn": "隐私担忧" }, "count": 568, "verbatim": { "en": "Found my doorbell footage used in company marketing without consent.", "cn": "发现我的门铃录像未经同意被用于公司营销。" } }, { "rank": 5, "topic": { "en": "Subscription cost", "cn": "订阅费用" }, "count": 492, "verbatim": { "en": "Subscriptions for 5 different smart home brands cost more than Netflix.", "cn": "5个不同智能家居品牌的订阅费比Netflix还贵。" } }, { "rank": 6, "topic": { "en": "Setup complexity", "cn": "设置复杂度" }, "count": 428, "verbatim": { "en": "Electrician quoted $400 to install a $60 smart switch. The ecosystem tax is real.", "cn": "电工报价400美元安装一个60美元的智能开关，生态税是真实存在的。" } }, { "rank": 7, "topic": { "en": "Device longevity", "cn": "设备寿命" }, "count": 365, "verbatim": { "en": "Wink Hub shutdown meant $300 of devices became useless overnight.", "cn": "Wink Hub停服意味着价值300美元的设备一夜之间变废铁。" } }, { "rank": 8, "topic": { "en": "App reliability", "cn": "应用可靠性" }, "count": 312, "verbatim": { "en": "Three apps updated on the same day, all three broke something different.", "cn": "三个应用同一天更新，三个各自把不同的功能搞坏了。" } }, { "rank": 9, "topic": { "en": "Voice recognition", "cn": "语音识别" }, "count": 265, "verbatim": { "en": "AC noise prevents voice commands from working in summer.", "cn": "夏天空调噪音使语音命令无法工作。" } }, { "rank": 10, "topic": { "en": "Energy monitoring", "cn": "能源监控" }, "count": 218, "verbatim": { "en": "Smart home uses more electricity than it saves running 24/7.", "cn": "智能家居设备24小时运行耗电比省电还多。" } }] }
+          ]
+        }
       }
     },
     "entertainment": {
@@ -283,6 +942,61 @@
         "repurchase": "42%",
         "repurchaseChange": 2.8,
         "donut": [22, 38, 25, 15]
+      },
+      "macro": {
+        "marketSummary": { "en": "Entertainment hardware grows 12.4% YoY; Mini-LED and OLED TVs drive ASP uplift while gaming content subscriptions reshape the device purchase decision.", "cn": "影音硬件同比增长12.4%；Mini-LED和OLED电视推动ASP提升，游戏内容订阅正在重塑设备购买决策。" },
+        "strategicRecommendation": { "en": "Lead with display technology (Mini-LED/OLED) and content platform integration; commodity TVs below $300 face terminal margin pressure.", "cn": "以显示技术（Mini-LED/OLED）和内容平台集成领跑；300美元以下的普通电视面临终端利润压力。" },
+        "hypeCycleStage": { "stage": "price_capture", "label": { "en": "Price Capture Phase", "cn": "价格获取期" }, "description": { "en": "Mature large-screen market with premium mix driving growth; gaming and premium audio remain high-margin verticals.", "cn": "成熟大屏市场，高端结构驱动增长；游戏和高端音频仍是高毛利垂直品类。" } }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          { "band": { "en": "Entry (<$100)", "cn": "入门级 (<¥725)" }, "players": [{ "brand": "TCL", "share": "28%" }, { "brand": "Hisense", "share": "22%" }, { "brand": "Xiaomi TV", "share": "18%" }], "costStructure": { "avgBom": "$42", "avgRetailPrice": "$79", "avgGrossMargin": "15%" } },
+          { "band": { "en": "Mid ($100–$399)", "cn": "中端 ($100–$399)" }, "players": [{ "brand": "Samsung", "share": "24%" }, { "brand": "LG", "share": "18%" }, { "brand": "Sony", "share": "16%" }], "costStructure": { "avgBom": "$145", "avgRetailPrice": "$299", "avgGrossMargin": "28%" } },
+          { "band": { "en": "Premium ($400+)", "cn": "高端 ($400+)" }, "players": [{ "brand": "Sony", "share": "28%" }, { "brand": "LG OLED", "share": "22%" }, { "brand": "Samsung QLED", "share": "20%" }], "costStructure": { "avgBom": "$380", "avgRetailPrice": "$1299", "avgGrossMargin": "42%" } }
+        ],
+        "coreModelTeardown": { "model": "Samsung Neo QLED 4K 65\"", "bom": "$385", "retailPrice": "$1299", "grossMargin": "38%", "iterationCycle": { "en": "12 months", "cn": "12个月" }, "salesChannels": { "en": "Big-box retail + brand store", "cn": "大型家电零售+品牌直营" }, "priceFloor": "$999", "launchDate": "2025-01", "sellingPoints": { "en": ["Mini-LED 2000 zones", "AI upscaling 4K→8K", "Gaming Mode 144Hz"], "cn": ["Mini-LED 2000分区", "AI 4K→8K升频", "游戏模式144Hz"] }, "targetAudience": { "en": "Home theater enthusiasts 35-55", "cn": "家庭影院爱好者 35-55" }, "radiationAudience": { "en": "Gamers upgrading living room setup", "cn": "升级客厅设置的游戏玩家" } },
+        "competitorComparison": [
+          { "model": "Samsung Neo QLED 65\"", "brand": "Samsung", "bom": "$385", "retailPrice": "$1299", "grossMargin": "38%", "launchDate": "2025-01", "iterationCycle": { "en": "12 mo", "cn": "12个月" }, "salesChannels": { "en": "Big-box + brand store", "cn": "大卖场+品牌店" }, "priceFloor": "$999", "sellingPoints": { "en": ["Mini-LED 2000 zones", "AI upscaling", "Gaming 144Hz"], "cn": ["Mini-LED 2000分区", "AI升频", "游戏144Hz"] }, "targetAudience": { "en": "Home theater 35-55", "cn": "家庭影院 35-55" }, "radiationAudience": { "en": "Gamers", "cn": "游戏玩家" } },
+          { "model": "LG OLED G5 65\"", "brand": "LG", "bom": "$620", "retailPrice": "$2299", "grossMargin": "42%", "launchDate": "2025-02", "iterationCycle": { "en": "12 mo", "cn": "12个月" }, "salesChannels": { "en": "Brand showroom + premium retail", "cn": "品牌展厅+高端零售" }, "priceFloor": "$1999", "sellingPoints": { "en": ["Perfect black WOLED", "4th Gen α9 AI processor", "Dolby Vision/Atmos native"], "cn": ["完美黑WOLED", "第四代α9 AI处理器", "原生杜比视界/全景声"] }, "targetAudience": { "en": "Premium AV enthusiasts 40-60", "cn": "高端影音爱好者 40-60" }, "radiationAudience": { "en": "Interior designers, luxury buyers", "cn": "室内设计师、奢侈品购买者" } },
+          { "model": "Sony Bravia 9 65\"", "brand": "Sony", "bom": "$510", "retailPrice": "$1799", "grossMargin": "40%", "launchDate": "2024-12", "iterationCycle": { "en": "12 mo", "cn": "12个月" }, "salesChannels": { "en": "Sony Style + electronics retail", "cn": "Sony Style+电子零售" }, "priceFloor": "$1499", "sellingPoints": { "en": ["XR Cognitive Processor", "PlayStation integration", "Acoustic Surface Audio+"], "cn": ["XR认知处理器", "PlayStation集成", "Acoustic Surface Audio+"] }, "targetAudience": { "en": "Sony ecosystem users, cinephiles", "cn": "Sony生态用户、电影爱好者" }, "radiationAudience": { "en": "PS5 gamers upgrading TV", "cn": "PS5玩家升级电视" } }
+        ],
+        "asymmetricAdvantages": [
+          { "manufacturer": "Samsung", "advantages": { "en": ["QLED panel self-supply advantage", "Tizen smart TV ecosystem (8M+ app downloads)", "Global carrier/retailer relationships"], "cn": ["QLED面板自供优势", "Tizen智能电视生态（800万+应用下载）", "全球运营商/零售商关系"] } },
+          { "manufacturer": "LG", "advantages": { "en": ["OLED panel vertical integration (dominant)", "webOS ecosystem stability", "Commercial display expertise expanding to residential"], "cn": ["OLED面板垂直整合（主导地位）", "webOS生态稳定性", "商业显示专业向家用市场扩展"] } },
+          { "manufacturer": "TCL/Hisense", "advantages": { "en": ["Manufacturing cost 35% below Sony/LG", "Fastest Mini-LED adoption at entry price", "North America sports sponsorship brand building"], "cn": ["制造成本低于Sony/LG 35%", "入门价格最快采纳Mini-LED", "北美体育赞助品牌建设"] } }
+        ],
+        "supplyChainComponents": [
+          { "component": { "en": "Mini-LED Backlight Array", "cn": "Mini-LED背光阵列" }, "tier1": ["Samsung LED", "Nichia"], "tier2": ["Epistar", "Cree"], "maturity": { "en": "Growing", "cn": "增长期" }, "priceTrend": { "en": "Declining 15-20% YoY as volume scales", "cn": "规模扩大同比降15-20%" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } },
+          { "component": { "en": "OLED/QLED Panel", "cn": "OLED/QLED面板" }, "tier1": ["LG Display", "Samsung Display"], "tier2": ["BOE (OLED entering)"], "maturity": { "en": "Mature (QLED); Growing (OLED)", "cn": "成熟（QLED）；增长期（OLED）" }, "priceTrend": { "en": "Stable with slight decline", "cn": "稳定，略有下降" }, "geopoliticalRisk": { "en": "Low-Medium — Korea concentration", "cn": "中低 — 集中于韩国" } },
+          { "component": { "en": "Smart TV SoC (AV Processing)", "cn": "智能电视SoC（AV处理）" }, "tier1": ["MediaTek MT9900", "Amlogic T982"], "tier2": ["Realtek", "Mstar"], "maturity": { "en": "Mature", "cn": "成熟" }, "priceTrend": { "en": "Stable", "cn": "稳定" }, "geopoliticalRisk": { "en": "Medium — Amlogic under scrutiny", "cn": "中等 — Amlogic受关注" } }
+        ],
+        "inventoryTurnover": [
+          { "brand": "Samsung", "turnoverDays": 35, "depreciationRisk": { "en": "Medium — holiday season creates post-season surplus", "cn": "中等 — 节日季后产生库存剩余" }, "skuDecayCurve": [100, 94, 87, 79, 70, 61, 52, 44, 37, 31, 25, 20] },
+          { "brand": "LG OLED", "turnoverDays": 28, "depreciationRisk": { "en": "Low-Medium — OLED premium holds value better", "cn": "中低 — OLED高端保值较好" }, "skuDecayCurve": [100, 95, 89, 82, 74, 66, 58, 50, 43, 36, 30, 24] },
+          { "brand": "TCL/Hisense", "turnoverDays": 55, "depreciationRisk": { "en": "High — price pressure from new low-cost entrants", "cn": "高 — 新低成本进入者带来价格压力" }, "skuDecayCurve": [100, 88, 75, 63, 52, 43, 35, 28, 22, 17, 13, 10] }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          { "group": { "en": "Gamers", "cn": "游戏玩家" }, "priceRange": { "en": "$200–800", "cn": "¥1,450–5,800" }, "painPoints": [{ "rank": 1, "en": "Input lag too high for competitive gaming (>10ms)", "cn": "竞技游戏输入延迟太高（超10ms）" }, { "rank": 2, "en": "VRR/FreeSync implementation inconsistent", "cn": "VRR/FreeSync实现不稳定" }, { "rank": 3, "en": "Game mode disables HDR features", "cn": "游戏模式关闭了HDR功能" }, { "rank": 4, "en": "Motion blur at 60fps visible on fast games", "cn": "60fps时快速游戏有明显运动模糊" }, { "rank": 5, "en": "Smart TV OS updates interrupt gaming sessions", "cn": "智能电视OS更新打断游戏" }, { "rank": 6, "en": "HDMI 2.1 limited to 2 ports, not 4", "cn": "HDMI 2.1只有2个接口，不是4个" }, { "rank": 7, "en": "No optical audio out for external DAC", "cn": "没有光纤音频输出外接DAC" }, { "rank": 8, "en": "Burn-in risk with OLED in static gaming UI", "cn": "OLED静态游戏界面有烧屏风险" }, { "rank": 9, "en": "Remote control non-responsive during heavy load", "cn": "高负载时遥控器反应迟钝" }, { "rank": 10, "en": "Cannot disable smart TV ads/OS", "cn": "无法禁用智能电视广告/操作系统" }] },
+          { "group": { "en": "Movie / TV Buffs", "cn": "影视爱好者" }, "priceRange": { "en": "$400–2500", "cn": "¥2,900–18,125" }, "painPoints": [{ "rank": 1, "en": "Motion smoothing (soap opera effect) too aggressive", "cn": "动态补帧（肥皂剧效果）太激进" }, { "rank": 2, "en": "Black uniformity poor in dark scenes", "cn": "暗场黑色均匀性差" }, { "rank": 3, "en": "Dolby Atmos passthrough inconsistent with soundbar", "cn": "杜比全景声传输与回音壁不一致" }, { "rank": 4, "en": "Color banding in gradients", "cn": "渐变中出现色带" }, { "rank": 5, "en": "Streaming apps force 4K when WiFi is slow", "cn": "WiFi慢时流媒体应用强制4K导致卡顿" }, { "rank": 6, "en": "Ambient light sensor too aggressive", "cn": "环境光传感器调节太激进" }, { "rank": 7, "en": "Soundbar sync delay with TV audio", "cn": "回音壁与电视音频同步延迟" }, { "rank": 8, "en": "Netflix/Disney+ HDR tone mapping inconsistent", "cn": "Netflix/Disney+ HDR色调映射不一致" }, { "rank": 9, "en": "OLED pixel refresher interrupts late-night viewing", "cn": "OLED像素刷新在深夜观看时中断" }, { "rank": 10, "en": "Cannot disable smart TV data collection", "cn": "无法禁用智能电视数据收集" }] },
+          { "group": { "en": "Casual Family Viewers", "cn": "家庭普通用户" }, "priceRange": { "en": "$100–400", "cn": "¥725–2,900" }, "painPoints": [{ "rank": 1, "en": "Too many remote controls for family members", "cn": "家庭成员要管理太多遥控器" }, { "rank": 2, "en": "Smart TV ads displayed on home screen", "cn": "智能电视主界面显示广告" }, { "rank": 3, "en": "Child lock features limited/complex", "cn": "儿童锁功能有限/复杂" }, { "rank": 4, "en": "Voice search not available in all languages", "cn": "语音搜索不支持所有语言" }, { "rank": 5, "en": "App updates change interface unexpectedly", "cn": "应用更新意外改变了界面" }, { "rank": 6, "en": "Budget TV picture quality worse at night", "cn": "低端电视夜间画质变差" }, { "rank": 7, "en": "Soundbar volume different from TV volume", "cn": "回音壁与电视音量不一致" }, { "rank": 8, "en": "Screen too glossy, reflections in daytime", "cn": "屏幕太亮面，白天有强烈反射" }, { "rank": 9, "en": "Cannot find where streaming service content is", "cn": "找不到流媒体内容在哪个服务上" }, { "rank": 10, "en": "Energy bill higher than expected", "cn": "电费账单比预期高" }] }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [{ "en": "best 4K TV 2025", "cn": "2025最佳4K电视" }, { "en": "OLED vs Mini-LED TV", "cn": "OLED和Mini-LED哪个好" }, { "en": "gaming TV low input lag", "cn": "低延迟游戏电视" }],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": { "k1": [68, 72, 76, 80, 84, 88], "k2": [52, 56, 60, 64, 68, 72], "k3": [45, 50, 55, 60, 65, 70] },
+          "reviewPainTrends": { "categories": [{ "en": "Picture Quality", "cn": "画质" }, { "en": "Smart TV Software", "cn": "智能系统" }, { "en": "Audio", "cn": "音效" }], "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"], "series": [[325, 348, 372, 398, 425, 452], [248, 268, 288, 312, 335, 358], [185, 198, 215, 228, 242, 258]] }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "52,000",
+          "period": { "en": "Apr–Sep 2025", "cn": "2025年4月–9月" },
+          "monthlyTop10": [
+            { "month": "2025-09", "painPoints": [{ "rank": 1, "topic": { "en": "Smart TV software", "cn": "智能电视软件" }, "count": 1280, "verbatim": { "en": "Tizen update added unskippable ads to the home screen. Considering returning it.", "cn": "Tizen更新在主界面加了跳不过的广告，考虑退货。" } }, { "rank": 2, "topic": { "en": "Picture quality", "cn": "画质" }, "count": 1120, "verbatim": { "en": "Motion smoothing makes every film look like a cheap soap opera.", "cn": "动态补帧让每部电影看起来像廉价肥皂剧。" } }, { "rank": 3, "topic": { "en": "Input lag", "cn": "输入延迟" }, "count": 958, "verbatim": { "en": "Listed as 1.3ms but my controller feels delayed. Measured 8ms actual.", "cn": "标注1.3ms但手柄感觉有延迟，实测8ms。" } }, { "rank": 4, "topic": { "en": "Black uniformity", "cn": "黑场均匀性" }, "count": 845, "verbatim": { "en": "FALD TV has 12 visible blooming zones in dark space scenes.", "cn": "FALD电视在太空黑暗场景有12个明显光晕区域。" } }, { "rank": 5, "topic": { "en": "Audio quality", "cn": "音效质量" }, "count": 720, "verbatim": { "en": "Built-in speakers are embarrassing on a $1299 TV. Buy a soundbar or suffer.", "cn": "1299美元的电视内置扬声器令人尴尬，买回音壁或受苦。" } }, { "rank": 6, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 612, "verbatim": { "en": "Peacock app is missing from the smart TV. Have to use a streaming stick instead.", "cn": "智能电视缺少Peacock应用，只能用投屏器代替。" } }, { "rank": 7, "topic": { "en": "Remote control", "cn": "遥控器" }, "count": 525, "verbatim": { "en": "Magic remote rechargeable battery lasts only 2 months. Environmental problem.", "cn": "魔控遥控器充电电池只用两个月，环保问题。" } }, { "rank": 8, "topic": { "en": "HDMI eARC issues", "cn": "HDMI eARC问题" }, "count": 448, "verbatim": { "en": "eARC connection drops randomly. Dolby Atmos cuts out mid-movie.", "cn": "eARC连接随机断开，杜比全景声电影中途切断。" } }, { "rank": 9, "topic": { "en": "Energy consumption", "cn": "能耗" }, "count": 382, "verbatim": { "en": "75-inch QLED uses 350W. My electricity bill increased $30/month.", "cn": "75英寸QLED用电350W，我的电费每月增加了30美元。" } }, { "rank": 10, "topic": { "en": "Data privacy", "cn": "数据隐私" }, "count": 325, "verbatim": { "en": "TV is monitoring my viewing habits and I cannot fully opt out.", "cn": "电视在监控我的收视习惯，我无法完全退出。" } }] },
+            { "month": "2025-08", "painPoints": [{ "rank": 1, "topic": { "en": "Picture quality", "cn": "画质" }, "count": 1180, "verbatim": { "en": "Screen glare in sunlit living room makes daytime TV unwatchable without blackout curtains.", "cn": "阳光照射下的客厅屏幕眩光使白天看电视必须拉遮光窗帘。" } }, { "rank": 2, "topic": { "en": "Smart TV software", "cn": "智能电视软件" }, "count": 1050, "verbatim": { "en": "OS update pushed at 3am while TV was in standby. Woke me up.", "cn": "凌晨3点系统更新在待机状态推送，把我吵醒了。" } }, { "rank": 3, "topic": { "en": "Input lag", "cn": "输入延迟" }, "count": 895, "verbatim": { "en": "Summer heat makes TV underclock the processor. Input lag doubles.", "cn": "夏天高温使电视处理器降频，输入延迟翻倍。" } }, { "rank": 4, "topic": { "en": "Audio quality", "cn": "音效质量" }, "count": 768, "verbatim": { "en": "High-frequency buzzing from the TV when display is bright.", "cn": "显示亮场景时电视有高频蜂鸣声。" } }, { "rank": 5, "topic": { "en": "Black uniformity", "cn": "黑场均匀性" }, "count": 652, "verbatim": { "en": "Corners of the screen are noticeably brighter than the center.", "cn": "屏幕四角明显比中心亮。" } }, { "rank": 6, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 558, "verbatim": { "en": "Cannot sideload apps. Ecosystem too closed for a $1500 TV.", "cn": "无法侧载应用，1500美元的电视生态太封闭了。" } }, { "rank": 7, "topic": { "en": "Remote control", "cn": "遥控器" }, "count": 475, "verbatim": { "en": "Kids keep losing the one remote that controls everything.", "cn": "孩子们总是找不到那唯一的万能遥控器。" } }, { "rank": 8, "topic": { "en": "HDMI eARC issues", "cn": "HDMI eARC问题" }, "count": 398, "verbatim": { "en": "Every HDMI-CEC device wakes the TV when it turns on. Very annoying.", "cn": "每个HDMI-CEC设备开机都会唤醒电视，非常烦人。" } }, { "rank": 9, "topic": { "en": "Energy consumption", "cn": "能耗" }, "count": 338, "verbatim": { "en": "Standby power consumption is 2.5W and TV auto-starts apps constantly.", "cn": "待机功耗2.5W，电视还不断自动启动应用。" } }, { "rank": 10, "topic": { "en": "Data privacy", "cn": "数据隐私" }, "count": 282, "verbatim": { "en": "ACR feature was on by default. It was tracking everything I watched for 2 years.", "cn": "ACR功能默认开启，2年来一直追踪我看的所有内容。" } }] },
+            { "month": "2025-07", "painPoints": [{ "rank": 1, "topic": { "en": "Input lag", "cn": "输入延迟" }, "count": 1145, "verbatim": { "en": "July gaming marathon revealed 12ms input lag. Unacceptable for competitive play.", "cn": "七月游戏马拉松暴露了12ms输入延迟，竞技游戏不可接受。" } }, { "rank": 2, "topic": { "en": "Smart TV software", "cn": "智能电视软件" }, "count": 985, "verbatim": { "en": "webOS update removed the feature I use most. No rollback option.", "cn": "webOS更新删除了我最常用的功能，没有回滚选项。" } }, { "rank": 3, "topic": { "en": "Picture quality", "cn": "画质" }, "count": 858, "verbatim": { "en": "Auto HDR processing makes my PS5 games look washed out.", "cn": "自动HDR处理使我的PS5游戏画面看起来过曝。" } }, { "rank": 4, "topic": { "en": "Black uniformity", "cn": "黑场均匀性" }, "count": 725, "verbatim": { "en": "DSE (dirty screen effect) visible during sports broadcasts. Distracting.", "cn": "DSE（脏屏效应）在体育转播中清晰可见，很分散注意力。" } }, { "rank": 5, "topic": { "en": "Audio quality", "cn": "音效质量" }, "count": 618, "verbatim": { "en": "Dialogue is inaudible during action scenes even at max volume.", "cn": "动作场景中对话声在最大音量下也听不清。" } }, { "rank": 6, "topic": { "en": "App ecosystem", "cn": "应用生态" }, "count": 528, "verbatim": { "en": "Prime Video removed from this TV's app store due to a commercial dispute.", "cn": "由于商业纠纷Prime Video从该电视应用商店下架。" } }, { "rank": 7, "topic": { "en": "HDMI eARC issues", "cn": "HDMI eARC问题" }, "count": 445, "verbatim": { "en": "Soundbar volume control via TV remote stopped working after firmware update.", "cn": "固件更新后通过电视遥控器控制回音壁音量停止工作。" } }, { "rank": 8, "topic": { "en": "Remote control", "cn": "遥控器" }, "count": 378, "verbatim": { "en": "Solar-powered remote does not charge in cloudy weather. Needs batteries in winter.", "cn": "太阳能遥控器阴天无法充电，冬天还是要用电池。" } }, { "rank": 9, "topic": { "en": "Energy consumption", "cn": "能耗" }, "count": 315, "verbatim": { "en": "Quick-start mode uses 8W in standby. I turned it off but startup is now 12 seconds.", "cn": "快速启动模式待机耗电8W，关掉后开机要12秒。" } }, { "rank": 10, "topic": { "en": "Data privacy", "cn": "数据隐私" }, "count": 268, "verbatim": { "en": "Personalized ads in my TV app recommendations. I pay $1500 for this?", "cn": "电视应用推荐中有个性化广告，我花1500美元买这个？" } }] }
+          ]
+        }
       }
     },
     "health": {
@@ -340,6 +1054,61 @@
         "repurchase": "56%",
         "repurchaseChange": 10.4,
         "donut": [10, 24, 28, 38]
+      },
+      "macro": {
+        "marketSummary": { "en": "Digital health hardware grows 15.1% driven by CGM and remote patient monitoring; FDA breakthrough designations are compressing development timelines for leading brands.", "cn": "数字健康硬件以15.1%增长，连续血糖仪和远程患者监测是主要驱动力；FDA突破性认证正在压缩头部品牌的开发周期。" },
+        "strategicRecommendation": { "en": "Target the health-prevention segment ($60-200) with medical-grade accuracy; avoid the clinical market without FDA 510k clearance as liability risk is prohibitive.", "cn": "以医疗级精度定位健康预防细分市场（$60-200）；没有FDA 510k认证不要进入临床市场，因为责任风险过高。" },
+        "hypeCycleStage": { "stage": "price_capture", "label": { "en": "Price Capture Phase", "cn": "价格获取期" }, "description": { "en": "Growing category with medical credibility commanding premium; CGM and AFib detection are highest-growth verticals.", "cn": "增长型品类，医疗公信力支撑高端定价；CGM和房颤检测是增速最快的垂直品类。" } }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          { "band": { "en": "Consumer (<$50)", "cn": "消费级 (<¥362)" }, "players": [{ "brand": "Xiaomi Smart Scale", "share": "28%" }, { "brand": "Withings", "share": "18%" }, { "brand": "Omron Basic", "share": "15%" }], "costStructure": { "avgBom": "$18", "avgRetailPrice": "$39", "avgGrossMargin": "24%" } },
+          { "band": { "en": "Mid ($50–$199)", "cn": "中端 ($50–$199)" }, "players": [{ "brand": "Withings ScanWatch", "share": "22%" }, { "brand": "Garmin Health", "share": "16%" }, { "brand": "Omron Gold", "share": "14%" }], "costStructure": { "avgBom": "$62", "avgRetailPrice": "$149", "avgGrossMargin": "32%" } },
+          { "band": { "en": "Medical Grade ($200+)", "cn": "医疗级 ($200+)" }, "players": [{ "brand": "Dexcom", "share": "32%" }, { "brand": "Abbott Libre", "share": "28%" }, { "brand": "iRhythm", "share": "14%" }], "costStructure": { "avgBom": "$85", "avgRetailPrice": "$299", "avgGrossMargin": "45%" } }
+        ],
+        "coreModelTeardown": { "model": "Withings ScanWatch 2", "bom": "$68", "retailPrice": "$159", "grossMargin": "30%", "iterationCycle": { "en": "16 months", "cn": "16个月" }, "salesChannels": { "en": "E-com + pharmacy + health retail", "cn": "电商+药房+健康零售" }, "priceFloor": "$129", "launchDate": "2025-01", "sellingPoints": { "en": ["ECG + SpO2 + AFib detection", "30-day battery", "Classic watch design"], "cn": ["心电图+血氧+房颤检测", "30天续航", "经典手表外观"] }, "targetAudience": { "en": "Health-preventers 35-60", "cn": "健康预防用户 35-60" }, "radiationAudience": { "en": "Family members buying for parents", "cn": "为父母购买的家庭成员" } },
+        "competitorComparison": [
+          { "model": "Withings ScanWatch 2", "brand": "Withings", "bom": "$68", "retailPrice": "$159", "grossMargin": "30%", "launchDate": "2025-01", "iterationCycle": { "en": "16 mo", "cn": "16个月" }, "salesChannels": { "en": "E-com + pharmacy", "cn": "电商+药房" }, "priceFloor": "$129", "sellingPoints": { "en": ["ECG+SpO2+AFib", "30-day battery", "Classic design"], "cn": ["心电+血氧+房颤", "30天续航", "经典外观"] }, "targetAudience": { "en": "Health-preventers 35-60", "cn": "健康预防 35-60" }, "radiationAudience": { "en": "Family gifting", "cn": "家庭赠礼" } },
+          { "model": "Dexcom G7 CGM", "brand": "Dexcom", "bom": "$88", "retailPrice": "$319/sensor", "grossMargin": "44%", "launchDate": "2024-09", "iterationCycle": { "en": "24 mo", "cn": "24个月" }, "salesChannels": { "en": "Pharmacy/insurance + e-com", "cn": "药房/医保+电商" }, "priceFloor": "$249", "sellingPoints": { "en": ["Real-time glucose every 5 min", "FDA-cleared CGM", "10-day wear"], "cn": ["每5分钟实时血糖", "FDA认证CGM", "持续佩戴10天"] }, "targetAudience": { "en": "Diabetics (Type 1&2), 25-75", "cn": "糖尿病患者（1型/2型），25-75岁" }, "radiationAudience": { "en": "Pre-diabetics, performance athletes", "cn": "糖尿病前期用户、竞技运动员" } },
+          { "model": "Omron Evolv BP Monitor", "brand": "Omron", "bom": "$42", "retailPrice": "$99", "grossMargin": "35%", "launchDate": "2024-06", "iterationCycle": { "en": "20 mo", "cn": "20个月" }, "salesChannels": { "en": "Pharmacy + Amazon", "cn": "药房+Amazon" }, "priceFloor": "$79", "sellingPoints": { "en": ["Clinically validated accuracy", "All-in-one cuff design", "Omron Connect app"], "cn": ["临床验证精度", "一体式袖带设计", "Omron Connect应用"] }, "targetAudience": { "en": "Hypertension patients 50+", "cn": "高血压患者 50+" }, "radiationAudience": { "en": "Elderly parents, chronic patients", "cn": "老年父母、慢性病患者" } }
+        ],
+        "asymmetricAdvantages": [
+          { "manufacturer": "Dexcom/Abbott", "advantages": { "en": ["FDA/CE-IVD clinical clearance moat", "Insurance reimbursement integration", "Physician prescription channel"], "cn": ["FDA/CE-IVD临床认证护城河", "医疗保险报销整合", "医生处方渠道"] } },
+          { "manufacturer": "Omron/Withings", "advantages": { "en": ["Decades of clinical validation data", "Pharmacy retail shelf dominance", "Brand trust in medical community"], "cn": ["数十年临床验证数据", "药房零售货架主导", "医疗社区品牌信任"] } },
+          { "manufacturer": "Xiaomi/consumer brands", "advantages": { "en": ["Price 60-70% below medical brands", "Ecosystem integration (phone/watch)", "Rapid product iteration (health wellness)"], "cn": ["价格低于医疗品牌60-70%", "生态集成（手机/手表）", "快速产品迭代（健康wellness）"] } }
+        ],
+        "supplyChainComponents": [
+          { "component": { "en": "Bio-sensing ASIC (PPG/ECG)", "cn": "生物传感ASIC（光电/心电）" }, "tier1": ["Texas Instruments AFE4950", "Maxim MAX86161"], "tier2": ["Silicon Labs", "NXP Healthcare"], "maturity": { "en": "Mature (PPG); Growing (ECG)", "cn": "成熟（PPG）；增长（心电）" }, "priceTrend": { "en": "Stable with premium for medical accuracy", "cn": "稳定，医疗精度有溢价" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } },
+          { "component": { "en": "Glucose Biosensor (CGM electrochemical)", "cn": "血糖生物传感器（CGM电化学）" }, "tier1": ["Dexcom proprietary", "Abbott proprietary"], "tier2": ["Medtronic", "ISENSE"], "maturity": { "en": "Growing — new entrants emerging", "cn": "增长期 — 新进入者涌现" }, "priceTrend": { "en": "Declining 10-15% YoY as volume scales", "cn": "随规模扩大同比降10-15%" }, "geopoliticalRisk": { "en": "Medium — proprietary platform IP concentration", "cn": "中等 — 专有平台IP集中" } },
+          { "component": { "en": "Medical-grade Battery (implant-safe)", "cn": "医疗级电池（植入安全）" }, "tier1": ["Integer Holdings", "EaglePicher"], "tier2": ["Greatbatch", "Murata"], "maturity": { "en": "Mature", "cn": "成熟" }, "priceTrend": { "en": "Stable", "cn": "稳定" }, "geopoliticalRisk": { "en": "Low", "cn": "低" } }
+        ],
+        "inventoryTurnover": [
+          { "brand": "Dexcom (CGM)", "turnoverDays": 18, "depreciationRisk": { "en": "Low — consumable model, steady recurring demand", "cn": "低 — 耗材模式，稳定的复购需求" }, "skuDecayCurve": [100, 98, 96, 93, 89, 84, 78, 72, 65, 58, 51, 45] },
+          { "brand": "Withings", "turnoverDays": 42, "depreciationRisk": { "en": "Medium — hardware lifecycle 2-3 years, software-driven upgrades", "cn": "中等 — 硬件生命周期2-3年，软件驱动升级" }, "skuDecayCurve": [100, 95, 88, 80, 72, 64, 56, 48, 41, 34, 28, 22] },
+          { "brand": "Omron", "turnoverDays": 35, "depreciationRisk": { "en": "Low-Medium — clinical brand, slow depreciation", "cn": "中低 — 临床品牌，折旧慢" }, "skuDecayCurve": [100, 96, 91, 86, 80, 74, 68, 62, 56, 50, 44, 38] }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          { "group": { "en": "Chronic Disease Patients", "cn": "慢性病患者" }, "priceRange": { "en": "$100–400/month", "cn": "¥725–2,900/月" }, "painPoints": [{ "rank": 1, "en": "CGM sensor falls off during sleep/exercise", "cn": "CGM传感器在睡眠/运动中脱落" }, { "rank": 2, "en": "Insurance coverage for CGM varies wildly", "cn": "CGM保险覆盖差异极大" }, { "rank": 3, "en": "Data not integrated with hospital EHR", "cn": "数据不能集成到医院电子健康记录" }, { "rank": 4, "en": "Sensor accuracy drifts in the last 2 days", "cn": "传感器在最后2天精度下降" }, { "rank": 5, "en": "Alarms wake up entire household at night", "cn": "夜间警报惊醒全家人" }, { "rank": 6, "en": "App requires too many steps to log meals", "cn": "应用需要太多步骤记录饮食" }, { "rank": 7, "en": "Reorder/subscription management complex", "cn": "补货/订阅管理复杂" }, { "rank": 8, "en": "No offline mode when traveling internationally", "cn": "国际旅行时没有离线模式" }, { "rank": 9, "en": "Painful insertion process for CGM", "cn": "CGM插入过程有痛感" }, { "rank": 10, "en": "Device not water-resistant for pool swimming", "cn": "设备不防水无法游泳时佩戴" }] },
+          { "group": { "en": "Health-Prevention Adults", "cn": "健康预防成年人" }, "priceRange": { "en": "$50–200", "cn": "¥362–1,450" }, "painPoints": [{ "rank": 1, "en": "Measurement inconsistency vs medical equipment", "cn": "与医疗设备测量结果不一致" }, { "rank": 2, "en": "Health data fragmented across apps (no unified view)", "cn": "健康数据分散在多个应用中（无统一视图）" }, { "rank": 3, "en": "Personalized insights too generic", "cn": "个性化洞察太泛化" }, { "rank": 4, "en": "Subscription required for trend analysis", "cn": "趋势分析需要付费订阅" }, { "rank": 5, "en": "Device accuracy not clinically validated", "cn": "设备精度未经临床验证" }, { "rank": 6, "en": "Battery life too short for long-term monitoring", "cn": "长期监测中续航太短" }, { "rank": 7, "en": "Wearable uncomfortable for 24/7 wear", "cn": "全天候佩戴不舒适" }, { "rank": 8, "en": "Anxiety from constant health notifications", "cn": "持续健康通知引起焦虑" }, { "rank": 9, "en": "No dietary recommendation integration", "cn": "缺乏饮食建议集成" }, { "rank": 10, "en": "Hard to share data with healthcare provider", "cn": "难以与医疗提供者分享数据" }] },
+          { "group": { "en": "Elderly Users (65+)", "cn": "老年用户（65岁以上）" }, "priceRange": { "en": "$30–150", "cn": "¥218–1,088" }, "painPoints": [{ "rank": 1, "en": "Device too small/hard to read display", "cn": "设备太小/屏幕难以阅读" }, { "rank": 2, "en": "App interface too complex", "cn": "应用界面太复杂" }, { "rank": 3, "en": "Falls detection false alarm rate too high", "cn": "跌倒检测误报率太高" }, { "rank": 4, "en": "Emergency button not always reachable", "cn": "紧急按钮并非总是能触及" }, { "rank": 5, "en": "Charging too frequent (daily)", "cn": "充电太频繁（每天）" }, { "rank": 6, "en": "Family data sharing requires separate account", "cn": "家庭数据共享需要单独账户" }, { "rank": 7, "en": "Blood pressure cuff uncomfortable for arthritis", "cn": "关节炎患者血压袖带佩戴不舒适" }, { "rank": 8, "en": "Voice feedback volume not loud enough", "cn": "语音反馈音量不够大" }, { "rank": 9, "en": "WiFi setup too difficult", "cn": "WiFi设置太困难" }, { "rank": 10, "en": "Medication reminder feature too basic", "cn": "用药提醒功能太基础" }] }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [{ "en": "best blood pressure monitor 2025", "cn": "2025血压监测仪推荐" }, { "en": "continuous glucose monitor without prescription", "cn": "无需处方的连续血糖仪" }, { "en": "health wearable seniors", "cn": "适合老年人的健康穿戴" }],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": { "k1": [55, 60, 65, 70, 75, 80], "k2": [42, 48, 55, 62, 68, 74], "k3": [35, 40, 45, 50, 55, 60] },
+          "reviewPainTrends": { "categories": [{ "en": "Accuracy", "cn": "准确度" }, { "en": "Ease of Use", "cn": "易用性" }, { "en": "Cost", "cn": "费用" }], "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"], "series": [[285, 312, 338, 365, 392, 418], [218, 238, 258, 278, 298, 318], [175, 192, 210, 228, 245, 262]] }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "38,000",
+          "period": { "en": "Apr–Sep 2025", "cn": "2025年4月–9月" },
+          "monthlyTop10": [
+            { "month": "2025-09", "painPoints": [{ "rank": 1, "topic": { "en": "Accuracy vs medical device", "cn": "与医疗设备精度对比" }, "count": 1125, "verbatim": { "en": "My doctor's BP cuff reads 20 points higher than this device. Which one is wrong?", "cn": "我医生的血压计读数比这个设备高20点，哪个错了？" } }, { "rank": 2, "topic": { "en": "Subscription cost", "cn": "订阅费用" }, "count": 945, "verbatim": { "en": "$199 device + $10/month subscription just to see my own health data history.", "cn": "199美元设备+每月10美元订阅，只是为了看自己的历史健康数据。" } }, { "rank": 3, "topic": { "en": "App complexity", "cn": "应用复杂度" }, "count": 812, "verbatim": { "en": "My mother cannot use this. Called tech support 5 times in 2 weeks.", "cn": "我妈妈不会用，两周内打了5次技术支持电话。" } }, { "rank": 4, "topic": { "en": "Sensor adhesion", "cn": "传感器附着" }, "count": 698, "verbatim": { "en": "CGM sensor peeled off at the gym after 2 days. Replacement cost $80.", "cn": "CGM传感器在健身房2天后脱落，更换费用80美元。" } }, { "rank": 5, "topic": { "en": "Data privacy", "cn": "数据隐私" }, "count": 582, "verbatim": { "en": "Health data sold to insurance companies? This was in the fine print.", "cn": "健康数据卖给了保险公司？这是在小字条款里写的。" } }, { "rank": 6, "topic": { "en": "Battery life", "cn": "续航" }, "count": 498, "verbatim": { "en": "Daily charging for a health monitor is not sustainable for elderly users.", "cn": "健康监测仪每天充电对老年用户来说不可持续。" } }, { "rank": 7, "topic": { "en": "Insurance coverage", "cn": "保险覆盖" }, "count": 425, "verbatim": { "en": "CGM is not covered by my plan. $300/month out of pocket. Unaffordable.", "cn": "CGM不在我的保险范围内，每月自付300美元，负担不起。" } }, { "rank": 8, "topic": { "en": "Data fragmentation", "cn": "数据碎片化" }, "count": 362, "verbatim": { "en": "Heart data in one app, sleep in another, BP in a third. Cannot see full picture.", "cn": "心脏数据在一个应用，睡眠在另一个，血压在第三个，看不到完整画面。" } }, { "rank": 9, "topic": { "en": "Alert fatigue", "cn": "警报疲劳" }, "count": 298, "verbatim": { "en": "8 health alerts in one day. Now I ignore all of them. Purpose defeated.", "cn": "一天8个健康警报，现在我全部忽略了，失去了目的。" } }, { "rank": 10, "topic": { "en": "Clinical validation", "cn": "临床验证" }, "count": 245, "verbatim": { "en": "No peer-reviewed studies for this device. Doctor would not accept the data.", "cn": "这个设备没有同行评审研究，医生不接受这些数据。" } }] },
+            { "month": "2025-08", "painPoints": [{ "rank": 1, "topic": { "en": "Accuracy vs medical device", "cn": "与医疗设备精度对比" }, "count": 1068, "verbatim": { "en": "SpO2 reads 99% but I had COVID and was actually at 93%. Dangerous inaccuracy.", "cn": "血氧读数99%但我实际上感染了COVID，真实值93%，危险的不准确。" } }, { "rank": 2, "topic": { "en": "Subscription cost", "cn": "订阅费用" }, "count": 895, "verbatim": { "en": "Company changed pricing from one-time to subscription. No grandfathering.", "cn": "公司把定价从一次性改为订阅制，没有老用户保护。" } }, { "rank": 3, "topic": { "en": "Sensor adhesion", "cn": "传感器附着" }, "count": 756, "verbatim": { "en": "Summer sweat makes every adhesive-based sensor peel off faster.", "cn": "夏天出汗使所有粘贴式传感器更快脱落。" } }, { "rank": 4, "topic": { "en": "App complexity", "cn": "应用复杂度" }, "count": 642, "verbatim": { "en": "6 clicks to see my blood pressure reading from yesterday.", "cn": "查看昨天血压读数需要点6次。" } }, { "rank": 5, "topic": { "en": "Battery life", "cn": "续航" }, "count": 538, "verbatim": { "en": "Blood glucose monitor battery died mid-measurement. Terrifying if urgent.", "cn": "血糖监测仪在测量中途没电了，如果是紧急情况很可怕。" } }, { "rank": 6, "topic": { "en": "Data fragmentation", "cn": "数据碎片化" }, "count": 455, "verbatim": { "en": "Apple Health integration is read-only. Cannot write back from my device.", "cn": "Apple Health集成只读，我的设备不能回写。" } }, { "rank": 7, "topic": { "en": "Insurance coverage", "cn": "保险覆盖" }, "count": 385, "verbatim": { "en": "Doctor prescribed CGM but insurance denied twice. Third appeal pending.", "cn": "医生开了CGM处方但保险拒绝了两次，第三次申诉待处理。" } }, { "rank": 8, "topic": { "en": "Alert fatigue", "cn": "警报疲劳" }, "count": 322, "verbatim": { "en": "Stress level alert while I was watching a comedy. Algorithm needs work.", "cn": "我在看喜剧时收到了压力水平警报，算法需要改进。" } }, { "rank": 9, "topic": { "en": "Clinical validation", "cn": "临床验证" }, "count": 268, "verbatim": { "en": "FDA cleared does not mean it is accurate. Mine fails ISO 81060-2 retest.", "cn": "FDA清关不代表准确，我的在ISO 81060-2复测中失败了。" } }, { "rank": 10, "topic": { "en": "Data privacy", "cn": "数据隐私" }, "count": 218, "verbatim": { "en": "Health data broker selling my glucose readings. Found my data on a third-party site.", "cn": "健康数据经纪人在出售我的血糖读数，在第三方网站找到了我的数据。" } }] },
+            { "month": "2025-07", "painPoints": [{ "rank": 1, "topic": { "en": "Accuracy vs medical device", "cn": "与医疗设备精度对比" }, "count": 985, "verbatim": { "en": "Withings ECG said atrial fibrillation. Hospital confirmed it was normal sinus. $500 ER visit.", "cn": "Withings心电图显示房颤，医院确认是正常窦性心律，花了500美元急诊。" } }, { "rank": 2, "topic": { "en": "Subscription cost", "cn": "订阅费用" }, "count": 825, "verbatim": { "en": "Health plan costs more than my gym membership now.", "cn": "健康计划订阅现在比我的健身房会员费还贵。" } }, { "rank": 3, "topic": { "en": "App complexity", "cn": "应用复杂度" }, "count": 712, "verbatim": { "en": "Onboarding takes 45 minutes. My father quit before finishing.", "cn": "新手引导需要45分钟，我父亲没做完就放弃了。" } }, { "rank": 4, "topic": { "en": "Battery life", "cn": "续航" }, "count": 598, "verbatim": { "en": "Heart monitor needs charging every 3 days. Cannot maintain continuous tracking.", "cn": "心脏监测仪每3天要充电，无法保持连续追踪。" } }, { "rank": 5, "topic": { "en": "Sensor adhesion", "cn": "传感器附着" }, "count": 512, "verbatim": { "en": "Adhesive leaves a red welt that itches for days after removal.", "cn": "胶带在取下后留下红肿并痒好几天。" } }, { "rank": 6, "topic": { "en": "Alert fatigue", "cn": "警报疲劳" }, "count": 435, "verbatim": { "en": "7 health alerts during a 30-minute run. Turned off all alerts to exercise in peace.", "cn": "30分钟跑步收到7个健康警报，关闭了所有警报以便平静运动。" } }, { "rank": 7, "topic": { "en": "Data fragmentation", "cn": "数据碎片化" }, "count": 368, "verbatim": { "en": "5 apps to see my complete health picture. Why is there no standard?", "cn": "需要5个应用才能看到完整健康画面，为什么没有标准？" } }, { "rank": 8, "topic": { "en": "Insurance coverage", "cn": "保险覆盖" }, "count": 305, "verbatim": { "en": "Diabetes management device covered. Pre-diabetes prevention not covered. Backwards.", "cn": "糖尿病管理设备覆盖，糖尿病前期预防不覆盖，本末倒置。" } }, { "rank": 9, "topic": { "en": "Clinical validation", "cn": "临床验证" }, "count": 255, "verbatim": { "en": "Blood pressure reading varies 15 points depending on arm position. No guidance in manual.", "cn": "血压读数因手臂位置不同差15点，说明书里没有指导。" } }, { "rank": 10, "topic": { "en": "Data privacy", "cn": "数据隐私" }, "count": 212, "verbatim": { "en": "Company acquired by private equity. Privacy policy changed to allow data monetization.", "cn": "公司被私募基金收购，隐私政策改为允许数据货币化。" } }] }
+          ]
+        }
       }
     },
     "mobility": {
@@ -397,6 +1166,305 @@
         "repurchase": "45%",
         "repurchaseChange": 6.8,
         "donut": [18, 34, 32, 16]
+      },
+      "macro": {
+        "marketSummary": {
+          "en": "Connected vehicle hardware is entering a high-growth phase driven by ADAS mandates and software-defined vehicle transitions, with Tier-1 suppliers under margin pressure from OEM insourcing.",
+          "cn": "受 ADAS 法规强制与软件定义汽车转型驱动，车载智能硬件进入高速增长期，一级供应商因主机厂自研而面临利润压缩。"
+        },
+        "strategicRecommendation": {
+          "en": "Focus on ADAS sensor fusion and HUD display modules where software integration value commands 30%+ gross margins; avoid pure hardware commodity plays in dashcams and OBD.",
+          "cn": "聚焦 ADAS 传感器融合和 HUD 显示模块，软件集成价值支撑 30%+ 毛利；规避行车记录仪和 OBD 等纯硬件商品化赛道。"
+        },
+        "hypeCycleStage": {
+          "stage": "growing",
+          "label": { "en": "Rapid Adoption Phase", "cn": "快速采纳期" },
+          "description": {
+            "en": "ADAS and smart cockpit technologies are moving from early adopter to early majority. Regulatory tailwinds in EU and China markets are accelerating deployment timelines.",
+            "cn": "ADAS 与智能座舱技术正从早期采用者向早期大众扩散，欧盟和中国市场的法规利好正在加速落地时间表。"
+          }
+        }
+      },
+      "competition": {
+        "priceSegmentPlayers": [
+          {
+            "band": { "en": "Entry (<$100)", "cn": "入门 (<¥725)" },
+            "players": [
+              { "brand": "Viofo", "share": "18%" },
+              { "brand": "Thinkware", "share": "14%" },
+              { "brand": "Garmin", "share": "12%" }
+            ],
+            "costStructure": { "avgBom": "$38", "avgRetailPrice": "$79", "avgGrossMargin": "22%" }
+          },
+          {
+            "band": { "en": "Mid ($100-$299)", "cn": "中端 (¥725-¥2,168)" },
+            "players": [
+              { "brand": "Bosch", "share": "22%" },
+              { "brand": "Continental", "share": "17%" },
+              { "brand": "Denso", "share": "14%" }
+            ],
+            "costStructure": { "avgBom": "$95", "avgRetailPrice": "$185", "avgGrossMargin": "26%" }
+          },
+          {
+            "band": { "en": "Premium ($300+)", "cn": "高端 (¥2,175+)" },
+            "players": [
+              { "brand": "Tesla", "share": "28%" },
+              { "brand": "Mobileye", "share": "16%" },
+              { "brand": "Magna", "share": "12%" }
+            ],
+            "costStructure": { "avgBom": "$160", "avgRetailPrice": "$380", "avgGrossMargin": "34%" }
+          }
+        ],
+        "coreModelTeardown": {
+          "model": "Bosch iBooster 2 ADAS Module",
+          "bom": "$112",
+          "retailPrice": "$210",
+          "grossMargin": "28%",
+          "iterationCycle": { "en": "20 months", "cn": "20个月" },
+          "salesChannels": { "en": "OEM direct (78%), Tier-1 integration (22%)", "cn": "OEM 直供 (78%)，一级集成商 (22%)" },
+          "priceFloor": "$185",
+          "launchDate": "2024-11",
+          "sellingPoints": {
+            "en": ["Redundant sensor fusion for L2+ ADAS", "Over-the-air update capability", "ISO 26262 ASIL-D certified"],
+            "cn": ["冗余传感器融合支持 L2+ ADAS", "支持 OTA 升级", "通过 ISO 26262 ASIL-D 认证"]
+          },
+          "targetAudience": { "en": "Premium OEM brands requiring L2/L2+ compliance", "cn": "需要 L2/L2+ 合规的高端 OEM 品牌" },
+          "radiationAudience": { "en": "Tier-1 suppliers building ADAS stacks", "cn": "构建 ADAS 软硬件栈的一级供应商" }
+        },
+        "competitorComparison": [
+          {
+            "model": "iBooster 2 ADAS",
+            "brand": "Bosch",
+            "bom": "$112", "retailPrice": "$210", "grossMargin": "28%",
+            "launchDate": "2024-11",
+            "iterationCycle": { "en": "20 Mo", "cn": "20个月" },
+            "salesChannels": { "en": "OEM direct", "cn": "OEM直供" },
+            "priceFloor": "$185",
+            "sellingPoints": { "en": ["Sensor fusion", "OTA ready", "ASIL-D cert"], "cn": ["传感器融合", "支持OTA", "ASIL-D认证"] },
+            "targetAudience": { "en": "Premium OEMs", "cn": "高端OEM" },
+            "radiationAudience": { "en": "Tier-1 ADAS stacks", "cn": "一级ADAS供应商" }
+          },
+          {
+            "model": "EyeQ5 Vision Processor",
+            "brand": "Mobileye",
+            "bom": "$140", "retailPrice": "$320", "grossMargin": "38%",
+            "launchDate": "2024-06",
+            "iterationCycle": { "en": "24 Mo", "cn": "24个月" },
+            "salesChannels": { "en": "OEM direct (100%)", "cn": "OEM直供 (100%)" },
+            "priceFloor": "$280",
+            "sellingPoints": { "en": ["Industry-leading vision AI", "Road experience management", "Autonomous driving ready"], "cn": ["领先视觉AI算法", "道路经验管理", "自动驾驶就绪"] },
+            "targetAudience": { "en": "Premium & luxury OEMs", "cn": "高端与豪华OEM品牌" },
+            "radiationAudience": { "en": "L3+ autonomy programs", "cn": "L3+自动驾驶项目" }
+          },
+          {
+            "model": "HFL110 Smart Cockpit",
+            "brand": "Continental",
+            "bom": "$88", "retailPrice": "$175", "grossMargin": "24%",
+            "launchDate": "2025-01",
+            "iterationCycle": { "en": "18 Mo", "cn": "18个月" },
+            "salesChannels": { "en": "OEM (85%), aftermarket (15%)", "cn": "OEM (85%)，后市场 (15%)" },
+            "priceFloor": "$155",
+            "sellingPoints": { "en": ["Multi-display cockpit integration", "Android Automotive OS support", "5G V2X ready"], "cn": ["多屏座舱集成", "支持Android车机系统", "5G V2X就绪"] },
+            "targetAudience": { "en": "Mid-premium OEMs", "cn": "中高端OEM品牌" },
+            "radiationAudience": { "en": "EV platform integrations", "cn": "电动车平台集成商" }
+          }
+        ],
+        "asymmetricAdvantages": [
+          {
+            "manufacturer": "Tesla",
+            "advantages": {
+              "en": ["Vertically integrated FSD chip design", "Direct OTA fleet learning at scale", "Data moat: 5B+ miles driven"],
+              "cn": ["FSD芯片垂直自研", "大规模车队OTA学习", "数据壁垒：超50亿英里驾驶数据"]
+            }
+          },
+          {
+            "manufacturer": "Mobileye",
+            "advantages": {
+              "en": ["35+ OEM partnerships lock-in", "True redundancy architecture (RSS)", "EyeQ chip dominates L2 perception"],
+              "cn": ["35+OEM合作伙伴锁定", "真冗余架构(RSS安全模型)", "EyeQ芯片主导L2感知市场"]
+            }
+          },
+          {
+            "manufacturer": "Bosch",
+            "advantages": {
+              "en": ["Full ADAS stack from sensor to ECU", "Global Tier-1 production scale", "Safety certification expertise"],
+              "cn": ["从传感器到ECU的完整ADAS栈", "全球一级供应商生产规模", "安全认证专业积累深厚"]
+            }
+          }
+        ],
+        "supplyChainComponents": [
+          {
+            "component": { "en": "LiDAR Sensors", "cn": "激光雷达传感器" },
+            "tier1": ["Valeo", "Luminar", "Hesai"],
+            "tier2": ["II-VI", "AMS OSRAM", "Coherent"],
+            "maturity": { "en": "Early commercial", "cn": "早期商业化" },
+            "priceTrend": { "en": "Declining 30%/yr", "cn": "年降30%" },
+            "geopoliticalRisk": { "en": "Medium — Chinese suppliers gaining share", "cn": "中等 — 中国供应商份额提升" }
+          },
+          {
+            "component": { "en": "ADAS SoC", "cn": "ADAS 主控芯片" },
+            "tier1": ["Mobileye", "Nvidia", "Qualcomm"],
+            "tier2": ["TSMC", "Samsung", "SMIC"],
+            "maturity": { "en": "Mature", "cn": "成熟" },
+            "priceTrend": { "en": "Stable", "cn": "稳定" },
+            "geopoliticalRisk": { "en": "High — TSMC Taiwan concentration", "cn": "高 — 台积电台湾集中风险" }
+          },
+          {
+            "component": { "en": "HUD Display Module", "cn": "HUD 显示模块" },
+            "tier1": ["Continental", "Nippon Seiki", "Yazaki"],
+            "tier2": ["MicroDisplay Corp", "Himax", "Syndiant"],
+            "maturity": { "en": "Growing", "cn": "成长期" },
+            "priceTrend": { "en": "Rising 8%/yr", "cn": "年升8%" },
+            "geopoliticalRisk": { "en": "Low", "cn": "低" }
+          }
+        ],
+        "inventoryTurnover": [
+          {
+            "brand": "Bosch",
+            "turnoverDays": 22,
+            "depreciationRisk": { "en": "Medium — 18-24 month product cycles", "cn": "中等 — 18-24个月产品周期" },
+            "skuDecayCurve": [100, 98, 96, 93, 90, 86, 81, 75, 68, 60, 52, 44]
+          },
+          {
+            "brand": "Mobileye",
+            "turnoverDays": 15,
+            "depreciationRisk": { "en": "Low — OEM committed volumes", "cn": "低 — OEM承诺采购量锁定" },
+            "skuDecayCurve": [100, 99, 98, 97, 95, 93, 90, 87, 83, 78, 73, 68]
+          },
+          {
+            "brand": "Continental",
+            "turnoverDays": 28,
+            "depreciationRisk": { "en": "Medium-high — platform fragmentation", "cn": "中高 — 平台碎片化风险" },
+            "skuDecayCurve": [100, 97, 94, 90, 85, 79, 72, 65, 57, 49, 41, 34]
+          }
+        ]
+      },
+      "demand": {
+        "painPointsByDemographic": [
+          {
+            "group": { "en": "New Car Buyers", "cn": "新车购买者" },
+            "priceRange": { "en": "$200-500", "cn": "¥1,450-3,625" },
+            "painPoints": [
+              { "rank": 1, "en": "ADAS features feel unreliable in heavy rain", "cn": "雨天ADAS功能可靠性差" },
+              { "rank": 2, "en": "Cockpit UI too complex, learning curve steep", "cn": "座舱界面过于复杂，学习曲线陡峭" },
+              { "rank": 3, "en": "Voice assistant misunderstands in noisy environments", "cn": "嘈杂环境下语音助手识别率低" },
+              { "rank": 4, "en": "Over-the-air updates interrupt driving unexpectedly", "cn": "OTA更新时机不当，影响驾驶" },
+              { "rank": 5, "en": "Navigation maps lag real-world road changes", "cn": "导航地图更新滞后于实际道路变化" },
+              { "rank": 6, "en": "Backup camera resolution poor in low light", "cn": "低光照下倒车摄像头分辨率差" },
+              { "rank": 7, "en": "Smartphone mirroring connection drops frequently", "cn": "手机映射连接频繁断开" },
+              { "rank": 8, "en": "Heated seat controls buried in touchscreen menus", "cn": "座椅加热控制藏在触屏深处" },
+              { "rank": 9, "en": "Lane keep assist too aggressive on highways", "cn": "高速行驶时车道保持辅助过于强势" },
+              { "rank": 10, "en": "Subscription fees for basic connected features", "cn": "基础联网功能需要额外订阅付费" }
+            ]
+          },
+          {
+            "group": { "en": "Fleet Operators", "cn": "车队运营商" },
+            "priceRange": { "en": "$300-800", "cn": "¥2,175-5,800" },
+            "painPoints": [
+              { "rank": 1, "en": "Telematics data fragmented across OEM platforms", "cn": "远程信息数据分散在各OEM平台" },
+              { "rank": 2, "en": "High cost of replacing ADAS sensors after minor collisions", "cn": "轻微碰撞后ADAS传感器更换成本高" },
+              { "rank": 3, "en": "Driver behavior monitoring too invasive for staff", "cn": "驾驶员行为监控过于侵入性" },
+              { "rank": 4, "en": "EV range anxiety affecting route planning", "cn": "电动车续航焦虑影响路线规划" },
+              { "rank": 5, "en": "Compliance reporting requires manual data export", "cn": "合规报告需要手动导出数据" },
+              { "rank": 6, "en": "Inconsistent ADAS performance across same-model vehicles", "cn": "同款车型ADAS性能表现不一致" },
+              { "rank": 7, "en": "Poor integration between dashcam and fleet management software", "cn": "行车记录仪与车队管理软件集成差" },
+              { "rank": 8, "en": "Long lead times for hardware replacements", "cn": "硬件更换等待周期过长" },
+              { "rank": 9, "en": "GPS accuracy degrades in urban canyons", "cn": "城市峡谷中GPS精度下降" },
+              { "rank": 10, "en": "High false positive rates in collision detection", "cn": "碰撞检测误报率高" }
+            ]
+          },
+          {
+            "group": { "en": "Aftermarket Upgraders", "cn": "后市场改装用户" },
+            "priceRange": { "en": "$50-200", "cn": "¥362-1,450" },
+            "painPoints": [
+              { "rank": 1, "en": "Aftermarket ADAS calibration too complicated", "cn": "后市场ADAS标定流程过于复杂" },
+              { "rank": 2, "en": "Dashcam suction mount falls off in heat", "cn": "行车记录仪吸盘支架在高温下脱落" },
+              { "rank": 3, "en": "HUD display washes out in direct sunlight", "cn": "HUD显示在直射阳光下看不清" },
+              { "rank": 4, "en": "OBD diagnostic apps don't support all car brands", "cn": "OBD诊断应用不支持所有车型" },
+              { "rank": 5, "en": "Installation voids factory warranty concerns", "cn": "担心安装后市场产品影响原厂保修" },
+              { "rank": 6, "en": "Bluetooth range insufficient for large vehicles", "cn": "蓝牙范围对大型车辆不够用" },
+              { "rank": 7, "en": "Power draw drains battery when car is parked", "cn": "停车时持续耗电导致电瓶亏电" },
+              { "rank": 8, "en": "App requires constant phone connection", "cn": "应用需要持续连接手机才能使用" },
+              { "rank": 9, "en": "Night vision quality far below OEM systems", "cn": "夜视效果远不及原厂系统" },
+              { "rank": 10, "en": "Confusing regional firmware versions", "cn": "区域固件版本混乱难以区分" }
+            ]
+          }
+        ],
+        "keywordSearchTrends": {
+          "keywords": [
+            { "en": "ADAS upgrade", "cn": "ADAS升级" },
+            { "en": "smart cockpit", "cn": "智能座舱" },
+            { "en": "dashcam 4K", "cn": "4K行车记录仪" }
+          ],
+          "months": ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09"],
+          "data": {
+            "k1": [45, 52, 58, 63, 70, 78],
+            "k2": [68, 72, 76, 80, 86, 92],
+            "k3": [55, 58, 54, 60, 65, 62]
+          },
+          "reviewPainTrends": {
+            "categories": [
+              { "en": "ADAS Reliability", "cn": "ADAS可靠性" },
+              { "en": "UI/UX Complexity", "cn": "界面复杂度" },
+              { "en": "Connectivity", "cn": "连接稳定性" }
+            ],
+            "series": [
+              [180, 195, 210, 228, 245, 268],
+              [140, 152, 165, 178, 185, 196],
+              [95, 102, 98, 110, 118, 125]
+            ]
+          }
+        },
+        "reviewPainPointCollection": {
+          "totalReviews": "68,000",
+          "monthlyTop10": [
+            {
+              "month": "2025-09",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "ADAS false alarms", "cn": "ADAS误报" }, "count": 1840, "verbatim": { "en": "\"Lane keep assist kept nudging me on a straight motorway — turned it off after 10 minutes.\"", "cn": "\"在笔直的高速公路上，车道保持辅助一直在纠偏，十分钟后就关掉了。\"" } },
+                { "rank": 2, "topic": { "en": "Touchscreen response", "cn": "触屏响应速度" }, "count": 1520, "verbatim": { "en": "\"Tapping the climate control takes 2-3 seconds to register while driving — dangerous.\"", "cn": "\"驾驶中点击空调控制需要2-3秒才响应，太危险了。\"" } },
+                { "rank": 3, "topic": { "en": "OTA update timing", "cn": "OTA更新时机" }, "count": 1280, "verbatim": { "en": "\"Car forced a 45-minute update right when I needed to leave for work.\"", "cn": "\"出门上班时车子强制安装了45分钟的更新，完全没有预警。\"" } },
+                { "rank": 4, "topic": { "en": "Voice assistant accuracy", "cn": "语音助手准确率" }, "count": 1050, "verbatim": { "en": "\"It keeps setting navigation to wrong addresses when I speak clearly.\"", "cn": "\"明明说得很清楚，导航还是导错地方。\"" } },
+                { "rank": 5, "topic": { "en": "Connectivity drops", "cn": "连接断开" }, "count": 890, "verbatim": { "en": "\"Apple CarPlay disconnects every 20 minutes on longer drives.\"", "cn": "\"长途驾驶中CarPlay每20分钟就断一次。\"" } },
+                { "rank": 6, "topic": { "en": "GPS lag", "cn": "GPS延迟" }, "count": 760, "verbatim": { "en": "\"System told me to turn 100m after the actual junction.\"", "cn": "\"系统在真实路口100米后才提示转向。\"" } },
+                { "rank": 7, "topic": { "en": "Camera night quality", "cn": "摄像头夜间效果" }, "count": 640, "verbatim": { "en": "\"Backup camera is useless at night — just a blurry dark rectangle.\"", "cn": "\"夜间倒车摄像头完全没用，就是模糊的黑色方块。\"" } },
+                { "rank": 8, "topic": { "en": "Subscription fees", "cn": "订阅费用" }, "count": 520, "verbatim": { "en": "\"Paid $60k for the car and now they want $200/yr for remote lock. Unacceptable.\"", "cn": "\"花60万买的车，远程解锁还要额外收钱，无法接受。\"" } },
+                { "rank": 9, "topic": { "en": "HUD glare", "cn": "HUD炫光" }, "count": 410, "verbatim": { "en": "\"HUD is invisible with morning sun directly ahead.\"", "cn": "\"早晨阳光直射时HUD完全看不见。\"" } },
+                { "rank": 10, "topic": { "en": "Complex menus", "cn": "菜单复杂" }, "count": 320, "verbatim": { "en": "\"It takes 5 taps to turn on heated seats. Why no physical buttons?\"", "cn": "\"打开座椅加热要点5次屏幕，为什么不给实体按键？\"" } }
+              ]
+            },
+            {
+              "month": "2025-08",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "ADAS false alarms", "cn": "ADAS误报" }, "count": 1680, "verbatim": { "en": "\"Automatic emergency braking triggered at a shadow on the road.\"", "cn": "\"自动紧急制动被路面阴影误触发。\"" } },
+                { "rank": 2, "topic": { "en": "Summer heat issues", "cn": "高温故障" }, "count": 1340, "verbatim": { "en": "\"Screen dims automatically in the sun so you can't see it at all.\"", "cn": "\"屏幕在阳光下自动降亮，什么都看不见。\"" } },
+                { "rank": 3, "topic": { "en": "Touchscreen response", "cn": "触屏响应速度" }, "count": 1120, "verbatim": { "en": "\"The system lags so badly that I gave up on voice commands entirely.\"", "cn": "\"系统卡顿严重，语音指令完全放弃使用了。\"" } },
+                { "rank": 4, "topic": { "en": "Battery drain", "cn": "耗电问题" }, "count": 980, "verbatim": { "en": "\"Parking mode dashcam killed my car battery in 3 days.\"", "cn": "\"停车监控模式3天就把汽车电瓶耗光了。\"" } },
+                { "rank": 5, "topic": { "en": "App crashes", "cn": "应用崩溃" }, "count": 820, "verbatim": { "en": "\"The OEM app crashes every time I try to pre-cool the car remotely.\"", "cn": "\"每次用原厂APP远程预冷车内温度时都会崩溃。\"" } },
+                { "rank": 6, "topic": { "en": "Voice assistant accuracy", "cn": "语音助手准确率" }, "count": 690, "verbatim": { "en": "\"Asked it to call 'Mom' — called 'Tom' instead.\"", "cn": "\"让它拨打'妈妈'，结果拨给了'小明'。\"" } },
+                { "rank": 7, "topic": { "en": "Connectivity drops", "cn": "连接断开" }, "count": 560, "verbatim": { "en": "\"Android Auto drops every time I go through a tunnel.\"", "cn": "\"每次过隧道Android Auto就断开了。\"" } },
+                { "rank": 8, "topic": { "en": "GPS lag", "cn": "GPS延迟" }, "count": 440, "verbatim": { "en": "\"Navigation recalculates so slowly I missed my exit.\"", "cn": "\"导航重新规划太慢，过了出口才提示。\"" } },
+                { "rank": 9, "topic": { "en": "OTA update timing", "cn": "OTA更新时机" }, "count": 350, "verbatim": { "en": "\"Update notification appeared while I was reversing.\"", "cn": "\"倒车时突然弹出更新通知。\"" } },
+                { "rank": 10, "topic": { "en": "Subscription fees", "cn": "订阅费用" }, "count": 280, "verbatim": { "en": "\"Why is live traffic a subscription? It was free with my old car.\"", "cn": "\"实时路况为什么要收订阅费？我的老车是免费的。\"" } }
+              ]
+            },
+            {
+              "month": "2025-07",
+              "painPoints": [
+                { "rank": 1, "topic": { "en": "ADAS false alarms", "cn": "ADAS误报" }, "count": 1520, "verbatim": { "en": "\"Phantom braking twice in one week — I don't trust it anymore.\"", "cn": "\"一周内幽灵刹车两次，已经不信任这个功能了。\"" } },
+                { "rank": 2, "topic": { "en": "Touchscreen response", "cn": "触屏响应速度" }, "count": 1180, "verbatim": { "en": "\"The UI is beautiful but so slow. Feels like a 2015 tablet.\"", "cn": "\"UI很漂亮但是非常卡，感觉像2015年的平板电脑。\"" } },
+                { "rank": 3, "topic": { "en": "Connectivity drops", "cn": "连接断开" }, "count": 960, "verbatim": { "en": "\"My phone disconnects within minutes of connecting via USB-C.\"", "cn": "\"USB-C连接几分钟后手机就断开了。\"" } },
+                { "rank": 4, "topic": { "en": "Voice assistant accuracy", "cn": "语音助手准确率" }, "count": 820, "verbatim": { "en": "\"It understands 'navigate home' maybe 50% of the time.\"", "cn": "\"'导航回家'大概只有50%的识别成功率。\"" } },
+                { "rank": 5, "topic": { "en": "GPS lag", "cn": "GPS延迟" }, "count": 680, "verbatim": { "en": "\"Map doesn't show construction zones added last month.\"", "cn": "\"地图还没有更新上个月新增的施工区域。\"" } },
+                { "rank": 6, "topic": { "en": "Complex menus", "cn": "菜单复杂" }, "count": 540, "verbatim": { "en": "\"Finding the tire pressure display requires 4 menu levels.\"", "cn": "\"查看胎压显示需要进入4层菜单。\"" } },
+                { "rank": 7, "topic": { "en": "OTA update timing", "cn": "OTA更新时机" }, "count": 420, "verbatim": { "en": "\"Update took 2 hours and I couldn't drive the car.\"", "cn": "\"更新花了2小时，期间完全无法用车。\"" } },
+                { "rank": 8, "topic": { "en": "Camera night quality", "cn": "摄像头夜间效果" }, "count": 320, "verbatim": { "en": "\"360 surround view is completely black in dark parking lots.\"", "cn": "\"在昏暗停车场360环视全黑看不见任何东西。\"" } },
+                { "rank": 9, "topic": { "en": "HUD glare", "cn": "HUD炫光" }, "count": 260, "verbatim": { "en": "\"HUD reflects on the windshield at night and creates double image.\"", "cn": "\"夜间HUD在挡风玻璃上产生重影。\"" } },
+                { "rank": 10, "topic": { "en": "Battery drain", "cn": "耗电问题" }, "count": 200, "verbatim": { "en": "\"Sentry mode uses so much power it's not worth enabling.\"", "cn": "\"哨兵模式耗电太多，根本不值得开启。\"" } }
+              ]
+            }
+          ]
+        }
       }
     }
   },
